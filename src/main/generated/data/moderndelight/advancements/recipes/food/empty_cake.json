@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:empty_cake"
+        "recipe": "moderndelight:empty_cake"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:empty_cake"
+      "moderndelight:empty_cake"
     ]
   },
   "sends_telemetry_event": false

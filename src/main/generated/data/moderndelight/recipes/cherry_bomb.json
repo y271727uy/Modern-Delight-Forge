@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "bakingdelight:cherry"
+      "item": "moderndelight:cherry"
     },
     "G": {
       "item": "minecraft:gunpowder"
@@ -15,7 +15,7 @@
     " G "
   ],
   "result": {
-    "item": "bakingdelight:cherry_bomb"
+    "item": "moderndelight:cherry_bomb"
   },
   "show_notification": true
 }

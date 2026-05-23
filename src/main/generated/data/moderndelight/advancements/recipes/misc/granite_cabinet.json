@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:granite_cabinet"
+        "recipe": "moderndelight:granite_cabinet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:granite_cabinet"
+      "moderndelight:granite_cabinet"
     ]
   },
   "sends_telemetry_event": false

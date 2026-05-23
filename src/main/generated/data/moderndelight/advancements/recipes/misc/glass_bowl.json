@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:glass_bowl"
+        "recipe": "moderndelight:glass_bowl"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:glass_bowl"
+      "moderndelight:glass_bowl"
     ]
   },
   "sends_telemetry_event": false

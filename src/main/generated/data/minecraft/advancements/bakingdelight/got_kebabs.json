@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_cuttlebone",
+  "parent": "minecraft:moderndelight/got_cuttlebone",
   "criteria": {
     "glow_kebabs": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:glow_squid_tentacle_kebabs"
+              "moderndelight:glow_squid_tentacle_kebabs"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:squid_tentacle_kebabs"
+              "moderndelight:squid_tentacle_kebabs"
             ]
           }
         ]
@@ -29,16 +29,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.kebabs.desc"
+      "translate": "advancement.moderndelight.kebabs.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:squid_tentacle_kebabs"
+      "item": "moderndelight:squid_tentacle_kebabs"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.kebabs.title"
+      "translate": "advancement.moderndelight.kebabs.title"
     }
   },
   "requirements": [

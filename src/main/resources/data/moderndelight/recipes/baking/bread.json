@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
       "tag": "c:foods/doughs"

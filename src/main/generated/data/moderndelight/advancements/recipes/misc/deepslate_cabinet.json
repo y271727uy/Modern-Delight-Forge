@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:deepslate_cabinet"
+        "recipe": "moderndelight:deepslate_cabinet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:deepslate_cabinet"
+      "moderndelight:deepslate_cabinet"
     ]
   },
   "sends_telemetry_event": false

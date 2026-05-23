@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:biogas_digester_controller"
+          "name": "moderndelight:biogas_digester_controller"
         }
       ],
       "rolls": 1.0

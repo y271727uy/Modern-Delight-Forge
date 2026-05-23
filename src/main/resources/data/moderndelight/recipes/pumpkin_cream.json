@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:cream"
+      "item": "moderndelight:cream"
     },
     {
       "tag": "c:foods/pumpkins"
@@ -13,6 +13,6 @@
     }
   ],
   "result": {
-    "item": "bakingdelight:pumpkin_cream"
+    "item": "moderndelight:pumpkin_cream"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/wind",
+  "parent": "minecraft:moderndelight/wind",
   "criteria": {
     "freezer": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:freezer"
+              "moderndelight:freezer"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_freezer_desc"
+      "translate": "advancement.moderndelight.get_freezer_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:freezer"
+      "item": "moderndelight:freezer"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_freezer_title"
+      "translate": "advancement.moderndelight.get_freezer_title"
     }
   },
   "requirements": [

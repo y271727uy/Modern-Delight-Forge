@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
       "item": "minecraft:sunflower"
@@ -9,7 +9,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:sunflower_seed",
+    "item": "moderndelight:sunflower_seed",
     "count": 4
   }
 }

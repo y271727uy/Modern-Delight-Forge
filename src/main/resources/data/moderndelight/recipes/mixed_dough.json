@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:potato_starch"
+      "item": "moderndelight:potato_starch"
     },
     {
       "tag": "c:foods/doughs/wheat"
     }
   ],
   "result": {
-    "item": "bakingdelight:mixed_dough",
+    "item": "moderndelight:mixed_dough",
     "count": 2
   }
 }

@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:butter"
+      "item": "moderndelight:butter"
     },
     {
-      "item": "bakingdelight:bread_slice"
+      "item": "moderndelight:bread_slice"
     }
   ],
   "result": {
-    "item": "bakingdelight:butter_bread_slice"
+    "item": "moderndelight:butter_bread_slice"
   }
 }

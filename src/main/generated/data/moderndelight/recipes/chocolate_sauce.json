@@ -12,10 +12,10 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "bakingdelight:jar"
+      "item": "moderndelight:jar"
     }
   ],
   "result": {
-    "item": "bakingdelight:chocolate_sauce"
+    "item": "moderndelight:chocolate_sauce"
   }
 }

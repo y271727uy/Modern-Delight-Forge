@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "bakingdelight:silicon_ingot"
+      "item": "moderndelight:silicon_ingot"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "AAA"
   ],
   "result": {
-    "item": "bakingdelight:silicon_block"
+    "item": "moderndelight:silicon_block"
   },
   "show_notification": true
 }

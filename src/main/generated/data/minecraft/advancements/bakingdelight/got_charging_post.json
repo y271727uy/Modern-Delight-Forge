@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_battery1",
+  "parent": "minecraft:moderndelight/got_battery1",
   "criteria": {
     "charging_post": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:charging_post"
+              "moderndelight:charging_post"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.charging_post.desc"
+      "translate": "advancement.moderndelight.charging_post.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:charging_post"
+      "item": "moderndelight:charging_post"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.charging_post.title"
+      "translate": "advancement.moderndelight.charging_post.title"
     }
   },
   "requirements": [

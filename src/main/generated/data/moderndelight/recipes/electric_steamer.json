@@ -9,7 +9,7 @@
       "item": "minecraft:iron_ingot"
     },
     "R": {
-      "item": "bakingdelight:redstone_component"
+      "item": "moderndelight:redstone_component"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "IRI"
   ],
   "result": {
-    "item": "bakingdelight:electric_steamer"
+    "item": "moderndelight:electric_steamer"
   },
   "show_notification": true
 }

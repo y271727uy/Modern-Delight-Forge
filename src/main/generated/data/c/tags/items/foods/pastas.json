@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bakingdelight:raw_noodles",
+    "moderndelight:raw_noodles",
     {
       "id": "#forge:pasta",
       "required": false

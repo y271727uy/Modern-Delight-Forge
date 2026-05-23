@@ -5,7 +5,7 @@
       "modid": "casualness_delight"
     }
   ],
-  "type": "bakingdelight:deep_frying",
+  "type": "moderndelight:deep_frying",
   "ingredients": [
     {
       "item": "farmersdelight:chicken_cuts"

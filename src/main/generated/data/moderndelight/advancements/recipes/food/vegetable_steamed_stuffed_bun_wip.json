@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:vegetable_steamed_stuffed_bun_wip"
+        "recipe": "moderndelight:vegetable_steamed_stuffed_bun_wip"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:wooden_plate"
+              "moderndelight:wooden_plate"
             ]
           }
         ]
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:vegetable_steamed_stuffed_bun_wip"
+      "moderndelight:vegetable_steamed_stuffed_bun_wip"
     ]
   },
   "sends_telemetry_event": false

@@ -6,13 +6,13 @@
       "item": "minecraft:egg"
     },
     {
-      "item": "bakingdelight:cream_bucket"
+      "item": "moderndelight:cream_bucket"
     },
     {
       "item": "minecraft:sugar"
     },
     {
-      "item": "bakingdelight:butter"
+      "item": "moderndelight:butter"
     },
     {
       "item": "minecraft:wheat"
@@ -23,6 +23,6 @@
   ],
   "result": {
     "count": 12,
-    "item": "bakingdelight:mousse_wip"
+    "item": "moderndelight:mousse_wip"
   }
 }

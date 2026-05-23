@@ -1,11 +1,11 @@
 {
-  "type": "bakingdelight:deep_frying",
+  "type": "moderndelight:deep_frying",
   "ingredients": [
     {
-      "item": "bakingdelight:cheese"
+      "item": "moderndelight:cheese"
     }
   ],
   "output": {
-    "item": "bakingdelight:cheese_ball"
+    "item": "moderndelight:cheese_ball"
   }
 }

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:squid_tentacle"
+              "moderndelight:squid_tentacle"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:raw_squid_tentacle_kebabs"
+        "recipe": "moderndelight:raw_squid_tentacle_kebabs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:raw_squid_tentacle_kebabs"
+      "moderndelight:raw_squid_tentacle_kebabs"
     ]
   },
   "sends_telemetry_event": false

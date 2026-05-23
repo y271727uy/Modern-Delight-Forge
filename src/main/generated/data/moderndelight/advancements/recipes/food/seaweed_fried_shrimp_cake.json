@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:deep_fried_shrimp_cake"
+              "moderndelight:deep_fried_shrimp_cake"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:seaweed_fried_shrimp_cake"
+        "recipe": "moderndelight:seaweed_fried_shrimp_cake"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:seaweed_fried_shrimp_cake"
+      "moderndelight:seaweed_fried_shrimp_cake"
     ]
   },
   "sends_telemetry_event": false

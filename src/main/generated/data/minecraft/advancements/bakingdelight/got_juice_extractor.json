@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/wind",
+  "parent": "minecraft:moderndelight/wind",
   "criteria": {
     "juice_extractor": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:juice_extractor"
+              "moderndelight:juice_extractor"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.juice_extractor.desc"
+      "translate": "advancement.moderndelight.juice_extractor.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:juice_extractor"
+      "item": "moderndelight:juice_extractor"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.juice_extractor.title"
+      "translate": "advancement.moderndelight.juice_extractor.title"
     }
   },
   "requirements": [

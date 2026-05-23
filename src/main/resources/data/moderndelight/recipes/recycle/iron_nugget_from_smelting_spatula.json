@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "ingredient": {
-    "item": "bakingdelight:spatula"
+    "item": "moderndelight:spatula"
   },
   "result": "minecraft:iron_nugget"
 }

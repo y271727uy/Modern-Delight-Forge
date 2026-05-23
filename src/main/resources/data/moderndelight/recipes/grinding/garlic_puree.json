@@ -1,17 +1,17 @@
 {
-  "type": "bakingdelight:grinding",
+  "type": "moderndelight:grinding",
   "ingredients": [
     {
-      "item": "bakingdelight:garlic_petal"
+      "item": "moderndelight:garlic_petal"
     }
   ],
   "output": {
-    "item": "bakingdelight:garlic_puree",
+    "item": "moderndelight:garlic_puree",
     "count": 1
   },
   "chance": 0.3,
   "extra": {
-    "item": "bakingdelight:garlic_puree",
+    "item": "moderndelight:garlic_puree",
     "count": 1
   }
 }

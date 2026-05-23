@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:kitchen_utensil_holder"
+        "recipe": "moderndelight:kitchen_utensil_holder"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:kitchen_utensil_holder"
+      "moderndelight:kitchen_utensil_holder"
     ]
   },
   "sends_telemetry_event": false

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bakingdelight:mashed_potato_block",
+    "moderndelight:mashed_potato_block",
     "minecraft:dirt",
     "minecraft:dirt_path",
     "minecraft:grass_block",

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:silicon_block"
+          "name": "moderndelight:silicon_block"
         }
       ],
       "rolls": 1.0

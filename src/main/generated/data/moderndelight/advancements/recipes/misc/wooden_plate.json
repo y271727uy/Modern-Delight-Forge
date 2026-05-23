@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:wooden_plate"
+        "recipe": "moderndelight:wooden_plate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:wooden_plate"
+      "moderndelight:wooden_plate"
     ]
   },
   "sends_telemetry_event": false

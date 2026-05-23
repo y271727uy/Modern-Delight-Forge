@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:basalt_cabinet"
+          "name": "moderndelight:basalt_cabinet"
         }
       ],
       "rolls": 1.0

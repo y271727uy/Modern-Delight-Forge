@@ -9,12 +9,12 @@
   "ingredients": [
     {
       "amount": 27000,
-      "fluid": "bakingdelight:still_cream"
+      "fluid": "moderndelight:still_cream"
     }
   ],
   "results": [
     {
-      "item": "bakingdelight:butter"
+      "item": "moderndelight:butter"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:squeeze",
+  "type": "moderndelight:squeeze",
   "is_danger": true,
   "ingredients": [
     {
@@ -10,7 +10,7 @@
     "item": "minecraft:sugar"
   },
   "fluid_output": {
-    "fluid": "bakingdelight:still_sweetened_water",
+    "fluid": "moderndelight:still_sweetened_water",
     "amount": 2250
   }
 }

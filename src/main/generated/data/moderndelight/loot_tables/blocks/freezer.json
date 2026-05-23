@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:freezer"
+          "name": "moderndelight:freezer"
         }
       ],
       "rolls": 1.0

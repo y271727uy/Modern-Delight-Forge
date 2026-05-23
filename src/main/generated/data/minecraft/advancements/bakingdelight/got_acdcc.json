@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_silicon_ingot",
+  "parent": "minecraft:moderndelight/got_silicon_ingot",
   "criteria": {
     "acdcc": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:ac_dc_converter"
+              "moderndelight:ac_dc_converter"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.acdcc.desc"
+      "translate": "advancement.moderndelight.acdcc.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:ac_dc_converter"
+      "item": "moderndelight:ac_dc_converter"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.acdcc.title"
+      "translate": "advancement.moderndelight.acdcc.title"
     }
   },
   "requirements": [

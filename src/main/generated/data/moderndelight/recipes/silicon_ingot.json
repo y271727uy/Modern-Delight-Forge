@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:silicon_block"
+      "item": "moderndelight:silicon_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "bakingdelight:silicon_ingot"
+    "item": "moderndelight:silicon_ingot"
   }
 }

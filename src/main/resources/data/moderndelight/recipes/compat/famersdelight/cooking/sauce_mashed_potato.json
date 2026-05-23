@@ -16,14 +16,14 @@
       "tag": "c:crops/cabbage"
     },
     {
-      "item": "bakingdelight:mashed_potato"
+      "item": "moderndelight:mashed_potato"
     },
     {
-      "item": "bakingdelight:black_pepper_dust"
+      "item": "moderndelight:black_pepper_dust"
     }
   ],
   "recipe_book_tab": "meals",
   "result": {
-    "item": "bakingdelight:sauce_mashed_potato"
+    "item": "moderndelight:sauce_mashed_potato"
   }
 }

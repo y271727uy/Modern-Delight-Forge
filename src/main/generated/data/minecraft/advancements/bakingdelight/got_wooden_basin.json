@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_gas_cooking_stove",
+  "parent": "minecraft:moderndelight/got_gas_cooking_stove",
   "criteria": {
     "wooden_basin": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:wooden_basin"
+              "moderndelight:wooden_basin"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.wooden_basin.desc"
+      "translate": "advancement.moderndelight.wooden_basin.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:wooden_basin"
+      "item": "moderndelight:wooden_basin"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.wooden_basin.title"
+      "translate": "advancement.moderndelight.wooden_basin.title"
     }
   },
   "requirements": [

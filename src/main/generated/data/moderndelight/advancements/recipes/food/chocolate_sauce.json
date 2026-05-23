@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:chocolate_sauce"
+        "recipe": "moderndelight:chocolate_sauce"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:chocolate_sauce"
+      "moderndelight:chocolate_sauce"
     ]
   },
   "sends_telemetry_event": false

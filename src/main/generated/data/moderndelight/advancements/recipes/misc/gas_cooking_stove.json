@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:gas_cooking_stove"
+        "recipe": "moderndelight:gas_cooking_stove"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:gas_cooking_stove"
+      "moderndelight:gas_cooking_stove"
     ]
   },
   "sends_telemetry_event": false

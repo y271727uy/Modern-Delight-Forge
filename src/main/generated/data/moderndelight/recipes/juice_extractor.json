@@ -9,7 +9,7 @@
       "item": "minecraft:iron_ingot"
     },
     "R": {
-      "item": "bakingdelight:redstone_component"
+      "item": "moderndelight:redstone_component"
     },
     "S": {
       "item": "minecraft:heavy_weighted_pressure_plate"
@@ -21,7 +21,7 @@
     "SRS"
   ],
   "result": {
-    "item": "bakingdelight:juice_extractor"
+    "item": "moderndelight:juice_extractor"
   },
   "show_notification": true
 }

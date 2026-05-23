@@ -3,16 +3,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:cherry"
+      "item": "moderndelight:cherry"
     },
     {
       "item": "minecraft:sugar"
     },
     {
-      "item": "bakingdelight:empty_cake"
+      "item": "moderndelight:empty_cake"
     }
   ],
   "result": {
-    "item": "bakingdelight:cherry_cake"
+    "item": "moderndelight:cherry_cake"
   }
 }

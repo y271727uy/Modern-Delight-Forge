@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:garlic_petal"
+              "moderndelight:garlic_petal"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:garlic"
+        "recipe": "moderndelight:garlic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:garlic"
+      "moderndelight:garlic"
     ]
   },
   "sends_telemetry_event": false

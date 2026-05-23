@@ -16,10 +16,10 @@
       "tag": "c:foods/breads"
     },
     {
-      "item": "bakingdelight:black_pepper_dust"
+      "item": "moderndelight:black_pepper_dust"
     },
     {
-      "item": "bakingdelight:cheese"
+      "item": "moderndelight:cheese"
     },
     {
       "item": "minecraft:carrot"
@@ -33,6 +33,6 @@
   ],
   "recipe_book_tab": "meals",
   "result": {
-    "item": "bakingdelight:french_onion_soup"
+    "item": "moderndelight:french_onion_soup"
   }
 }

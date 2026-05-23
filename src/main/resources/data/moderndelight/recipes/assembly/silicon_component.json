@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:assembly",
+  "type": "moderndelight:assembly",
   "mini_game_type": 3,
   "goal": 4,
   "ingredients": [
@@ -7,7 +7,7 @@
       "item": "moderndelight:silicon_ingot"
     },
     {
-      "item": "bakingdelight:redstone_component"
+      "item": "moderndelight:redstone_component"
     },
     {
       "item": "moderndelight:silicon_ingot"
@@ -23,7 +23,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:silicon_component",
+    "item": "moderndelight:silicon_component",
     "count": 4
   }
 }

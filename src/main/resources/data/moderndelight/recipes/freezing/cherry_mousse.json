@@ -1,17 +1,17 @@
 {
-  "type": "bakingdelight:freezing",
+  "type": "moderndelight:freezing",
   "ingredients": [
     {
-      "item": "bakingdelight:cherry"
+      "item": "moderndelight:cherry"
     },
     {
-      "item": "bakingdelight:mousse_wip"
+      "item": "moderndelight:mousse_wip"
     },
     {
-      "item": "bakingdelight:cherry"
+      "item": "moderndelight:cherry"
     }
   ],
   "output": {
-    "item": "bakingdelight:cherry_mousse"
+    "item": "moderndelight:cherry_mousse"
   }
 }

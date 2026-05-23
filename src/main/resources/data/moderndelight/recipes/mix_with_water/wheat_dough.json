@@ -1,11 +1,11 @@
 {
-  "type": "bakingdelight:mix_with_water",
+  "type": "moderndelight:mix_with_water",
   "ingredients": [
     {
-      "item": "bakingdelight:wheat_flour"
+      "item": "moderndelight:wheat_flour"
     }
   ],
   "output": {
-    "item": "bakingdelight:wheat_dough"
+    "item": "moderndelight:wheat_dough"
   }
 }

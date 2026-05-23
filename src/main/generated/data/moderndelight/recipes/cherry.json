@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:boxed_cherries"
+      "item": "moderndelight:boxed_cherries"
     }
   ],
   "result": {
     "count": 9,
-    "item": "bakingdelight:cherry"
+    "item": "moderndelight:cherry"
   }
 }

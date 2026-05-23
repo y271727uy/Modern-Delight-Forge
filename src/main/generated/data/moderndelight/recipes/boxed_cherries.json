@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "bakingdelight:cherry"
+      "item": "moderndelight:cherry"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "AAA"
   ],
   "result": {
-    "item": "bakingdelight:boxed_cherries"
+    "item": "moderndelight:boxed_cherries"
   },
   "show_notification": true
 }

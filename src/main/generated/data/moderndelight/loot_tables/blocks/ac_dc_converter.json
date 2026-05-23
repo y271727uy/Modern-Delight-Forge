@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:ac_dc_converter"
+          "name": "moderndelight:ac_dc_converter"
         }
       ],
       "rolls": 1.0

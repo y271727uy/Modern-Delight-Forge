@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:juice_extracting",
+  "type": "moderndelight:juice_extracting",
   "progress": 150,
   "container": "minecraft:glass_bottle",
   "ingredients": [
@@ -17,7 +17,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:tomato_juice",
+    "item": "moderndelight:tomato_juice",
     "count": 3
   }
 }

@@ -3,19 +3,19 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:cream"
+      "item": "moderndelight:cream"
     },
     {
-      "item": "bakingdelight:matcha"
+      "item": "moderndelight:matcha"
     },
     {
-      "item": "bakingdelight:matcha"
+      "item": "moderndelight:matcha"
     },
     {
-      "item": "bakingdelight:matcha"
+      "item": "moderndelight:matcha"
     }
   ],
   "result": {
-    "item": "bakingdelight:matcha_cream"
+    "item": "moderndelight:matcha_cream"
   }
 }

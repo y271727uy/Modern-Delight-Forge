@@ -6,13 +6,13 @@
       "item": "minecraft:dried_kelp"
     },
     {
-      "item": "bakingdelight:deep_fried_shrimp_cake"
+      "item": "moderndelight:deep_fried_shrimp_cake"
     },
     {
       "item": "minecraft:dried_kelp"
     }
   ],
   "result": {
-    "item": "bakingdelight:seaweed_fried_shrimp_cake"
+    "item": "moderndelight:seaweed_fried_shrimp_cake"
   }
 }

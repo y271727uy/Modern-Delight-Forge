@@ -6,7 +6,7 @@
       "item": "minecraft:amethyst_shard"
     },
     "I": {
-      "item": "bakingdelight:silicon_ingot"
+      "item": "moderndelight:silicon_ingot"
     },
     "R": {
       "item": "minecraft:redstone"
@@ -17,7 +17,7 @@
     "IR"
   ],
   "result": {
-    "item": "bakingdelight:amethyst_knife"
+    "item": "moderndelight:amethyst_knife"
   },
   "show_notification": true
 }

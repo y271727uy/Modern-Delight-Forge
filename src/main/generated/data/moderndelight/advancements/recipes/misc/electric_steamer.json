@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:redstone_component"
+              "moderndelight:redstone_component"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:electric_steamer"
+        "recipe": "moderndelight:electric_steamer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:electric_steamer"
+      "moderndelight:electric_steamer"
     ]
   },
   "sends_telemetry_event": false

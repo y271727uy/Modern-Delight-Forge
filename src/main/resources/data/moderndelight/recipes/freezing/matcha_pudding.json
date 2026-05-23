@@ -1,17 +1,17 @@
 {
-  "type": "bakingdelight:freezing",
+  "type": "moderndelight:freezing",
   "ingredients": [
     {
-      "item": "bakingdelight:matcha"
+      "item": "moderndelight:matcha"
     },
     {
-      "item": "bakingdelight:pudding_wip_2"
+      "item": "moderndelight:pudding_wip_2"
     },
     {
-      "item": "bakingdelight:matcha"
+      "item": "moderndelight:matcha"
     }
   ],
   "output": {
-    "item": "bakingdelight:matcha_pudding"
+    "item": "moderndelight:matcha_pudding"
   }
 }

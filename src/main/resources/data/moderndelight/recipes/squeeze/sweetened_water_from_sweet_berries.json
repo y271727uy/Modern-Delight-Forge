@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:squeeze",
+  "type": "moderndelight:squeeze",
   "ingredients": [
     {
       "item": "minecraft:sweet_berries"
@@ -9,7 +9,7 @@
     "item": "minecraft:stick"
   },
   "fluid_output": {
-    "fluid": "bakingdelight:still_sweetened_water",
+    "fluid": "moderndelight:still_sweetened_water",
     "amount": 3375
   }
 }

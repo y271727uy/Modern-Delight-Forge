@@ -9,19 +9,19 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "tag": "bakingdelight:oil_plants"
+      "tag": "moderndelight:oil_plants"
     },
     {
-      "tag": "bakingdelight:oil_plants"
+      "tag": "moderndelight:oil_plants"
     },
     {
-      "tag": "bakingdelight:oil_plants"
+      "tag": "moderndelight:oil_plants"
     }
   ],
   "results": [
     {
       "amount": 27000,
-      "fluid": "bakingdelight:still_vegetable_oil"
+      "fluid": "moderndelight:still_vegetable_oil"
     }
   ]
 }

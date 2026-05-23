@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "wither_rose_cake": {
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:wither_rose_cake"
+            "moderndelight:wither_rose_cake"
           ]
         }
       },
@@ -15,16 +15,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.wither_rose_cake.desc"
+      "translate": "advancement.moderndelight.wither_rose_cake.desc"
     },
     "frame": "challenge",
     "hidden": true,
     "icon": {
-      "item": "bakingdelight:wither_rose_cake"
+      "item": "moderndelight:wither_rose_cake"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.wither_rose_cake.title"
+      "translate": "advancement.moderndelight.wither_rose_cake.title"
     }
   },
   "requirements": [

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:obsidian_cabinet"
+        "recipe": "moderndelight:obsidian_cabinet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:obsidian_cabinet"
+      "moderndelight:obsidian_cabinet"
     ]
   },
   "sends_telemetry_event": false

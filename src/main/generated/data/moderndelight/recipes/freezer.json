@@ -12,7 +12,7 @@
       "item": "minecraft:chest"
     },
     "R": {
-      "item": "bakingdelight:redstone_component"
+      "item": "moderndelight:redstone_component"
     }
   },
   "pattern": [
@@ -21,7 +21,7 @@
     "GRB"
   ],
   "result": {
-    "item": "bakingdelight:freezer"
+    "item": "moderndelight:freezer"
   },
   "show_notification": true
 }

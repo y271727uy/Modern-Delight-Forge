@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:ice_cream_maker"
+          "name": "moderndelight:ice_cream_maker"
         }
       ],
       "rolls": 1.0

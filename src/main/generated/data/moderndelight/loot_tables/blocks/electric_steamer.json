@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:electric_steamer"
+          "name": "moderndelight:electric_steamer"
         }
       ],
       "rolls": 1.0

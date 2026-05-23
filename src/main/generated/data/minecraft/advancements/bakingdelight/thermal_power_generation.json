@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_silicon_ingot",
+  "parent": "minecraft:moderndelight/got_silicon_ingot",
   "criteria": {
     "faraday_generator": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:faraday_generator"
+              "moderndelight:faraday_generator"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:sterling_engine"
+              "moderndelight:sterling_engine"
             ]
           }
         ]
@@ -29,16 +29,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.thermal_power_generation.desc"
+      "translate": "advancement.moderndelight.thermal_power_generation.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:sterling_engine"
+      "item": "moderndelight:sterling_engine"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.thermal_power_generation.title"
+      "translate": "advancement.moderndelight.thermal_power_generation.title"
     }
   },
   "requirements": [

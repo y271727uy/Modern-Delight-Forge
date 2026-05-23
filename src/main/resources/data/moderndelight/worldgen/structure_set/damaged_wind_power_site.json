@@ -7,7 +7,7 @@
     "spread_type": "triangular"
   },
   "structures": [{
-    "structure": "bakingdelight:damaged_wind_power_site",
+    "structure": "moderndelight:damaged_wind_power_site",
     "weight": 1
   }]
 }

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_bamboo_steamer",
+  "parent": "minecraft:moderndelight/got_bamboo_steamer",
   "criteria": {
     "steamed_bun": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:steamed_bun"
+              "moderndelight:steamed_bun"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.steamed_bun.desc"
+      "translate": "advancement.moderndelight.steamed_bun.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:steamed_bun"
+      "item": "moderndelight:steamed_bun"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.steamed_bun.title"
+      "translate": "advancement.moderndelight.steamed_bun.title"
     }
   },
   "requirements": [

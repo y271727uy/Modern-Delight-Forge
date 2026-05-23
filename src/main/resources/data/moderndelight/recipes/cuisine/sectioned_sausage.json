@@ -1,15 +1,15 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
-      "item": "bakingdelight:sausage"
+      "item": "moderndelight:sausage"
     },
     {
       "tag": "c:tools/knives"
     }
   ],
   "output": {
-    "item": "bakingdelight:sectioned_sausage",
+    "item": "moderndelight:sectioned_sausage",
     "count": 1
   }
 }

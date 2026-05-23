@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
       "item": "minecraft:apple"
@@ -9,7 +9,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:apple_petal",
+    "item": "moderndelight:apple_petal",
     "count": 3
   }
 }

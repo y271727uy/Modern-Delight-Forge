@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:fan_blade"
+        "recipe": "moderndelight:fan_blade"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:fan_blade"
+      "moderndelight:fan_blade"
     ]
   },
   "sends_telemetry_event": false

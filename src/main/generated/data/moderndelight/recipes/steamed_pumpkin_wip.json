@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "bakingdelight:wooden_plate"
+      "item": "moderndelight:wooden_plate"
     },
     "E": {
       "item": "minecraft:egg"
@@ -27,7 +27,7 @@
     "MBM"
   ],
   "result": {
-    "item": "bakingdelight:steamed_pumpkin_wip"
+    "item": "moderndelight:steamed_pumpkin_wip"
   },
   "show_notification": true
 }

@@ -1,7 +1,7 @@
 {
-  "type": "bakingdelight:juice_extracting",
+  "type": "moderndelight:juice_extracting",
   "progress": 300,
-  "container": "bakingdelight:glass_cup",
+  "container": "moderndelight:glass_cup",
   "ingredients": [
     {
       "item": "minecraft:sweet_berries"
@@ -10,14 +10,14 @@
       "item": "minecraft:rose_bush"
     },
     {
-      "item": "bakingdelight:ice_brick"
+      "item": "moderndelight:ice_brick"
     },
     {
       "tag": "minecraft:leaves"
     }
   ],
   "output": {
-    "item": "bakingdelight:rose_ice_tea",
+    "item": "moderndelight:rose_ice_tea",
     "count": 3
   }
 }

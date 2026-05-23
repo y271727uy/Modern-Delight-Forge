@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
       "item": "minecraft:chicken"
@@ -9,7 +9,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:raw_chicken_fillet",
+    "item": "moderndelight:raw_chicken_fillet",
     "count": 2
   }
 }

@@ -8,14 +8,14 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "bakingdelight:wild_pepper_crop"
+      "item": "moderndelight:wild_pepper_crop"
     }
   ],
   "processingTime": 50,
   "results": [
     {
       "count": 2,
-      "item": "bakingdelight:black_pepper_corn"
+      "item": "moderndelight:black_pepper_corn"
     },
     {
       "chance": 0.6,

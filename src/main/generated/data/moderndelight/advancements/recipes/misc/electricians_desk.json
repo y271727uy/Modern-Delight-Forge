@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:electricians_desk"
+        "recipe": "moderndelight:electricians_desk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:electricians_desk"
+      "moderndelight:electricians_desk"
     ]
   },
   "sends_telemetry_event": false

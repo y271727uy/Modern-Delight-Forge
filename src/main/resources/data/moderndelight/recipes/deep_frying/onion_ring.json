@@ -1,11 +1,11 @@
 {
-  "type": "bakingdelight:deep_frying",
+  "type": "moderndelight:deep_frying",
   "ingredients": [
     {
-      "item": "bakingdelight:raw_onion_ring"
+      "item": "moderndelight:raw_onion_ring"
     }
   ],
   "output": {
-    "item": "bakingdelight:onion_ring"
+    "item": "moderndelight:onion_ring"
   }
 }

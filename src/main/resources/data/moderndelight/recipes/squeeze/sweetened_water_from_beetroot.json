@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:squeeze",
+  "type": "moderndelight:squeeze",
   "ingredients": [
     {
       "item": "minecraft:beetroot"
@@ -9,7 +9,7 @@
     "item": "minecraft:beetroot_seeds"
   },
   "fluid_output": {
-    "fluid": "bakingdelight:still_sweetened_water",
+    "fluid": "moderndelight:still_sweetened_water",
     "amount": 3375
   }
 }

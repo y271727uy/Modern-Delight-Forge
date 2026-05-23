@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:stone_whisk_from_cobblestone"
+        "recipe": "moderndelight:stone_whisk_from_cobblestone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,9 +28,9 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:stone_whisk_from_cobblestone",
-      "bakingdelight:stone_whisk_from_cobbled_deepslate",
-      "bakingdelight:stone_whisk_from_blackstone"
+      "moderndelight:stone_whisk_from_cobblestone",
+      "moderndelight:stone_whisk_from_cobbled_deepslate",
+      "moderndelight:stone_whisk_from_blackstone"
     ]
   },
   "sends_telemetry_event": false

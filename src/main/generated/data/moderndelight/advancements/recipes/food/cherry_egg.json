@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:egg_bowl"
+              "moderndelight:egg_bowl"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:cherry_egg"
+        "recipe": "moderndelight:cherry_egg"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:cherry_egg"
+      "moderndelight:cherry_egg"
     ]
   },
   "sends_telemetry_event": false

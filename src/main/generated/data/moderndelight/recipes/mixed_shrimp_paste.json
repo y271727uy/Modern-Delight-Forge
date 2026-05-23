@@ -6,16 +6,16 @@
       "item": "minecraft:carrot"
     },
     {
-      "item": "bakingdelight:black_pepper_corn"
+      "item": "moderndelight:black_pepper_corn"
     },
     {
-      "item": "bakingdelight:mixed_dough"
+      "item": "moderndelight:mixed_dough"
     },
     {
-      "item": "bakingdelight:shrimp_paste"
+      "item": "moderndelight:shrimp_paste"
     }
   ],
   "result": {
-    "item": "bakingdelight:mixed_shrimp_paste"
+    "item": "moderndelight:mixed_shrimp_paste"
   }
 }

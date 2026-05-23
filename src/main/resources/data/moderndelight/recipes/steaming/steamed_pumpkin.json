@@ -1,12 +1,12 @@
 {
-  "type": "bakingdelight:steaming",
+  "type": "moderndelight:steaming",
   "maxProgress": 15,
   "ingredients": [
     {
-      "item": "bakingdelight:steamed_pumpkin_wip"
+      "item": "moderndelight:steamed_pumpkin_wip"
     }
   ],
   "output": {
-    "item": "bakingdelight:steamed_pumpkin"
+    "item": "moderndelight:steamed_pumpkin"
   }
 }

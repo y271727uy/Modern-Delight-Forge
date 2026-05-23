@@ -1,11 +1,11 @@
 {
-  "type": "bakingdelight:whisking",
+  "type": "moderndelight:whisking",
   "ingredients": [
     {
-      "item": "bakingdelight:mashed_potato"
+      "item": "moderndelight:mashed_potato"
     }
   ],
   "output": {
-    "item": "bakingdelight:potato_starch"
+    "item": "moderndelight:potato_starch"
   }
 }

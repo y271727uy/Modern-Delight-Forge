@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_stone_mortar",
+  "parent": "minecraft:moderndelight/got_stone_mortar",
   "criteria": {
     "matcha": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:matcha"
+              "moderndelight:matcha"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.matcha.desc"
+      "translate": "advancement.moderndelight.matcha.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:matcha"
+      "item": "moderndelight:matcha"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.matcha.title"
+      "translate": "advancement.moderndelight.matcha.title"
     }
   },
   "requirements": [

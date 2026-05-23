@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_baking_tray",
+  "parent": "minecraft:moderndelight/got_baking_tray",
   "criteria": {
     "oven": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:oven"
+              "moderndelight:oven"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_oven_desc"
+      "translate": "advancement.moderndelight.get_oven_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:oven"
+      "item": "moderndelight:oven"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_oven_title"
+      "translate": "advancement.moderndelight.get_oven_title"
     }
   },
   "requirements": [

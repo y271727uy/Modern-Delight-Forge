@@ -13,7 +13,7 @@
   "adapt_noise":false,
   "spawn_overrides": {},
   "type": "minecraft:jigsaw",
-  "start_pool": "bakingdelight:damaged_wind_power_site",
+  "start_pool": "moderndelight:damaged_wind_power_site",
   "size": 7,
   "step": "surface_structures",
   "start_height": {

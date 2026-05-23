@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:vegetable_oil_bucket"
+      "item": "moderndelight:vegetable_oil_bucket"
     },
     {
       "item": "minecraft:glass_bottle"
@@ -17,6 +17,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "bakingdelight:vegetable_oil_bottle"
+    "item": "moderndelight:vegetable_oil_bottle"
   }
 }

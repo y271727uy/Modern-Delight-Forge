@@ -4,10 +4,10 @@
     "item": "minecraft:netherite_ingot"
   },
   "base": {
-    "item": "bakingdelight:diamond_whisk"
+    "item": "moderndelight:diamond_whisk"
   },
   "result": {
-    "item": "bakingdelight:netherite_whisk"
+    "item": "moderndelight:netherite_whisk"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"

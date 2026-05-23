@@ -3,22 +3,22 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:wooden_plate"
+      "item": "moderndelight:wooden_plate"
     },
     {
-      "item": "bakingdelight:fried_cod_nugget"
+      "item": "moderndelight:fried_cod_nugget"
     },
     {
-      "item": "bakingdelight:fried_cod_nugget"
+      "item": "moderndelight:fried_cod_nugget"
     },
     {
-      "item": "bakingdelight:deep_fried_potato_chips"
+      "item": "moderndelight:deep_fried_potato_chips"
     },
     {
-      "item": "bakingdelight:deep_fried_potato_chips"
+      "item": "moderndelight:deep_fried_potato_chips"
     }
   ],
   "result": {
-    "item": "bakingdelight:fish_and_chips"
+    "item": "moderndelight:fish_and_chips"
   }
 }

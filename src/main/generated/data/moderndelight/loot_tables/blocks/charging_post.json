@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:charging_post"
+          "name": "moderndelight:charging_post"
         }
       ],
       "rolls": 1.0

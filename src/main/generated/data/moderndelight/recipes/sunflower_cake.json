@@ -9,10 +9,10 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "bakingdelight:empty_cake"
+      "item": "moderndelight:empty_cake"
     }
   ],
   "result": {
-    "item": "bakingdelight:sunflower_cake"
+    "item": "moderndelight:sunflower_cake"
   }
 }

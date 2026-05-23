@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:freezer"
+        "recipe": "moderndelight:freezer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:freezer"
+      "moderndelight:freezer"
     ]
   },
   "sends_telemetry_event": false

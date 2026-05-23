@@ -6,19 +6,19 @@
       "item": "minecraft:stick"
     },
     {
-      "item": "bakingdelight:glow_squid_tentacle"
+      "item": "moderndelight:glow_squid_tentacle"
     },
     {
-      "item": "bakingdelight:glow_squid_tentacle"
+      "item": "moderndelight:glow_squid_tentacle"
     },
     {
-      "item": "bakingdelight:glow_cuttlebone"
+      "item": "moderndelight:glow_cuttlebone"
     },
     {
-      "item": "bakingdelight:black_pepper_dust"
+      "item": "moderndelight:black_pepper_dust"
     }
   ],
   "result": {
-    "item": "bakingdelight:raw_glow_squid_tentacle_kebabs"
+    "item": "moderndelight:raw_glow_squid_tentacle_kebabs"
   }
 }

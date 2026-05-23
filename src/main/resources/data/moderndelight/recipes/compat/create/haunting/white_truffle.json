@@ -8,12 +8,12 @@
   "type": "create:haunting",
   "ingredients": [
     {
-      "item": "bakingdelight:black_truffle"
+      "item": "moderndelight:black_truffle"
     }
   ],
   "results": [
     {
-      "item": "bakingdelight:white_truffle"
+      "item": "moderndelight:white_truffle"
     }
   ]
 }

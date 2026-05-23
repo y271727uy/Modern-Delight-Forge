@@ -1,11 +1,11 @@
 {
-  "type": "bakingdelight:deep_frying",
+  "type": "moderndelight:deep_frying",
   "ingredients": [
     {
-      "item": "bakingdelight:apple_petal"
+      "item": "moderndelight:apple_petal"
     }
   ],
   "output": {
-    "item": "bakingdelight:fried_apple"
+    "item": "moderndelight:fried_apple"
   }
 }

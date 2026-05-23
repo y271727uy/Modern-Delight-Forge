@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:empty_cake"
+              "moderndelight:empty_cake"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:sunflower_cake"
+        "recipe": "moderndelight:sunflower_cake"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:sunflower_cake"
+      "moderndelight:sunflower_cake"
     ]
   },
   "sends_telemetry_event": false

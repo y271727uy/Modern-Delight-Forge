@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:tesla_coil"
+          "name": "moderndelight:tesla_coil"
         }
       ],
       "rolls": 1.0

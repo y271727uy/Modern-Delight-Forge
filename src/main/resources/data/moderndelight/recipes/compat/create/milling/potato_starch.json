@@ -15,11 +15,11 @@
   "results": [
     {
       "count": 1,
-      "item": "bakingdelight:potato_starch"
+      "item": "moderndelight:potato_starch"
     },
     {
       "chance": 0.5,
-      "item": "bakingdelight:potato_starch"
+      "item": "moderndelight:potato_starch"
     }
   ]
 }

@@ -37,7 +37,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:black_pepper_corn"
+          "name": "moderndelight:black_pepper_corn"
         }
       ],
       "functions": [
@@ -86,7 +86,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:wild_pepper_crop"
+          "name": "moderndelight:wild_pepper_crop"
         }
       ],
       "functions": [

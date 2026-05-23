@@ -8,11 +8,11 @@
   "type": "patchouli:shapeless_book_recipe",
   "ingredients": [
     {
-      "tag": "bakingdelight:whisks"
+      "tag": "moderndelight:whisks"
     },
     {
       "item": "minecraft:book"
     }
   ],
-  "book": "bakingdelight:guide_book"
+  "book": "moderndelight:guide_book"
 }

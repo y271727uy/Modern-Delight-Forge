@@ -10,17 +10,17 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "item": "bakingdelight:sausage"
+      "item": "moderndelight:sausage"
     },
     {
       "tag": "c:crops/cabbage"
     },
     {
-      "item": "bakingdelight:sausage"
+      "item": "moderndelight:sausage"
     }
   ],
   "recipe_book_tab": "misc",
   "result": {
-    "item": "bakingdelight:little_octopus_sausage"
+    "item": "moderndelight:little_octopus_sausage"
   }
 }

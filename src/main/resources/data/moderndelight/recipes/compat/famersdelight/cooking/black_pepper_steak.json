@@ -9,7 +9,7 @@
   "cookingtime": 220,
   "experience": 1.0,
   "container": {
-    "item": "bakingdelight:wooden_plate"
+    "item": "moderndelight:wooden_plate"
   },
   "ingredients": [
     {
@@ -27,6 +27,6 @@
   ],
   "recipe_book_tab": "meals",
   "result": {
-    "item": "bakingdelight:black_pepper_steak"
+    "item": "moderndelight:black_pepper_steak"
   }
 }

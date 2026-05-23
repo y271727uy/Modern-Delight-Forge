@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_wooden_basin",
+  "parent": "minecraft:moderndelight/got_wooden_basin",
   "criteria": {
     "filter": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:filter"
+              "moderndelight:filter"
             ]
           }
         ]
@@ -17,17 +17,17 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.filter.desc"
+      "translate": "advancement.moderndelight.filter.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:filter",
+      "item": "moderndelight:filter",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.filter.title"
+      "translate": "advancement.moderndelight.filter.title"
     }
   },
   "requirements": [

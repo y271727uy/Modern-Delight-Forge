@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_amethyst",
+  "parent": "minecraft:moderndelight/got_amethyst",
   "criteria": {
     "cuttlebone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:cuttlebone"
+              "moderndelight:cuttlebone"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:glow_cuttlebone"
+              "moderndelight:glow_cuttlebone"
             ]
           }
         ]
@@ -29,16 +29,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_cuttlebone_desc"
+      "translate": "advancement.moderndelight.get_cuttlebone_desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:cuttlebone"
+      "item": "moderndelight:cuttlebone"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_cuttlebone_title"
+      "translate": "advancement.moderndelight.get_cuttlebone_title"
     }
   },
   "requirements": [

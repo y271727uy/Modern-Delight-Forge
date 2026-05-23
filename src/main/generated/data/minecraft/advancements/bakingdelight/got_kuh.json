@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "kuh": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:kitchen_utensil_holder"
+              "moderndelight:kitchen_utensil_holder"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.kuh.desc"
+      "translate": "advancement.moderndelight.kuh.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:kitchen_utensil_holder"
+      "item": "moderndelight:kitchen_utensil_holder"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.kuh.title"
+      "translate": "advancement.moderndelight.kuh.title"
     }
   },
   "requirements": [

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_tesla_coil",
+  "parent": "minecraft:moderndelight/got_tesla_coil",
   "criteria": {
     "fan_blade": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:fan_blade"
+              "moderndelight:fan_blade"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:wind_turbine_controller"
+              "moderndelight:wind_turbine_controller"
             ]
           }
         ]
@@ -29,16 +29,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.wind.desc"
+      "translate": "advancement.moderndelight.wind.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:fan_blade"
+      "item": "moderndelight:fan_blade"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.wind.title"
+      "translate": "advancement.moderndelight.wind.title"
     }
   },
   "requirements": [

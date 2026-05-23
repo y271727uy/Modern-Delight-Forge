@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:electricians_desk"
+          "name": "moderndelight:electricians_desk"
         }
       ],
       "rolls": 1.0

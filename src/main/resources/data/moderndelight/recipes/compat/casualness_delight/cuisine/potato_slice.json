@@ -5,7 +5,7 @@
       "modid": "casualness_delight"
     }
   ],
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
       "item": "minecraft:potato"

@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:egg_bowl"
+      "item": "moderndelight:egg_bowl"
     },
     {
-      "item": "bakingdelight:cherry"
+      "item": "moderndelight:cherry"
     }
   ],
   "result": {
-    "item": "bakingdelight:cherry_egg"
+    "item": "moderndelight:cherry_egg"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:grinding",
+  "type": "moderndelight:grinding",
   "ingredients": [
     {
       "tag": "minecraft:leaves"
@@ -10,7 +10,7 @@
   },
   "chance": 0.4,
   "extra": {
-    "item": "bakingdelight:matcha",
+    "item": "moderndelight:matcha",
     "count": 1
   }
 }

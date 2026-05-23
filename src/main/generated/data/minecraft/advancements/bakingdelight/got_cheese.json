@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_oven",
+  "parent": "minecraft:moderndelight/got_oven",
   "criteria": {
     "cheese": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:cheese"
+              "moderndelight:cheese"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_cheese.desc"
+      "translate": "advancement.moderndelight.get_cheese.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:cheese"
+      "item": "moderndelight:cheese"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_cheese.title"
+      "translate": "advancement.moderndelight.get_cheese.title"
     }
   },
   "requirements": [

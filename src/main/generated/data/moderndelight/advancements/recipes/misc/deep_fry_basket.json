@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:deep_fry_basket"
+        "recipe": "moderndelight:deep_fry_basket"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:deep_fry_basket"
+      "moderndelight:deep_fry_basket"
     ]
   },
   "sends_telemetry_event": false

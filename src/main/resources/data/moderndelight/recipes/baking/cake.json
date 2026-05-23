@@ -1,8 +1,8 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
-      "item": "bakingdelight:cream_bucket"
+      "item": "moderndelight:cream_bucket"
     },
     {
       "item": "minecraft:egg"

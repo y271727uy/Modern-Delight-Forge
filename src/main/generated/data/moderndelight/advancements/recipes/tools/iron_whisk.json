@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:iron_whisk"
+        "recipe": "moderndelight:iron_whisk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:iron_whisk"
+      "moderndelight:iron_whisk"
     ]
   },
   "sends_telemetry_event": false

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_acdcc",
+  "parent": "minecraft:moderndelight/got_acdcc",
   "criteria": {
     "battery1": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:simple_battery"
+              "moderndelight:simple_battery"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.battery1.desc"
+      "translate": "advancement.moderndelight.battery1.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:simple_battery"
+      "item": "moderndelight:simple_battery"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.battery1.title"
+      "translate": "advancement.moderndelight.battery1.title"
     }
   },
   "requirements": [

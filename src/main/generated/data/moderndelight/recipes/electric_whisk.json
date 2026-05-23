@@ -6,10 +6,10 @@
       "item": "minecraft:iron_ingot"
     },
     "R": {
-      "item": "bakingdelight:redstone_component"
+      "item": "moderndelight:redstone_component"
     },
     "W": {
-      "item": "bakingdelight:iron_whisk"
+      "item": "moderndelight:iron_whisk"
     }
   },
   "pattern": [
@@ -17,7 +17,7 @@
     "  W"
   ],
   "result": {
-    "item": "bakingdelight:electric_whisk"
+    "item": "moderndelight:electric_whisk"
   },
   "show_notification": true
 }

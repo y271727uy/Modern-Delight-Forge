@@ -9,13 +9,13 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "item": "bakingdelight:pudding_wip_1"
+      "item": "moderndelight:pudding_wip_1"
     }
   ],
   "results": [
     {
       "count": 1,
-      "item": "bakingdelight:pudding_wip_2"
+      "item": "moderndelight:pudding_wip_2"
     }
   ]
 }

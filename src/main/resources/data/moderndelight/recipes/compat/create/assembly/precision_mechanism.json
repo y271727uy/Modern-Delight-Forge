@@ -5,7 +5,7 @@
       "modid": "create"
     }
   ],
-  "type": "bakingdelight:assembly",
+  "type": "moderndelight:assembly",
   "mini_game_type": 2,
   "goal": 4,
   "ingredients": [
@@ -13,7 +13,7 @@
       "item": "create:golden_sheet"
     },
     {
-      "item": "bakingdelight:redstone_component"
+      "item": "moderndelight:redstone_component"
     },
     {
       "item": "minecraft:iron_ingot"
@@ -22,7 +22,7 @@
       "item": "minecraft:iron_ingot"
     },
     {
-      "item": "bakingdelight:redstone_component"
+      "item": "moderndelight:redstone_component"
     },
     {
       "item": "minecraft:iron_ingot"

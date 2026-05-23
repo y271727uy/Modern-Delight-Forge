@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
       "item": "minecraft:milk_bucket"
@@ -15,7 +15,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:cheese",
+    "item": "moderndelight:cheese",
     "count": 4
   }
 }

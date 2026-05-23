@@ -1,17 +1,17 @@
 {
-  "type": "bakingdelight:freezing",
+  "type": "moderndelight:freezing",
   "ingredients": [
     {
-      "item": "bakingdelight:caramel"
+      "item": "moderndelight:caramel"
     },
     {
-      "item": "bakingdelight:pudding_wip_2"
+      "item": "moderndelight:pudding_wip_2"
     },
     {
-      "item": "bakingdelight:caramel"
+      "item": "moderndelight:caramel"
     }
   ],
   "output": {
-    "item": "bakingdelight:caramel_pudding"
+    "item": "moderndelight:caramel_pudding"
   }
 }

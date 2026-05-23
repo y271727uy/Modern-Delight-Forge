@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_bamboo_steamer",
+  "parent": "minecraft:moderndelight/got_bamboo_steamer",
   "criteria": {
     "electric_steamer": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:electric_steamer"
+              "moderndelight:electric_steamer"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.electric_steamer.desc"
+      "translate": "advancement.moderndelight.electric_steamer.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:electric_steamer"
+      "item": "moderndelight:electric_steamer"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.electric_steamer.title"
+      "translate": "advancement.moderndelight.electric_steamer.title"
     }
   },
   "requirements": [

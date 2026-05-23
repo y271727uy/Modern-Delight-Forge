@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "ingredient": {
-    "item": "bakingdelight:iron_whisk"
+    "item": "moderndelight:iron_whisk"
   },
   "result": "minecraft:iron_nugget"
 }

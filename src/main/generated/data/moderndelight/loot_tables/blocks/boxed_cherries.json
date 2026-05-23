@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:boxed_cherries"
+          "name": "moderndelight:boxed_cherries"
         }
       ],
       "rolls": 1.0

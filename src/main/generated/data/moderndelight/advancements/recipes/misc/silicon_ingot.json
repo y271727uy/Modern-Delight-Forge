@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:silicon_block"
+              "moderndelight:silicon_block"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:silicon_ingot"
+        "recipe": "moderndelight:silicon_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:silicon_ingot"
+      "moderndelight:silicon_ingot"
     ]
   },
   "sends_telemetry_event": false

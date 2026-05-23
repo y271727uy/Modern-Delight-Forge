@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:faraday_generator"
+          "name": "moderndelight:faraday_generator"
         }
       ],
       "rolls": 1.0

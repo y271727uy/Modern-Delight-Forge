@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_mousse_wip",
+  "parent": "minecraft:moderndelight/got_mousse_wip",
   "criteria": {
     "cherry_mousse": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:cherry_mousse"
+              "moderndelight:cherry_mousse"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:chocolate_mousse"
+              "moderndelight:chocolate_mousse"
             ]
           }
         ]
@@ -30,7 +30,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:cream_mousse"
+              "moderndelight:cream_mousse"
             ]
           }
         ]
@@ -42,7 +42,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:golden_apple_mousse"
+              "moderndelight:golden_apple_mousse"
             ]
           }
         ]
@@ -54,7 +54,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:matcha_mousse"
+              "moderndelight:matcha_mousse"
             ]
           }
         ]
@@ -66,7 +66,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:pumpkin_mousse"
+              "moderndelight:pumpkin_mousse"
             ]
           }
         ]
@@ -77,16 +77,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_all_mousse_desc"
+      "translate": "advancement.moderndelight.get_all_mousse_desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:cherry_mousse"
+      "item": "moderndelight:cherry_mousse"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_all_mousse_title"
+      "translate": "advancement.moderndelight.get_all_mousse_title"
     }
   },
   "requirements": [

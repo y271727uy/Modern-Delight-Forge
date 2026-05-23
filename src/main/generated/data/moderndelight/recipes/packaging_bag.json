@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:multifunctional_wrapping_paper"
+      "item": "moderndelight:multifunctional_wrapping_paper"
     },
     {
-      "item": "bakingdelight:multifunctional_wrapping_paper"
+      "item": "moderndelight:multifunctional_wrapping_paper"
     },
     {
-      "item": "bakingdelight:multifunctional_wrapping_paper"
+      "item": "moderndelight:multifunctional_wrapping_paper"
     },
     {
       "item": "minecraft:red_dye"
@@ -17,6 +17,6 @@
   ],
   "result": {
     "count": 6,
-    "item": "bakingdelight:packaging_bag"
+    "item": "moderndelight:packaging_bag"
   }
 }

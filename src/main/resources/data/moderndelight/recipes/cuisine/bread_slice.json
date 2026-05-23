@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
       "item": "minecraft:bread"
@@ -9,7 +9,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:bread_slice",
+    "item": "moderndelight:bread_slice",
     "count": 3
   }
 }

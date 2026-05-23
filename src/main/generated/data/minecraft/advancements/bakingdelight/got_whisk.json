@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "iron_whisk": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:iron_whisk"
+              "moderndelight:iron_whisk"
             ]
           }
         ]
@@ -17,17 +17,17 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_whisk_desc"
+      "translate": "advancement.moderndelight.get_whisk_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:iron_whisk",
+      "item": "moderndelight:iron_whisk",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_whisk_title"
+      "translate": "advancement.moderndelight.get_whisk_title"
     }
   },
   "requirements": [

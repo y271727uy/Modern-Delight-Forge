@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "cherry_bomb": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:cherry_bomb"
+              "moderndelight:cherry_bomb"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_cherry_bomb_desc"
+      "translate": "advancement.moderndelight.get_cherry_bomb_desc"
     },
     "frame": "task",
     "hidden": true,
     "icon": {
-      "item": "bakingdelight:cherry"
+      "item": "moderndelight:cherry"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_cherry_bomb_title"
+      "translate": "advancement.moderndelight.get_cherry_bomb_title"
     }
   },
   "requirements": [

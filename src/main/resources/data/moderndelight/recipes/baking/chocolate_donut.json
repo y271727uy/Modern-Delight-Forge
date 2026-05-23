@@ -1,21 +1,21 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
-      "item": "bakingdelight:raw_donut"
+      "item": "moderndelight:raw_donut"
     },
     {
-      "item": "bakingdelight:chocolate_sauce"
+      "item": "moderndelight:chocolate_sauce"
     },
     {
-      "item": "bakingdelight:chocolate_sauce"
+      "item": "moderndelight:chocolate_sauce"
     },
     {
-      "item": "bakingdelight:raw_donut"
+      "item": "moderndelight:raw_donut"
     }
   ],
   "output": {
-    "item": "bakingdelight:chocolate_donut",
+    "item": "moderndelight:chocolate_donut",
     "count": 2
   }
 }

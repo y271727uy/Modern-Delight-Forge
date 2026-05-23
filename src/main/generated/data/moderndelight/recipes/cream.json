@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:cream_bucket"
+      "item": "moderndelight:cream_bucket"
     },
     {
       "item": "minecraft:bowl"
@@ -17,6 +17,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "bakingdelight:cream"
+    "item": "moderndelight:cream"
   }
 }

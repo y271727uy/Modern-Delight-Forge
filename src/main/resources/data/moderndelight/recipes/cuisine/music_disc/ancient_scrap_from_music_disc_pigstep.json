@@ -1,15 +1,15 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
       "item": "minecraft:music_disc_pigstep"
     },
     {
-      "tag": "bakingdelight:crowbars"
+      "tag": "moderndelight:crowbars"
     }
   ],
   "output": {
-    "item": "bakingdelight:ancient_scrap",
+    "item": "moderndelight:ancient_scrap",
     "count": 1
   }
 }

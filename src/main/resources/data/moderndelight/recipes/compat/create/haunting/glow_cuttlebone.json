@@ -8,12 +8,12 @@
   "type": "create:haunting",
   "ingredients": [
     {
-      "item": "bakingdelight:cuttlebone"
+      "item": "moderndelight:cuttlebone"
     }
   ],
   "results": [
     {
-      "item": "bakingdelight:glow_cuttlebone"
+      "item": "moderndelight:glow_cuttlebone"
     }
   ]
 }

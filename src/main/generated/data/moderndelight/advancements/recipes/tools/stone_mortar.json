@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:stone_mortar"
+        "recipe": "moderndelight:stone_mortar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:stone_mortar"
+      "moderndelight:stone_mortar"
     ]
   },
   "sends_telemetry_event": false

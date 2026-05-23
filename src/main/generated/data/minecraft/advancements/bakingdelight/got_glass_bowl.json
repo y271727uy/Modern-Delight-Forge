@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_whisk",
+  "parent": "minecraft:moderndelight/got_whisk",
   "criteria": {
     "glass_bowl": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:glass_bowl"
+              "moderndelight:glass_bowl"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_glass_bowl_desc"
+      "translate": "advancement.moderndelight.get_glass_bowl_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:glass_bowl"
+      "item": "moderndelight:glass_bowl"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_glass_bowl_title"
+      "translate": "advancement.moderndelight.get_glass_bowl_title"
     }
   },
   "requirements": [

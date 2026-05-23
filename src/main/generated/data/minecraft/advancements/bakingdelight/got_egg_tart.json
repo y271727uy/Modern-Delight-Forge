@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_oven",
+  "parent": "minecraft:moderndelight/got_oven",
   "criteria": {
     "egg_tart": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:egg_tart"
+              "moderndelight:egg_tart"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_egg_tart_desc"
+      "translate": "advancement.moderndelight.get_egg_tart_desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:egg_tart"
+      "item": "moderndelight:egg_tart"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_egg_tart_title"
+      "translate": "advancement.moderndelight.get_egg_tart_title"
     }
   },
   "requirements": [

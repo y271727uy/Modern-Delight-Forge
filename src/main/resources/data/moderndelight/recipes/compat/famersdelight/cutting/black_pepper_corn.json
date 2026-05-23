@@ -8,7 +8,7 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "bakingdelight:wild_pepper_crop"
+      "item": "moderndelight:wild_pepper_crop"
     }
   ],
   "tool": {
@@ -17,7 +17,7 @@
   },
   "result": [
     {
-      "item": "bakingdelight:black_pepper_corn",
+      "item": "moderndelight:black_pepper_corn",
       "count": 2
     }
   ]

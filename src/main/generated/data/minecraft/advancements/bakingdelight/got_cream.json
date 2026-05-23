@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_glass_bowl",
+  "parent": "minecraft:moderndelight/got_glass_bowl",
   "criteria": {
     "cream": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:cream_bucket"
+              "moderndelight:cream_bucket"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_cream_bucket_desc"
+      "translate": "advancement.moderndelight.get_cream_bucket_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:cream_bucket"
+      "item": "moderndelight:cream_bucket"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_cream_bucket_title"
+      "translate": "advancement.moderndelight.get_cream_bucket_title"
     }
   },
   "requirements": [

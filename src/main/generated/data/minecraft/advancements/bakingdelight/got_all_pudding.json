@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_pudding_wip_2",
+  "parent": "minecraft:moderndelight/got_pudding_wip_2",
   "criteria": {
     "apple_pudding": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:apple_pudding"
+              "moderndelight:apple_pudding"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:caramel_pudding"
+              "moderndelight:caramel_pudding"
             ]
           }
         ]
@@ -30,7 +30,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:cherry_pudding"
+              "moderndelight:cherry_pudding"
             ]
           }
         ]
@@ -42,7 +42,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:matcha_pudding"
+              "moderndelight:matcha_pudding"
             ]
           }
         ]
@@ -53,16 +53,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_all_pudding_desc"
+      "translate": "advancement.moderndelight.get_all_pudding_desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:apple_pudding"
+      "item": "moderndelight:apple_pudding"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_all_pudding_title"
+      "translate": "advancement.moderndelight.get_all_pudding_title"
     }
   },
   "requirements": [

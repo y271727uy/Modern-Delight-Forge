@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:steaming",
+  "type": "moderndelight:steaming",
   "maxProgress": 6,
   "ingredients": [
     {
@@ -7,6 +7,6 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:steamed_bun"
+    "item": "moderndelight:steamed_bun"
   }
 }

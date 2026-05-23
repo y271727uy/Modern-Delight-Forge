@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:wooden_basin"
+        "recipe": "moderndelight:wooden_basin"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:wooden_basin"
+      "moderndelight:wooden_basin"
     ]
   },
   "sends_telemetry_event": false

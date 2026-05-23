@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:steamed_pumpkin_wip"
+        "recipe": "moderndelight:steamed_pumpkin_wip"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:wooden_plate"
+              "moderndelight:wooden_plate"
             ]
           }
         ]
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:steamed_pumpkin_wip"
+      "moderndelight:steamed_pumpkin_wip"
     ]
   },
   "sends_telemetry_event": false

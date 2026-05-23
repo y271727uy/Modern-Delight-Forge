@@ -1,11 +1,11 @@
 {
-  "type": "bakingdelight:deep_frying",
+  "type": "moderndelight:deep_frying",
   "ingredients": [
     {
       "item": "minecraft:brown_mushroom"
     }
   ],
   "output": {
-    "item": "bakingdelight:fried_brown_mushroom"
+    "item": "moderndelight:fried_brown_mushroom"
   }
 }

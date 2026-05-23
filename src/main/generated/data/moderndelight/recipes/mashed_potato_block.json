@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "bakingdelight:mashed_potato"
+      "item": "moderndelight:mashed_potato"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "AAA"
   ],
   "result": {
-    "item": "bakingdelight:mashed_potato_block"
+    "item": "moderndelight:mashed_potato_block"
   },
   "show_notification": true
 }

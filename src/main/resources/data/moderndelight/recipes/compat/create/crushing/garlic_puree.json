@@ -8,22 +8,22 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "bakingdelight:garlic_petal"
+      "item": "moderndelight:garlic_petal"
     }
   ],
   "processingTime": 50,
   "results": [
     {
       "count": 2,
-      "item": "bakingdelight:garlic_puree"
+      "item": "moderndelight:garlic_puree"
     },
     {
       "chance": 0.5,
-      "item": "bakingdelight:garlic_puree"
+      "item": "moderndelight:garlic_puree"
     },
     {
       "chance": 0.2,
-      "item": "bakingdelight:garlic_puree"
+      "item": "moderndelight:garlic_puree"
     }
   ]
 }

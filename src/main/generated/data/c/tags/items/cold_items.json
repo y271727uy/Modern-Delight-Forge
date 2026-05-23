@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bakingdelight:ice_brick",
+    "moderndelight:ice_brick",
     "minecraft:snowball"
   ]
 }

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:amethyst_knife"
+        "recipe": "moderndelight:amethyst_knife"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:amethyst_knife"
+      "moderndelight:amethyst_knife"
     ]
   },
   "sends_telemetry_event": false

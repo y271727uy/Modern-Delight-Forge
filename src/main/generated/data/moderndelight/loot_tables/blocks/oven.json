@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:oven"
+          "name": "moderndelight:oven"
         }
       ],
       "rolls": 1.0

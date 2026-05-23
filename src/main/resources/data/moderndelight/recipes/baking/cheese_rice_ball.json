@@ -1,8 +1,8 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
-      "item": "bakingdelight:cheese"
+      "item": "moderndelight:cheese"
     },
     {
       "item": "minecraft:dried_kelp"
@@ -15,7 +15,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:cheese_rice_ball",
+    "item": "moderndelight:cheese_rice_ball",
     "count": 1
   }
 }

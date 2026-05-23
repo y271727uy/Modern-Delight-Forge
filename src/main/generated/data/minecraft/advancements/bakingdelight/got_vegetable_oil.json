@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_filter",
+  "parent": "minecraft:moderndelight/got_filter",
   "criteria": {
     "bottle": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:vegetable_oil_bottle"
+              "moderndelight:vegetable_oil_bottle"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:vegetable_oil_bucket"
+              "moderndelight:vegetable_oil_bucket"
             ]
           }
         ]
@@ -29,16 +29,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.vegetable_oil.desc"
+      "translate": "advancement.moderndelight.vegetable_oil.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:vegetable_oil_bottle"
+      "item": "moderndelight:vegetable_oil_bottle"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.vegetable_oil.title"
+      "translate": "advancement.moderndelight.vegetable_oil.title"
     }
   },
   "requirements": [

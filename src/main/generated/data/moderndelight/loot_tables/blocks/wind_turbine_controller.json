@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:wind_turbine_controller"
+          "name": "moderndelight:wind_turbine_controller"
         }
       ],
       "rolls": 1.0

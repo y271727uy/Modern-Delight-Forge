@@ -1,17 +1,17 @@
 {
-  "type": "bakingdelight:freezing",
+  "type": "moderndelight:freezing",
   "ingredients": [
     {
-      "item": "bakingdelight:ice_brick"
+      "item": "moderndelight:ice_brick"
     },
     {
       "item": "minecraft:stick"
     },
     {
-      "item": "bakingdelight:matcha"
+      "item": "moderndelight:matcha"
     }
   ],
   "output": {
-    "item": "bakingdelight:matcha_ice_lolly"
+    "item": "moderndelight:matcha_ice_lolly"
   }
 }

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:cuisine_table"
+        "recipe": "moderndelight:cuisine_table"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:cuisine_table"
+      "moderndelight:cuisine_table"
     ]
   },
   "sends_telemetry_event": false

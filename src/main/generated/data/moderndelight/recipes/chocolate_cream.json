@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:cream"
+      "item": "moderndelight:cream"
     },
     {
       "item": "minecraft:cocoa_beans"
@@ -13,6 +13,6 @@
     }
   ],
   "result": {
-    "item": "bakingdelight:chocolate_cream"
+    "item": "moderndelight:chocolate_cream"
   }
 }

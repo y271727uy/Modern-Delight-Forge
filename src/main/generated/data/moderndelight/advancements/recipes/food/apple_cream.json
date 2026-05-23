@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:butter"
+              "moderndelight:butter"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:apple_cream"
+        "recipe": "moderndelight:apple_cream"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:apple_cream"
+      "moderndelight:apple_cream"
     ]
   },
   "sends_telemetry_event": false

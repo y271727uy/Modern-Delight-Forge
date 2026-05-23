@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:photovoltaic_generator"
+          "name": "moderndelight:photovoltaic_generator"
         }
       ],
       "rolls": 1.0

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:basalt_cabinet"
+        "recipe": "moderndelight:basalt_cabinet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:basalt_cabinet"
+      "moderndelight:basalt_cabinet"
     ]
   },
   "sends_telemetry_event": false

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:advance_furnace"
+        "recipe": "moderndelight:advance_furnace"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:advance_furnace"
+      "moderndelight:advance_furnace"
     ]
   },
   "sends_telemetry_event": false

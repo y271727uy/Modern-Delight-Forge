@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:mashed_potato"
+              "moderndelight:mashed_potato"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:mashed_potato_block"
+        "recipe": "moderndelight:mashed_potato_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:mashed_potato_block"
+      "moderndelight:mashed_potato_block"
     ]
   },
   "sends_telemetry_event": false

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "black_truffle": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:black_truffle"
+              "moderndelight:black_truffle"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:white_truffle"
+              "moderndelight:white_truffle"
             ]
           }
         ]
@@ -29,16 +29,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_truffle_desc"
+      "translate": "advancement.moderndelight.get_truffle_desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:black_truffle"
+      "item": "moderndelight:black_truffle"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_truffle_title"
+      "translate": "advancement.moderndelight.get_truffle_title"
     }
   },
   "requirements": [

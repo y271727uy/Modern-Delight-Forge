@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:multifunctional_wrapping_paper"
+        "recipe": "moderndelight:multifunctional_wrapping_paper"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:multifunctional_wrapping_paper"
+      "moderndelight:multifunctional_wrapping_paper"
     ]
   },
   "sends_telemetry_event": false

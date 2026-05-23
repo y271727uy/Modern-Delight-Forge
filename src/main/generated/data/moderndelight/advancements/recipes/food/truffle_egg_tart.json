@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:black_truffle"
+              "moderndelight:black_truffle"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:truffle_egg_tart"
+        "recipe": "moderndelight:truffle_egg_tart"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:truffle_egg_tart"
+      "moderndelight:truffle_egg_tart"
     ]
   },
   "sends_telemetry_event": false

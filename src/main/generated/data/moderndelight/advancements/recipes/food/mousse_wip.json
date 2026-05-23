@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:cream_bucket"
+              "moderndelight:cream_bucket"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:mousse_wip"
+        "recipe": "moderndelight:mousse_wip"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:mousse_wip"
+      "moderndelight:mousse_wip"
     ]
   },
   "sends_telemetry_event": false

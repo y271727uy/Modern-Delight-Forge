@@ -1,11 +1,11 @@
 {
-  "type": "bakingdelight:deep_frying",
+  "type": "moderndelight:deep_frying",
   "ingredients": [
     {
-      "item": "bakingdelight:steamed_bun"
+      "item": "moderndelight:steamed_bun"
     }
   ],
   "output": {
-    "item": "bakingdelight:deep_fried_bun"
+    "item": "moderndelight:deep_fried_bun"
   }
 }

@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:potato_starch"
+      "item": "moderndelight:potato_starch"
     },
     {
-      "item": "bakingdelight:sausage"
+      "item": "moderndelight:sausage"
     }
   ],
   "result": {
-    "item": "bakingdelight:starch_sausage",
+    "item": "moderndelight:starch_sausage",
     "count": 1
   }
 }

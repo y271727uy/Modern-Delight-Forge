@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:glass_cup"
+        "recipe": "moderndelight:glass_cup"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:glass_cup"
+      "moderndelight:glass_cup"
     ]
   },
   "sends_telemetry_event": false

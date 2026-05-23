@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_freezer",
+  "parent": "minecraft:moderndelight/got_freezer",
   "criteria": {
     "ice_cream_maker": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:ice_cream_maker"
+              "moderndelight:ice_cream_maker"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.ice_cream_maker.desc"
+      "translate": "advancement.moderndelight.ice_cream_maker.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:ice_cream_maker"
+      "item": "moderndelight:ice_cream_maker"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.ice_cream_maker.title"
+      "translate": "advancement.moderndelight.ice_cream_maker.title"
     }
   },
   "requirements": [

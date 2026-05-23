@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_wheat_flour",
+  "parent": "minecraft:moderndelight/got_wheat_flour",
   "criteria": {
     "wheat_dough": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:wheat_dough"
+              "moderndelight:wheat_dough"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_wheat_dough.desc"
+      "translate": "advancement.moderndelight.get_wheat_dough.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:wheat_dough"
+      "item": "moderndelight:wheat_dough"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_wheat_dough.title"
+      "translate": "advancement.moderndelight.get_wheat_dough.title"
     }
   },
   "requirements": [

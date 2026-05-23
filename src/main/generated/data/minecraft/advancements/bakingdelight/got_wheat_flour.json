@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_glass_bowl",
+  "parent": "minecraft:moderndelight/got_glass_bowl",
   "criteria": {
     "wheat_flour": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:wheat_flour"
+              "moderndelight:wheat_flour"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_wheat_flour.desc"
+      "translate": "advancement.moderndelight.get_wheat_flour.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:wheat_flour"
+      "item": "moderndelight:wheat_flour"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_wheat_flour.title"
+      "translate": "advancement.moderndelight.get_wheat_flour.title"
     }
   },
   "requirements": [

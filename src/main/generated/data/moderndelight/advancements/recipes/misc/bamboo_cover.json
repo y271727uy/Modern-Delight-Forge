@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:bamboo_cover"
+        "recipe": "moderndelight:bamboo_cover"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:bamboo_cover"
+      "moderndelight:bamboo_cover"
     ]
   },
   "sends_telemetry_event": false

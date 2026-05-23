@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:gas_cooking_stove"
+          "name": "moderndelight:gas_cooking_stove"
         }
       ],
       "rolls": 1.0

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bakingdelight:still_cream",
-    "bakingdelight:flowing_cream"
+    "moderndelight:still_cream",
+    "moderndelight:flowing_cream"
   ]
 }

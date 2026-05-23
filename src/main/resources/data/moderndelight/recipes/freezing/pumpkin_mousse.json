@@ -1,17 +1,17 @@
 {
-  "type": "bakingdelight:freezing",
+  "type": "moderndelight:freezing",
   "ingredients": [
     {
       "tag": "c:foods/pumpkins"
     },
     {
-      "item": "bakingdelight:mousse_wip"
+      "item": "moderndelight:mousse_wip"
     },
     {
       "tag": "c:foods/pumpkins"
     }
   ],
   "output": {
-    "item": "bakingdelight:pumpkin_mousse"
+    "item": "moderndelight:pumpkin_mousse"
   }
 }

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "bakingdelight:still_liquefied_biogas",
-    "bakingdelight:flowing_liquefied_biogas",
+    "moderndelight:still_liquefied_biogas",
+    "moderndelight:flowing_liquefied_biogas",
     {
       "id": "#c:biofuel",
       "required": false

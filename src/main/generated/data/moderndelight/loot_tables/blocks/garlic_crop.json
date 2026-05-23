@@ -16,18 +16,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "bakingdelight:garlic_crop",
+                  "block": "moderndelight:garlic_crop",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "5"
                   }
                 }
               ],
-              "name": "bakingdelight:garlic"
+              "name": "moderndelight:garlic"
             },
             {
               "type": "minecraft:item",
-              "name": "bakingdelight:garlic"
+              "name": "moderndelight:garlic"
             }
           ]
         }
@@ -38,7 +38,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "bakingdelight:garlic_crop",
+          "block": "moderndelight:garlic_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "5"
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "bakingdelight:garlic"
+          "name": "moderndelight:garlic"
         }
       ],
       "rolls": 1.0

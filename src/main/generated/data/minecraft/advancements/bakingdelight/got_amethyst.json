@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "amethyst_knife": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:amethyst_knife"
+              "moderndelight:amethyst_knife"
             ]
           }
         ]
@@ -17,17 +17,17 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_amethyst_tool_desc"
+      "translate": "advancement.moderndelight.get_amethyst_tool_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:amethyst_knife",
+      "item": "moderndelight:amethyst_knife",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_amethyst_tool_title"
+      "translate": "advancement.moderndelight.get_amethyst_tool_title"
     }
   },
   "requirements": [

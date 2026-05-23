@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:bakingdelight/got_fried_noodles",
+  "parent": "minecraft:moderndelight/got_fried_noodles",
   "criteria": {
     "apple": {
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:fried_apple"
+            "moderndelight:fried_apple"
           ]
         }
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:cheese_ball"
+            "moderndelight:cheese_ball"
           ]
         }
       },
@@ -25,7 +25,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:chicken_fillet"
+            "moderndelight:chicken_fillet"
           ]
         }
       },
@@ -35,7 +35,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:fried_cod"
+            "moderndelight:fried_cod"
           ]
         }
       },
@@ -45,7 +45,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:deep_fried_bun"
+            "moderndelight:deep_fried_bun"
           ]
         }
       },
@@ -56,7 +56,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:deep_fried_potato_chips"
+              "moderndelight:deep_fried_potato_chips"
             ]
           }
         ]
@@ -68,7 +68,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:deep_fried_shrimp_cake"
+              "moderndelight:deep_fried_shrimp_cake"
             ]
           }
         ]
@@ -79,7 +79,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:fried_dough_stick"
+            "moderndelight:fried_dough_stick"
           ]
         }
       },
@@ -89,7 +89,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:french_fries"
+            "moderndelight:french_fries"
           ]
         }
       },
@@ -99,7 +99,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:fried_brown_mushroom"
+            "moderndelight:fried_brown_mushroom"
           ]
         }
       },
@@ -109,7 +109,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:fried_chicken"
+            "moderndelight:fried_chicken"
           ]
         }
       },
@@ -120,7 +120,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:fired_noodles"
+              "moderndelight:fired_noodles"
             ]
           }
         ]
@@ -131,7 +131,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:fried_red_mushroom"
+            "moderndelight:fried_red_mushroom"
           ]
         }
       },
@@ -141,7 +141,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:fried_milk"
+            "moderndelight:fried_milk"
           ]
         }
       },
@@ -151,7 +151,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:onion_ring"
+            "moderndelight:onion_ring"
           ]
         }
       },
@@ -161,7 +161,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:potato_chip"
+            "moderndelight:potato_chip"
           ]
         }
       },
@@ -171,7 +171,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:fried_salmon"
+            "moderndelight:fried_salmon"
           ]
         }
       },
@@ -181,7 +181,7 @@
       "conditions": {
         "item": {
           "items": [
-            "bakingdelight:seaweed_fried_shrimp_cake"
+            "moderndelight:seaweed_fried_shrimp_cake"
           ]
         }
       },
@@ -191,16 +191,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.all_fried.desc"
+      "translate": "advancement.moderndelight.all_fried.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:fried_milk"
+      "item": "moderndelight:fried_milk"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.all_fried.title"
+      "translate": "advancement.moderndelight.all_fried.title"
     }
   },
   "requirements": [

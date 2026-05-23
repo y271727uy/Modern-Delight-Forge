@@ -5,7 +5,7 @@
       "modid": "casualness_delight"
     }
   ],
-  "type": "bakingdelight:freezing",
+  "type": "moderndelight:freezing",
   "ingredients": [
     {
       "item": "minecraft:slime_ball"

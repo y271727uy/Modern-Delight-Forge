@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:egg_tart"
+      "item": "moderndelight:egg_tart"
     },
     {
-      "item": "bakingdelight:black_truffle"
+      "item": "moderndelight:black_truffle"
     }
   ],
   "result": {
-    "item": "bakingdelight:truffle_egg_tart"
+    "item": "moderndelight:truffle_egg_tart"
   }
 }

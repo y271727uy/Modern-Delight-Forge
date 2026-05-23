@@ -8,7 +8,7 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "bakingdelight:sausage"
+      "item": "moderndelight:sausage"
     }
   ],
   "tool": {
@@ -17,7 +17,7 @@
   },
   "result": [
     {
-      "item": "bakingdelight:sectioned_sausage"
+      "item": "moderndelight:sectioned_sausage"
     }
   ]
 }

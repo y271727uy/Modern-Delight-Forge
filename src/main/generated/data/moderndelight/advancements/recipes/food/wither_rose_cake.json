@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:empty_cake"
+              "moderndelight:empty_cake"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:wither_rose_cake"
+        "recipe": "moderndelight:wither_rose_cake"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:wither_rose_cake"
+      "moderndelight:wither_rose_cake"
     ]
   },
   "sends_telemetry_event": false

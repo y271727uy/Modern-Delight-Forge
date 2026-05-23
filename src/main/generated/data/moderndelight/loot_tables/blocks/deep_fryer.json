@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:deep_fryer"
+          "name": "moderndelight:deep_fryer"
         }
       ],
       "rolls": 1.0

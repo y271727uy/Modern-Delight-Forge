@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:kitchen_utensil_holder"
+          "name": "moderndelight:kitchen_utensil_holder"
         }
       ],
       "rolls": 1.0

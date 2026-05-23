@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
       "tag": "c:dough"
@@ -9,7 +9,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:raw_noodles",
+    "item": "moderndelight:raw_noodles",
     "count": 2
   }
 }

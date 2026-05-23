@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:potato_starch"
+      "item": "moderndelight:potato_starch"
     },
     {
       "tag": "c:foods/raw_meats/raw_pork"
     }
   ],
   "result": {
-    "item": "bakingdelight:sausage",
+    "item": "moderndelight:sausage",
     "count": 2
   }
 }

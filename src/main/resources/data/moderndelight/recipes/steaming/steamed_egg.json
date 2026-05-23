@@ -1,12 +1,12 @@
 {
-  "type": "bakingdelight:steaming",
+  "type": "moderndelight:steaming",
   "maxProgress": 8,
   "ingredients": [
     {
-      "item": "bakingdelight:egg_bowl"
+      "item": "moderndelight:egg_bowl"
     }
   ],
   "output": {
-    "item": "bakingdelight:steamed_egg"
+    "item": "moderndelight:steamed_egg"
   }
 }

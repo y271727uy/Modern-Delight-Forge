@@ -8,7 +8,7 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "bakingdelight:wild_garlic"
+      "item": "moderndelight:wild_garlic"
     }
   ],
   "tool": {
@@ -17,7 +17,7 @@
   },
   "result": [
     {
-      "item": "bakingdelight:garlic",
+      "item": "moderndelight:garlic",
       "count": 2
     }
   ]

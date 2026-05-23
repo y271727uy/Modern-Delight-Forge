@@ -10,20 +10,20 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "item": "bakingdelight:black_pepper_corn"
+      "item": "moderndelight:black_pepper_corn"
     },
     {
       "tag": "c:crops/cabbage"
     },
     {
-      "item": "bakingdelight:prawn"
+      "item": "moderndelight:prawn"
     },
     {
-      "item": "bakingdelight:mixed_dough"
+      "item": "moderndelight:mixed_dough"
     }
   ],
   "recipe_book_tab": "misc",
   "result": {
-    "item": "bakingdelight:braised_shrimp_ball"
+    "item": "moderndelight:braised_shrimp_ball"
   }
 }

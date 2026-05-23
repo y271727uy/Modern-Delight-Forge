@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_mashed_potato",
+  "parent": "minecraft:moderndelight/got_mashed_potato",
   "criteria": {
     "potato_starch": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:potato_starch"
+              "moderndelight:potato_starch"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_potato_starch_desc"
+      "translate": "advancement.moderndelight.get_potato_starch_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:potato_starch"
+      "item": "moderndelight:potato_starch"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_potato_starch_title"
+      "translate": "advancement.moderndelight.get_potato_starch_title"
     }
   },
   "requirements": [

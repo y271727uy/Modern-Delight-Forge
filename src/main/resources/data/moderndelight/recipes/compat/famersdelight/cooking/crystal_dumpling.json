@@ -9,7 +9,7 @@
   "cookingtime": 180,
   "experience": 1.0,
   "container": {
-    "item": "bakingdelight:wooden_plate"
+    "item": "moderndelight:wooden_plate"
   },
   "ingredients": [
     {
@@ -22,11 +22,11 @@
       "tag": "c:foods/raw_meats/raw_mutton"
     },
     {
-      "item": "bakingdelight:mixed_dough"
+      "item": "moderndelight:mixed_dough"
     }
   ],
   "recipe_book_tab": "meals",
   "result": {
-    "item": "bakingdelight:crystal_dumpling"
+    "item": "moderndelight:crystal_dumpling"
   }
 }

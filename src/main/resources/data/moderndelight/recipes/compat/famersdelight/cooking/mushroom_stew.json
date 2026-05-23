@@ -13,10 +13,10 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "item": "bakingdelight:white_truffle"
+      "item": "moderndelight:white_truffle"
     },
     {
-      "item": "bakingdelight:black_truffle"
+      "item": "moderndelight:black_truffle"
     }
   ],
   "recipe_book_tab": "meals",

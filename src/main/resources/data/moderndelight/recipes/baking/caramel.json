@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
       "item": "minecraft:sugar"
@@ -11,11 +11,11 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "bakingdelight:jar"
+      "item": "moderndelight:jar"
     }
   ],
   "output": {
-    "item": "bakingdelight:caramel",
+    "item": "moderndelight:caramel",
     "count": 1
   }
 }

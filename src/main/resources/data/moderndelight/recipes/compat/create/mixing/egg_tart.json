@@ -9,10 +9,10 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "item": "bakingdelight:cream"
+      "item": "moderndelight:cream"
     },
     {
-      "item": "bakingdelight:mixed_dough"
+      "item": "moderndelight:mixed_dough"
     },
     {
       "item": "minecraft:egg"
@@ -24,7 +24,7 @@
   "results": [
     {
       "count": 1,
-      "item": "bakingdelight:egg_tart"
+      "item": "moderndelight:egg_tart"
     }
   ]
 }

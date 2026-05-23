@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:redstone_component"
+              "moderndelight:redstone_component"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:juice_extractor"
+        "recipe": "moderndelight:juice_extractor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:juice_extractor"
+      "moderndelight:juice_extractor"
     ]
   },
   "sends_telemetry_event": false

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_freezer",
+  "parent": "minecraft:moderndelight/got_freezer",
   "criteria": {
     "mousse_wip": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:mousse_wip"
+              "moderndelight:mousse_wip"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_mousse_wip_desc"
+      "translate": "advancement.moderndelight.get_mousse_wip_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:mousse_wip"
+      "item": "moderndelight:mousse_wip"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_mousse_wip_title"
+      "translate": "advancement.moderndelight.get_mousse_wip_title"
     }
   },
   "requirements": [

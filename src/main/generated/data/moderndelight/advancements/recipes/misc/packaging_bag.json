@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:multifunctional_wrapping_paper"
+              "moderndelight:multifunctional_wrapping_paper"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:packaging_bag"
+        "recipe": "moderndelight:packaging_bag"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:packaging_bag"
+      "moderndelight:packaging_bag"
     ]
   },
   "sends_telemetry_event": false

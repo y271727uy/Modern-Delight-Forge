@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:caramel_pudding"
+          "name": "moderndelight:caramel_pudding"
         }
       ],
       "rolls": 1.0

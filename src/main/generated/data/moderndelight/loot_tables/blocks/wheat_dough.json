@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:wheat_dough"
+          "name": "moderndelight:wheat_dough"
         }
       ],
       "rolls": 1.0

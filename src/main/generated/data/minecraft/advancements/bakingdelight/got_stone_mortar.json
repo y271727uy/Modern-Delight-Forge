@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "stone_mortar": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:stone_mortar"
+              "moderndelight:stone_mortar"
             ]
           }
         ]
@@ -17,17 +17,17 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.stone_mortar.desc"
+      "translate": "advancement.moderndelight.stone_mortar.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:stone_mortar",
+      "item": "moderndelight:stone_mortar",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.stone_mortar.title"
+      "translate": "advancement.moderndelight.stone_mortar.title"
     }
   },
   "requirements": [

@@ -1,15 +1,15 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
-      "item": "bakingdelight:garlic"
+      "item": "moderndelight:garlic"
     },
     {
       "tag": "c:tools/knives"
     }
   ],
   "output": {
-    "item": "bakingdelight:garlic_petal",
+    "item": "moderndelight:garlic_petal",
     "count": 3
   }
 }

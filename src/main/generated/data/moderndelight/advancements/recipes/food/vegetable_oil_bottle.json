@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:vegetable_oil_bottle"
+        "recipe": "moderndelight:vegetable_oil_bottle"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:vegetable_oil_bucket"
+              "moderndelight:vegetable_oil_bucket"
             ]
           }
         ]
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:vegetable_oil_bottle"
+      "moderndelight:vegetable_oil_bottle"
     ]
   },
   "sends_telemetry_event": false

@@ -5,11 +5,11 @@
       "id": "#c:foods/sausages",
       "required": false
     },
-    "bakingdelight:sausage",
-    "bakingdelight:sectioned_sausage",
-    "bakingdelight:starch_sausage",
-    "bakingdelight:grilled_sausage",
-    "bakingdelight:grilled_starch_sausage",
-    "bakingdelight:little_octopus_sausage"
+    "moderndelight:sausage",
+    "moderndelight:sectioned_sausage",
+    "moderndelight:starch_sausage",
+    "moderndelight:grilled_sausage",
+    "moderndelight:grilled_starch_sausage",
+    "moderndelight:little_octopus_sausage"
   ]
 }

@@ -12,11 +12,11 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "bakingdelight:butter"
+      "item": "moderndelight:butter"
     }
   ],
   "result": {
     "count": 8,
-    "item": "bakingdelight:pudding_wip_1"
+    "item": "moderndelight:pudding_wip_1"
   }
 }

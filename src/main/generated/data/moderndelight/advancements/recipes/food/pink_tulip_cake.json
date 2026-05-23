@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:empty_cake"
+              "moderndelight:empty_cake"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:pink_tulip_cake"
+        "recipe": "moderndelight:pink_tulip_cake"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:pink_tulip_cake"
+      "moderndelight:pink_tulip_cake"
     ]
   },
   "sends_telemetry_event": false

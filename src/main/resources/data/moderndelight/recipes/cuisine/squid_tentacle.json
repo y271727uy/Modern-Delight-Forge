@@ -1,15 +1,15 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
-      "item": "bakingdelight:squid"
+      "item": "moderndelight:squid"
     },
     {
       "tag": "c:tools/knives"
     }
   ],
   "output": {
-    "item": "bakingdelight:squid_tentacle",
+    "item": "moderndelight:squid_tentacle",
     "count": 2
   }
 }

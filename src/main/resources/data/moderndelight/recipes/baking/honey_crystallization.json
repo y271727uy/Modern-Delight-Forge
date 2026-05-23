@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
       "item": "minecraft:honey_bottle"
@@ -15,7 +15,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:honey_crystallization",
+    "item": "moderndelight:honey_crystallization",
     "count": 3
   }
 }

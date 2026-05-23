@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:biogas_digester_controller"
+        "recipe": "moderndelight:biogas_digester_controller"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:biogas_digester_controller"
+      "moderndelight:biogas_digester_controller"
     ]
   },
   "sends_telemetry_event": false

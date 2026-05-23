@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:empty_cake"
+              "moderndelight:empty_cake"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:blue_orchid_flower_cake"
+        "recipe": "moderndelight:blue_orchid_flower_cake"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:blue_orchid_flower_cake"
+      "moderndelight:blue_orchid_flower_cake"
     ]
   },
   "sends_telemetry_event": false

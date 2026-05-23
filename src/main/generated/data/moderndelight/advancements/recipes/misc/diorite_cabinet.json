@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:diorite_cabinet"
+        "recipe": "moderndelight:diorite_cabinet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:diorite_cabinet"
+      "moderndelight:diorite_cabinet"
     ]
   },
   "sends_telemetry_event": false

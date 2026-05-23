@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "cuisine_table": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:cuisine_table"
+              "moderndelight:cuisine_table"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.cuisine_table.desc"
+      "translate": "advancement.moderndelight.cuisine_table.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:cuisine_table"
+      "item": "moderndelight:cuisine_table"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.cuisine_table.title"
+      "translate": "advancement.moderndelight.cuisine_table.title"
     }
   },
   "requirements": [

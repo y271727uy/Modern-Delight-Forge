@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_battery1",
+  "parent": "minecraft:moderndelight/got_battery1",
   "criteria": {
     "battery2": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:intermediate_battery"
+              "moderndelight:intermediate_battery"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.battery2.desc"
+      "translate": "advancement.moderndelight.battery2.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:intermediate_battery"
+      "item": "moderndelight:intermediate_battery"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.battery2.title"
+      "translate": "advancement.moderndelight.battery2.title"
     }
   },
   "requirements": [

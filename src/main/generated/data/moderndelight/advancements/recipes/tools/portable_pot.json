@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:portable_pot"
+        "recipe": "moderndelight:portable_pot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:portable_pot"
+      "moderndelight:portable_pot"
     ]
   },
   "sends_telemetry_event": false

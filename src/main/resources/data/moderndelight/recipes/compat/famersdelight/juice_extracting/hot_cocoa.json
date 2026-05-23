@@ -5,7 +5,7 @@
       "modid": "farmersdelight"
     }
   ],
-  "type": "bakingdelight:juice_extracting",
+  "type": "moderndelight:juice_extracting",
   "progress": 240,
   "container": "minecraft:glass_bottle",
   "ingredients": [

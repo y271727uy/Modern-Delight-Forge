@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:cream"
+              "moderndelight:cream"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:chocolate_cream"
+        "recipe": "moderndelight:chocolate_cream"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:chocolate_cream"
+      "moderndelight:chocolate_cream"
     ]
   },
   "sends_telemetry_event": false

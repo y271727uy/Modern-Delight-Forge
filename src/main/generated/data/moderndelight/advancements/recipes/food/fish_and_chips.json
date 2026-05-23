@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:deep_fried_potato_chips"
+              "moderndelight:deep_fried_potato_chips"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:fish_and_chips"
+        "recipe": "moderndelight:fish_and_chips"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:fish_and_chips"
+      "moderndelight:fish_and_chips"
     ]
   },
   "sends_telemetry_event": false

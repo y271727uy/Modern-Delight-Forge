@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_cream",
+  "parent": "minecraft:moderndelight/got_cream",
   "criteria": {
     "butter": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:butter"
+              "moderndelight:butter"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_butter_desc"
+      "translate": "advancement.moderndelight.get_butter_desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:butter"
+      "item": "moderndelight:butter"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_butter_title"
+      "translate": "advancement.moderndelight.get_butter_title"
     }
   },
   "requirements": [

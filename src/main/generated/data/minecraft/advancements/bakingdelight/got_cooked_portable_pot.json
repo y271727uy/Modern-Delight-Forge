@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_fried_noodles",
+  "parent": "minecraft:moderndelight/got_fried_noodles",
   "criteria": {
     "cooked_portable_pot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:cooked_portable_pot"
+              "moderndelight:cooked_portable_pot"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:packaged_instant_noodles"
+              "moderndelight:packaged_instant_noodles"
             ]
           }
         ]
@@ -30,7 +30,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:portable_pot"
+              "moderndelight:portable_pot"
             ]
           }
         ]
@@ -42,7 +42,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:quicklime"
+              "moderndelight:quicklime"
             ]
           }
         ]
@@ -53,16 +53,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.cooked_portable_pot.desc"
+      "translate": "advancement.moderndelight.cooked_portable_pot.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:cooked_portable_pot"
+      "item": "moderndelight:cooked_portable_pot"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.cooked_portable_pot.title"
+      "translate": "advancement.moderndelight.cooked_portable_pot.title"
     }
   },
   "requirements": [

@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "bakingdelight:raw_pizza",
-    "bakingdelight:pizza_wip",
-    "bakingdelight:pizza",
+    "moderndelight:raw_pizza",
+    "moderndelight:pizza_wip",
+    "moderndelight:pizza",
     {
       "id": "#minecraft:trapdoors",
       "required": false

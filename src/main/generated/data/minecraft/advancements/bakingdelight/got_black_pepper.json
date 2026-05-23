@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_stone_mortar",
+  "parent": "minecraft:moderndelight/got_stone_mortar",
   "criteria": {
     "black_pepper": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:black_pepper_corn"
+              "moderndelight:black_pepper_corn"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_black_pepper.desc"
+      "translate": "advancement.moderndelight.get_black_pepper.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:black_pepper_corn"
+      "item": "moderndelight:black_pepper_corn"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_black_pepper.title"
+      "translate": "advancement.moderndelight.get_black_pepper.title"
     }
   },
   "requirements": [

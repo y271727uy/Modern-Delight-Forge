@@ -6,7 +6,7 @@
       "item": "minecraft:iron_ingot"
     },
     "K": {
-      "item": "bakingdelight:deep_fry_basket"
+      "item": "moderndelight:deep_fry_basket"
     }
   },
   "pattern": [
@@ -15,7 +15,7 @@
     "III"
   ],
   "result": {
-    "item": "bakingdelight:deep_fryer"
+    "item": "moderndelight:deep_fryer"
   },
   "show_notification": true
 }

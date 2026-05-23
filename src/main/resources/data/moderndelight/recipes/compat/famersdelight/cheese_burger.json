@@ -24,11 +24,11 @@
       "item": "farmersdelight:onion"
     },
     {
-      "item": "bakingdelight:cheese"
+      "item": "moderndelight:cheese"
     }
   ],
   "result": {
-    "item": "bakingdelight:cheese_burger",
+    "item": "moderndelight:cheese_burger",
     "count": 1
   }
 }

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_oven",
+  "parent": "minecraft:moderndelight/got_oven",
   "criteria": {
     "crowbar": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:crowbar"
+              "moderndelight:crowbar"
             ]
           }
         ]
@@ -17,17 +17,17 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_crowbar.desc"
+      "translate": "advancement.moderndelight.get_crowbar.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:crowbar",
+      "item": "moderndelight:crowbar",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_crowbar.title"
+      "translate": "advancement.moderndelight.get_crowbar.title"
     }
   },
   "requirements": [

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:redstone_component"
+              "moderndelight:redstone_component"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:electric_whisk"
+        "recipe": "moderndelight:electric_whisk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:electric_whisk"
+      "moderndelight:electric_whisk"
     ]
   },
   "sends_telemetry_event": false

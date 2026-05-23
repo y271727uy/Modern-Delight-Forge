@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:biogas_digester_io"
+          "name": "moderndelight:biogas_digester_io"
         }
       ],
       "rolls": 1.0

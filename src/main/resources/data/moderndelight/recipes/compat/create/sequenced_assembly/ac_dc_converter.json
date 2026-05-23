@@ -7,22 +7,22 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "bakingdelight:ac_dc_converter"
+    "item": "moderndelight:ac_dc_converter"
   },
   "loops": 1,
   "results": [
     {
-      "item": "bakingdelight:ac_dc_converter",
+      "item": "moderndelight:ac_dc_converter",
       "chance": 80.0,
       "count": 2
     },
     {
-      "item": "bakingdelight:silicon_component",
+      "item": "moderndelight:silicon_component",
       "chance": 2.0,
       "count": 6
     },
     {
-      "item": "bakingdelight:ac_dc_converter",
+      "item": "moderndelight:ac_dc_converter",
       "chance": 18.0,
       "count": 1
     }
@@ -32,7 +32,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bakingdelight:ac_dc_converter"
+          "item": "moderndelight:ac_dc_converter"
         },
         {
           "tag": "c:iron_plates"
@@ -40,7 +40,7 @@
       ],
       "results": [
         {
-          "item": "bakingdelight:ac_dc_converter"
+          "item": "moderndelight:ac_dc_converter"
         }
       ]
     },
@@ -48,15 +48,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bakingdelight:ac_dc_converter"
+          "item": "moderndelight:ac_dc_converter"
         },
         {
-          "item": "bakingdelight:redstone_component"
+          "item": "moderndelight:redstone_component"
         }
       ],
       "results": [
         {
-          "item": "bakingdelight:ac_dc_converter"
+          "item": "moderndelight:ac_dc_converter"
         }
       ]
     },
@@ -64,15 +64,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bakingdelight:ac_dc_converter"
+          "item": "moderndelight:ac_dc_converter"
         },
         {
-          "item": "bakingdelight:silicon_component"
+          "item": "moderndelight:silicon_component"
         }
       ],
       "results": [
         {
-          "item": "bakingdelight:ac_dc_converter"
+          "item": "moderndelight:ac_dc_converter"
         }
       ]
     },
@@ -80,7 +80,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bakingdelight:ac_dc_converter"
+          "item": "moderndelight:ac_dc_converter"
         },
         {
           "tag": "c:iron_plates"
@@ -88,12 +88,12 @@
       ],
       "results": [
         {
-          "item": "bakingdelight:ac_dc_converter"
+          "item": "moderndelight:ac_dc_converter"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "bakingdelight:ac_dc_converter"
+    "item": "moderndelight:ac_dc_converter"
   }
 }

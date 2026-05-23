@@ -16,7 +16,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "bakingdelight:black_pepper_crop",
+                  "block": "moderndelight:black_pepper_crop",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "6"
@@ -27,7 +27,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "bakingdelight:black_pepper_corn"
+              "name": "moderndelight:black_pepper_corn"
             }
           ]
         }
@@ -38,7 +38,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "bakingdelight:black_pepper_crop",
+          "block": "moderndelight:black_pepper_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "6"
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "bakingdelight:black_pepper_corn"
+          "name": "moderndelight:black_pepper_corn"
         }
       ],
       "rolls": 1.0

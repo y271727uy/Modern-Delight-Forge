@@ -1,8 +1,8 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
-      "item": "bakingdelight:glow_squid"
+      "item": "moderndelight:glow_squid"
     },
     {
       "tag": "c:tools/knives"

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:empty_cake"
+              "moderndelight:empty_cake"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:fried_milk_wip"
+        "recipe": "moderndelight:fried_milk_wip"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:fried_milk_wip"
+      "moderndelight:fried_milk_wip"
     ]
   },
   "sends_telemetry_event": false

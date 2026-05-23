@@ -1,17 +1,17 @@
 {
-  "type": "bakingdelight:freezing",
+  "type": "moderndelight:freezing",
   "ingredients": [
     {
       "item": "minecraft:cocoa_beans"
     },
     {
-      "item": "bakingdelight:mousse_wip"
+      "item": "moderndelight:mousse_wip"
     },
     {
       "item": "minecraft:cocoa_beans"
     }
   ],
   "output": {
-    "item": "bakingdelight:chocolate_mousse"
+    "item": "moderndelight:chocolate_mousse"
   }
 }

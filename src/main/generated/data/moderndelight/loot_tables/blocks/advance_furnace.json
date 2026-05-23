@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:advance_furnace"
+          "name": "moderndelight:advance_furnace"
         }
       ],
       "rolls": 1.0

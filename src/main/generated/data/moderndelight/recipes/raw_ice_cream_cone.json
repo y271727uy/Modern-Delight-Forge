@@ -9,14 +9,14 @@
       "item": "minecraft:milk_bucket"
     },
     {
-      "item": "bakingdelight:mixed_dough"
+      "item": "moderndelight:mixed_dough"
     },
     {
-      "item": "bakingdelight:mixed_dough"
+      "item": "moderndelight:mixed_dough"
     }
   ],
   "result": {
     "count": 4,
-    "item": "bakingdelight:raw_ice_cream_cone"
+    "item": "moderndelight:raw_ice_cream_cone"
   }
 }

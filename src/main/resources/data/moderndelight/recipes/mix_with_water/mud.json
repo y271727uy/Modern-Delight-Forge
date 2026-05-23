@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:mix_with_water",
+  "type": "moderndelight:mix_with_water",
   "ingredients": [
     {
       "tag": "minecraft:dirt"

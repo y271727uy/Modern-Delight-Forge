@@ -8,30 +8,30 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "bakingdelight:sunflower_seed"
+      "item": "moderndelight:sunflower_seed"
     }
   ],
   "processingTime": 50,
   "results": [
     {
       "count": 2,
-      "item": "bakingdelight:sunflower_seed_pulp"
+      "item": "moderndelight:sunflower_seed_pulp"
     },
     {
       "chance": 0.9,
-      "item": "bakingdelight:sunflower_seed_peel"
+      "item": "moderndelight:sunflower_seed_peel"
     },
     {
       "chance": 0.8,
-      "item": "bakingdelight:sunflower_seed_peel"
+      "item": "moderndelight:sunflower_seed_peel"
     },
     {
       "chance": 0.7,
-      "item": "bakingdelight:sunflower_seed_peel"
+      "item": "moderndelight:sunflower_seed_peel"
     },
     {
       "chance": 0.6,
-      "item": "bakingdelight:sunflower_seed_peel"
+      "item": "moderndelight:sunflower_seed_peel"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "advance_furnace": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:advance_furnace"
+              "moderndelight:advance_furnace"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.get_advance_furnace.desc"
+      "translate": "advancement.moderndelight.get_advance_furnace.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:advance_furnace"
+      "item": "moderndelight:advance_furnace"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_advance_furnace.title"
+      "translate": "advancement.moderndelight.get_advance_furnace.title"
     }
   },
   "requirements": [

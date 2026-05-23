@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:shrimp_paste"
+              "moderndelight:shrimp_paste"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:mixed_shrimp_paste"
+        "recipe": "moderndelight:mixed_shrimp_paste"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:mixed_shrimp_paste"
+      "moderndelight:mixed_shrimp_paste"
     ]
   },
   "sends_telemetry_event": false

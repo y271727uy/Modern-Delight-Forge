@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_pudding_wip_1",
+  "parent": "minecraft:moderndelight/got_pudding_wip_1",
   "criteria": {
     "pudding_wip_2": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:pudding_wip_2"
+              "moderndelight:pudding_wip_2"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_pudding_wip_2_desc"
+      "translate": "advancement.moderndelight.get_pudding_wip_2_desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:pudding_wip_2"
+      "item": "moderndelight:pudding_wip_2"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_pudding_wip_2_title"
+      "translate": "advancement.moderndelight.get_pudding_wip_2_title"
     }
   },
   "requirements": [

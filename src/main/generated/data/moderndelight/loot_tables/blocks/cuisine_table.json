@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:cuisine_table"
+          "name": "moderndelight:cuisine_table"
         }
       ],
       "rolls": 1.0

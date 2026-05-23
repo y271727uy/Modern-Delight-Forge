@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_freezer",
+  "parent": "minecraft:moderndelight/got_freezer",
   "criteria": {
     "cherry_ice_lolly": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:cherry_ice_lolly"
+              "moderndelight:cherry_ice_lolly"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:chocolate_crunch_ice_lolly"
+              "moderndelight:chocolate_crunch_ice_lolly"
             ]
           }
         ]
@@ -30,7 +30,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:ice_lolly"
+              "moderndelight:ice_lolly"
             ]
           }
         ]
@@ -42,7 +42,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:matcha_ice_lolly"
+              "moderndelight:matcha_ice_lolly"
             ]
           }
         ]
@@ -54,7 +54,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:wither_ice_lolly"
+              "moderndelight:wither_ice_lolly"
             ]
           }
         ]
@@ -65,16 +65,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.all_ice_lolly.desc"
+      "translate": "advancement.moderndelight.all_ice_lolly.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:ice_lolly"
+      "item": "moderndelight:ice_lolly"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.all_ice_lolly.title"
+      "translate": "advancement.moderndelight.all_ice_lolly.title"
     }
   },
   "requirements": [

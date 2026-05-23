@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:blackstone_cabinet"
+        "recipe": "moderndelight:blackstone_cabinet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:blackstone_cabinet"
+      "moderndelight:blackstone_cabinet"
     ]
   },
   "sends_telemetry_event": false

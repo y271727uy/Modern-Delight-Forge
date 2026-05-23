@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:boxed_cherries"
+              "moderndelight:boxed_cherries"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:cherry"
+        "recipe": "moderndelight:cherry"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:cherry"
+      "moderndelight:cherry"
     ]
   },
   "sends_telemetry_event": false

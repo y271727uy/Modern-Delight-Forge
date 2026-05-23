@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:fan_blade"
+          "name": "moderndelight:fan_blade"
         }
       ],
       "rolls": 1.0

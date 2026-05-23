@@ -1,11 +1,11 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
-      "item": "bakingdelight:cream"
+      "item": "moderndelight:cream"
     },
     {
-      "item": "bakingdelight:mixed_dough"
+      "item": "moderndelight:mixed_dough"
     },
     {
       "item": "minecraft:egg"
@@ -15,6 +15,6 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:egg_tart"
+    "item": "moderndelight:egg_tart"
   }
 }

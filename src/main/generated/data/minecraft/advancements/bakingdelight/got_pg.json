@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_battery3",
+  "parent": "minecraft:moderndelight/got_battery3",
   "criteria": {
     "pg": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:photovoltaic_generator"
+              "moderndelight:photovoltaic_generator"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.pg.desc"
+      "translate": "advancement.moderndelight.pg.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:photovoltaic_generator"
+      "item": "moderndelight:photovoltaic_generator"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.pg.title"
+      "translate": "advancement.moderndelight.pg.title"
     }
   },
   "requirements": [

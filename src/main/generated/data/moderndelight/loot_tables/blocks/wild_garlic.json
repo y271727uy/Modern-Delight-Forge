@@ -37,7 +37,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:garlic"
+          "name": "moderndelight:garlic"
         }
       ],
       "functions": [
@@ -86,7 +86,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:wild_garlic"
+          "name": "moderndelight:wild_garlic"
         }
       ],
       "functions": [

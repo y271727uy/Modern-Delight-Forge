@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/root",
+  "parent": "minecraft:moderndelight/root",
   "criteria": {
     "bdc": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:biogas_digester_controller"
+              "moderndelight:biogas_digester_controller"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:biogas_digester_io"
+              "moderndelight:biogas_digester_io"
             ]
           }
         ]
@@ -29,16 +29,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.bdc_bdi.desc"
+      "translate": "advancement.moderndelight.bdc_bdi.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:biogas_digester_io"
+      "item": "moderndelight:biogas_digester_io"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.bdc_bdi.title"
+      "translate": "advancement.moderndelight.bdc_bdi.title"
     }
   },
   "requirements": [

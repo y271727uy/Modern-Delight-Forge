@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:sterling_engine"
+          "name": "moderndelight:sterling_engine"
         }
       ],
       "rolls": 1.0

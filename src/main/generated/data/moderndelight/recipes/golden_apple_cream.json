@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bakingdelight:cream"
+      "item": "moderndelight:cream"
     },
     {
       "item": "minecraft:golden_apple"
     }
   ],
   "result": {
-    "item": "bakingdelight:golden_apple_cream"
+    "item": "moderndelight:golden_apple_cream"
   }
 }

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bakingdelight:kneading_stick"
+        "recipe": "moderndelight:kneading_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bakingdelight:kneading_stick"
+      "moderndelight:kneading_stick"
     ]
   },
   "sends_telemetry_event": false

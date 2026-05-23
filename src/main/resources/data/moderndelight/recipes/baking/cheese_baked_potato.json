@@ -1,21 +1,21 @@
 {
-  "type": "bakingdelight:oven_baking",
+  "type": "moderndelight:oven_baking",
   "ingredients": [
     {
-      "item": "bakingdelight:cheese"
+      "item": "moderndelight:cheese"
     },
     {
-      "item": "bakingdelight:butter"
+      "item": "moderndelight:butter"
     },
     {
       "tag": "c:crops/black_peppers"
     },
     {
-      "item": "bakingdelight:mashed_potato"
+      "item": "moderndelight:mashed_potato"
     }
   ],
   "output": {
-    "item": "bakingdelight:cheese_baked_potato",
+    "item": "moderndelight:cheese_baked_potato",
     "count": 1
   }
 }

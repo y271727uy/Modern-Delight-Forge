@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "bakingdelight:honey_crystallization",
-    "bakingdelight:sea_salt",
-    "bakingdelight:garlic_puree",
-    "bakingdelight:black_pepper_dust",
-    "bakingdelight:black_truffle",
-    "bakingdelight:white_truffle",
-    "bakingdelight:cuttlebone",
-    "bakingdelight:glow_cuttlebone"
+    "moderndelight:honey_crystallization",
+    "moderndelight:sea_salt",
+    "moderndelight:garlic_puree",
+    "moderndelight:black_pepper_dust",
+    "moderndelight:black_truffle",
+    "moderndelight:white_truffle",
+    "moderndelight:cuttlebone",
+    "moderndelight:glow_cuttlebone"
   ]
 }

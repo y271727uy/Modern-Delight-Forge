@@ -1,12 +1,12 @@
 {
-  "type": "bakingdelight:steaming",
+  "type": "moderndelight:steaming",
   "maxProgress": 12,
   "ingredients": [
     {
-      "item": "bakingdelight:fish_egg"
+      "item": "moderndelight:fish_egg"
     }
   ],
   "output": {
-    "item": "bakingdelight:steamed_fish_egg"
+    "item": "moderndelight:steamed_fish_egg"
   }
 }

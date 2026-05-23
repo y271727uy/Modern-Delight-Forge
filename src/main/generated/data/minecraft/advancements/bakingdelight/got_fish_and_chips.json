@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_fried_noodles",
+  "parent": "minecraft:moderndelight/got_fried_noodles",
   "criteria": {
     "fish_and_chips": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:fish_and_chips"
+              "moderndelight:fish_and_chips"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.fish_and_chips.desc"
+      "translate": "advancement.moderndelight.fish_and_chips.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:fish_and_chips"
+      "item": "moderndelight:fish_and_chips"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.fish_and_chips.title"
+      "translate": "advancement.moderndelight.fish_and_chips.title"
     }
   },
   "requirements": [

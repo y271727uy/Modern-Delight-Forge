@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bakingdelight:obsidian_cabinet"
+          "name": "moderndelight:obsidian_cabinet"
         }
       ],
       "rolls": 1.0

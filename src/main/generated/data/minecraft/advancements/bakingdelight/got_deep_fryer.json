@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_vegetable_oil",
+  "parent": "minecraft:moderndelight/got_vegetable_oil",
   "criteria": {
     "deep_fryer": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:deep_fryer"
+              "moderndelight:deep_fryer"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.deep_fryer.desc"
+      "translate": "advancement.moderndelight.deep_fryer.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:deep_fryer"
+      "item": "moderndelight:deep_fryer"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.deep_fryer.title"
+      "translate": "advancement.moderndelight.deep_fryer.title"
     }
   },
   "requirements": [

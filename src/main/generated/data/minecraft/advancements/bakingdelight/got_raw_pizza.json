@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_kneading_stick",
+  "parent": "minecraft:moderndelight/got_kneading_stick",
   "criteria": {
     "raw_pizza": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:raw_pizza"
+              "moderndelight:raw_pizza"
             ]
           }
         ]
@@ -17,16 +17,16 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.bakingdelight.get_raw_pizza.desc"
+      "translate": "advancement.moderndelight.get_raw_pizza.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:raw_pizza"
+      "item": "moderndelight:raw_pizza"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.get_raw_pizza.title"
+      "translate": "advancement.moderndelight.get_raw_pizza.title"
     }
   },
   "requirements": [

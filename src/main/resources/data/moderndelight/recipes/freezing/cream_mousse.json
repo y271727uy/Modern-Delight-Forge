@@ -1,18 +1,18 @@
 {
-  "type": "bakingdelight:freezing",
+  "type": "moderndelight:freezing",
   "ingredients": [
     {
-      "item": "bakingdelight:mousse_wip"
+      "item": "moderndelight:mousse_wip"
     },
     {
-      "item": "bakingdelight:mousse_wip"
+      "item": "moderndelight:mousse_wip"
     },
     {
-      "item": "bakingdelight:mousse_wip"
+      "item": "moderndelight:mousse_wip"
     }
   ],
   "output": {
-    "item": "bakingdelight:cream_mousse",
+    "item": "moderndelight:cream_mousse",
     "count": 3
   }
 }

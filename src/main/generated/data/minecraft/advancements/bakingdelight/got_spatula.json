@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_gas_cooking_stove",
+  "parent": "minecraft:moderndelight/got_gas_cooking_stove",
   "criteria": {
     "spatula": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:spatula"
+              "moderndelight:spatula"
             ]
           }
         ]
@@ -17,17 +17,17 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.spatula.desc"
+      "translate": "advancement.moderndelight.spatula.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:spatula",
+      "item": "moderndelight:spatula",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.spatula.title"
+      "translate": "advancement.moderndelight.spatula.title"
     }
   },
   "requirements": [

@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "bakingdelight:wooden_plate"
+      "item": "moderndelight:wooden_plate"
     },
     "D": {
-      "item": "bakingdelight:mixed_dough"
+      "item": "moderndelight:mixed_dough"
     },
     "K": {
       "item": "minecraft:dried_kelp"
@@ -22,7 +22,7 @@
   ],
   "result": {
     "count": 3,
-    "item": "bakingdelight:vegetable_steamed_stuffed_bun_wip"
+    "item": "moderndelight:vegetable_steamed_stuffed_bun_wip"
   },
   "show_notification": true
 }

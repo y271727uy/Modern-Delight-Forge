@@ -1,5 +1,5 @@
 {
-  "type": "bakingdelight:cuisine",
+  "type": "moderndelight:cuisine",
   "ingredients": [
     {
       "item": "minecraft:potato"
@@ -9,7 +9,7 @@
     }
   ],
   "output": {
-    "item": "bakingdelight:raw_potato_chip",
+    "item": "moderndelight:raw_potato_chip",
     "count": 4
   }
 }

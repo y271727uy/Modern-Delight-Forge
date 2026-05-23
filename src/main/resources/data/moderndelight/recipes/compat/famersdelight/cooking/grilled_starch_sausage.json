@@ -13,14 +13,14 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "bakingdelight:starch_sausage"
+      "item": "moderndelight:starch_sausage"
     },
     {
-      "item": "bakingdelight:black_pepper_dust"
+      "item": "moderndelight:black_pepper_dust"
     }
   ],
   "recipe_book_tab": "misc",
   "result": {
-    "item": "bakingdelight:grilled_starch_sausage"
+    "item": "moderndelight:grilled_starch_sausage"
   }
 }

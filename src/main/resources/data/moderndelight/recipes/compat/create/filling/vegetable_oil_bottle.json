@@ -12,12 +12,12 @@
     },
     {
       "amount": 27000,
-      "fluid": "bakingdelight:still_vegetable_oil"
+      "fluid": "moderndelight:still_vegetable_oil"
     }
   ],
   "results": [
     {
-      "item": "bakingdelight:vegetable_oil_bottle"
+      "item": "moderndelight:vegetable_oil_bottle"
     }
   ]
 }

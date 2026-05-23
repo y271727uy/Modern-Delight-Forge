@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:bakingdelight/got_gas_cooking_stove",
+  "parent": "minecraft:moderndelight/got_gas_cooking_stove",
   "criteria": {
     "bamboo_cover": {
       "conditions": {
         "items": [
           {
             "items": [
-              "bakingdelight:bamboo_cover"
+              "moderndelight:bamboo_cover"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "bakingdelight:bamboo_grate"
+              "moderndelight:bamboo_grate"
             ]
           }
         ]
@@ -41,16 +41,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.bakingdelight.bamboo_steamer.desc"
+      "translate": "advancement.moderndelight.bamboo_steamer.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "bakingdelight:bamboo_grate"
+      "item": "moderndelight:bamboo_grate"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.bakingdelight.bamboo_steamer.title"
+      "translate": "advancement.moderndelight.bamboo_steamer.title"
     }
   },
   "requirements": [

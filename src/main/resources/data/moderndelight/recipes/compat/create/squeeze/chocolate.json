@@ -5,7 +5,7 @@
       "modid": "create"
     }
   ],
-  "type": "bakingdelight:squeeze",
+  "type": "moderndelight:squeeze",
   "ingredients": [
     {
       "item": "create:bar_of_chocolate"
