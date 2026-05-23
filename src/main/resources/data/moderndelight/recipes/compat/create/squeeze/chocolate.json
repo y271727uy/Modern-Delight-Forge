@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "bakingdelight:squeeze",
+  "ingredients": [
+    {
+      "item": "create:bar_of_chocolate"
+    }
+  ],
+  "output": {
+    "item": "minecraft:sugar"
+  },
+  "fluid_output": {
+    "fluid": "create:chocolate",
+    "amount": 22500
+  }
+}

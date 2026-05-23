@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "bakingdelight:oil_plants"
+    },
+    {
+      "tag": "bakingdelight:oil_plants"
+    },
+    {
+      "tag": "bakingdelight:oil_plants"
+    }
+  ],
+  "results": [
+    {
+      "amount": 27000,
+      "fluid": "bakingdelight:still_vegetable_oil"
+    }
+  ]
+}

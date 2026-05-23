@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "bakingdelight:juice_extracting",
+  "progress": 260,
+  "container": "minecraft:glass_bottle",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    }
+  ],
+  "output": {
+    "item": "farmersdelight:apple_cider",
+    "count": 3
+  }
+}

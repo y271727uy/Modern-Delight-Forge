@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "minecraft:leaves"
+    }
+  ],
+  "processingTime": 30,
+  "results": [
+    {
+      "chance": 0.4,
+      "item": "bakingdelight:matcha"
+    }
+  ]
+}

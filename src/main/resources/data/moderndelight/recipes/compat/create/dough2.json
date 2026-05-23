@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create:dough"
+    }
+  ],
+  "result": {
+    "item": "bakingdelight:wheat_dough",
+    "count": 1
+  }
+}

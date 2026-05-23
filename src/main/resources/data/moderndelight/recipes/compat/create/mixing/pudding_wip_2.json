@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "bakingdelight:pudding_wip_1"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "bakingdelight:pudding_wip_2"
+    }
+  ]
+}

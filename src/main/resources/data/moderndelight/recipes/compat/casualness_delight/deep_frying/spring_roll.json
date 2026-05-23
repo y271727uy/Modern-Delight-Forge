@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "casualness_delight"
+    }
+  ],
+  "type": "bakingdelight:deep_frying",
+  "ingredients": [
+    {
+      "item": "casualness_delight:raw_spring_roll"
+    }
+  ],
+  "output": {
+    "item": "casualness_delight:spring_roll",
+    "count": 3
+  }
+}

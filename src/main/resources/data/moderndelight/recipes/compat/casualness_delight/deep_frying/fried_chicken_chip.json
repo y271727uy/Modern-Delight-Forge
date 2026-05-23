@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "casualness_delight"
+    }
+  ],
+  "type": "bakingdelight:deep_frying",
+  "ingredients": [
+    {
+      "item": "farmersdelight:chicken_cuts"
+    }
+  ],
+  "output": {
+    "item": "casualness_delight:fried_chicken_chip",
+    "count": 3
+  }
+}

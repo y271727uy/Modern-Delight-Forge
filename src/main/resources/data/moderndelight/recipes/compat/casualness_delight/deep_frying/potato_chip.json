@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "casualness_delight"
+    }
+  ],
+  "type": "bakingdelight:deep_frying",
+  "ingredients": [
+    {
+      "item": "casualness_delight:potato_slice"
+    }
+  ],
+  "output": {
+    "item": "casualness_delight:potato_chip",
+    "count": 3
+  }
+}

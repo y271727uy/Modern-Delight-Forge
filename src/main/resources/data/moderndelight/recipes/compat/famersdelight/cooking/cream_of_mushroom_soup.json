@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 250,
+  "experience": 1.5,
+  "ingredients": [
+    {
+      "tag": "c:foods/creams_without_plain"
+    },
+    {
+      "tag": "c:milks"
+    },
+    {
+      "tag": "c:wheat_flour"
+    },
+    {
+      "item": "farmersdelight:onion"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "bakingdelight:cream_of_mushroom_soup"
+  }
+}

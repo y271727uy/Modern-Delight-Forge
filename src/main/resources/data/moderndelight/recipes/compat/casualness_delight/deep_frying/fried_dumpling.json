@@ -1,0 +1,17 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "casualness_delight"
+    }
+  ],
+  "type": "bakingdelight:deep_frying",
+  "ingredients": [
+    {
+      "item": "casualness_delight:raw_fried_dumpling"
+    }
+  ],
+  "output": {
+    "item": "casualness_delight:fried_dumpling"
+  }
+}

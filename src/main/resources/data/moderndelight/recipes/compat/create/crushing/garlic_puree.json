@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "bakingdelight:garlic_petal"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 2,
+      "item": "bakingdelight:garlic_puree"
+    },
+    {
+      "chance": 0.5,
+      "item": "bakingdelight:garlic_puree"
+    },
+    {
+      "chance": 0.2,
+      "item": "bakingdelight:garlic_puree"
+    }
+  ]
+}

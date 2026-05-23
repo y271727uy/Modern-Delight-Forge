@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^powershell -ExecutionPolicy Bypass -File \"d:\\\\document\\\\dev\\\\GitHub\\\\fast_replace\\.ps1\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
