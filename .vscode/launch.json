@@ -1,0 +1,101 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - Modern-Delight-Forge",
+        "order": 0
+      },
+      "projectName": "Modern-Delight-Forge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmoderndelight%%D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {
+        "MOD_CLASSES": "moderndelight%%D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\bin\\main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Data",
+      "presentation": {
+        "group": "Mod Development - Modern-Delight-Forge",
+        "order": 1
+      },
+      "projectName": "Modern-Delight-Forge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmoderndelight%%D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {
+        "MOD_CLASSES": "moderndelight%%D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\bin\\main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "GameTestServer",
+      "presentation": {
+        "group": "Mod Development - Modern-Delight-Forge",
+        "order": 2
+      },
+      "projectName": "Modern-Delight-Forge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\build\\moddev\\gameTestServerRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\build\\moddev\\gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmoderndelight%%D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {
+        "MOD_CLASSES": "moderndelight%%D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\bin\\main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - Modern-Delight-Forge",
+        "order": 3
+      },
+      "projectName": "Modern-Delight-Forge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmoderndelight%%D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {
+        "MOD_CLASSES": "moderndelight%%D:\\document\\dev\\GitHub\\Modern-Delight-Forge\\bin\\main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}

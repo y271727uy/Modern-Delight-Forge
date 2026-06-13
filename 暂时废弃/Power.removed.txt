@@ -1,2 +1,0 @@
-Legacy note: `Power` was removed after FE-only migration.
-

@@ -3,6 +3,7 @@ package com.y271727uy.moderndelight.fluid.custom;
 import com.y271727uy.moderndelight.block.ModBlocks;
 import com.y271727uy.moderndelight.fluid.ModAbstractFluid;
 import com.y271727uy.moderndelight.fluid.ModFluid;
+import com.y271727uy.moderndelight.fluid.ModFluidTypes;
 import com.y271727uy.moderndelight.item.ModItems;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.LevelReader;
@@ -18,6 +19,11 @@ public abstract class SweetenedWaterFluid extends ModAbstractFluid {
 
     public Fluid getStill() {
         return ModFluid.STILL_SWEETENED_WATER.get();
+    }
+
+    @Override
+    public net.minecraftforge.fluids.FluidType getFluidType() {
+        return ModFluidTypes.SWEETENED_WATER_FLUID_TYPE.get();
     }
 
     public Item getBucketItem() {

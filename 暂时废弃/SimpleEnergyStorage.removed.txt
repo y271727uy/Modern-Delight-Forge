@@ -1,3 +1,0 @@
-Legacy note: `team.reborn.energy.api.base.SimpleEnergyStorage` was removed after migrating the mod to Forge FE (`IEnergyStorage` / `ForgeCapabilities.ENERGY`).
-
-

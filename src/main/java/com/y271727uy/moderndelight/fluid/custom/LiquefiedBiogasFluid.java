@@ -4,6 +4,7 @@ import com.y271727uy.moderndelight.block.ModBlocks;
 import com.y271727uy.moderndelight.block.biogas.GasCanisterBlockEntity;
 import com.y271727uy.moderndelight.fluid.ModAbstractFluid;
 import com.y271727uy.moderndelight.fluid.ModFluid;
+import com.y271727uy.moderndelight.fluid.ModFluidTypes;
 import com.y271727uy.moderndelight.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -32,6 +33,11 @@ public abstract class LiquefiedBiogasFluid extends ModAbstractFluid {
 
     public Fluid getStill() {
         return ModFluid.STILL_LIQUEFIED_BIOGAS.get();
+    }
+
+    @Override
+    public net.minecraftforge.fluids.FluidType getFluidType() {
+        return ModFluidTypes.LIQUEFIED_BIOGAS_FLUID_TYPE.get();
     }
 
     public Item getBucketItem() {

@@ -10,6 +10,7 @@ import com.y271727uy.moderndelight.entity.ModEntities;
 import com.y271727uy.moderndelight.entity.custom.ButterEntity;
 import com.y271727uy.moderndelight.entity.custom.CherryBombEntity;
 import com.y271727uy.moderndelight.fluid.ModFluid;
+import com.y271727uy.moderndelight.fluid.ModFluidTypes;
 import com.y271727uy.moderndelight.item.ModItemGroups;
 import com.y271727uy.moderndelight.item.ModItems;
 import com.y271727uy.moderndelight.networking.NetworkHandler;
@@ -53,6 +54,7 @@ public class ModernDelightMain {
 	public ModernDelightMain() {
 		
 		// Register all mod components
+		ModFluidTypes.FLUID_TYPES.register(EVENT_BUS);
 		ModFluid.registerModFluid(EVENT_BUS);
 		ModItems.registerModItems();
 		ModBlocks.register(EVENT_BUS);

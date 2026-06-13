@@ -3,6 +3,26 @@
   "moderndelight.tooltips.holder": "Can pick up and store container items",
   "moderndelight.tooltips.prohibit_unlimited_nesting": "You can't nest holders inside holders or containers",
   "moderndelight.tooltips.seasoning_added": "Seasonings added",
-  "moderndelight.tooltips.condiment_tip": "Use on food to add seasoning"
+  "moderndelight.tooltips.condiment_tip": "Use on food to add seasoning",
+
+  "moderndelight.jei.mix_with_water": "Glass Bowl Mixing",
+  "moderndelight.jei.whisking": "Whisking",
+  "moderndelight.jei.assembly": "Assembly",
+  "moderndelight.jei.baking_tray": "Baking Tray",
+  "moderndelight.jei.biogas_fermentation": "Biogas Fermentation",
+  "moderndelight.jei.cuisine": "Cuisine",
+  "moderndelight.jei.deep_frying": "Deep Frying",
+  "moderndelight.jei.freezing": "Freezing",
+  "moderndelight.jei.baking": "Baking",
+  "moderndelight.jei.pizza": "Pizza Making",
+  "moderndelight.jei.steaming": "Steaming",
+  "moderndelight.jei.steaming_electric": "Electric Steaming",
+  "moderndelight.jei.advance_furnace": "Advance Furnace Transforming",
+  "moderndelight.jei.oven": "Oven Disassembly",
+  "moderndelight.jei.wooden_basin": "Wooden Basin Pressing",
+  "moderndelight.jei.ice_cream": "Ice Cream Making",
+  "moderndelight.jei.juice_extracting": "Juice Extracting",
+  "moderndelight.jei.instant_noodles": "Instant Noodles Making",
+  "moderndelight.jei.grinding": "Grinding"
 }
 

@@ -125,7 +125,9 @@ obfuscation {
 dependencies {
     modImplementation "maven.modrinth:geckolib:HVdLnQMI"
     modImplementation "maven.modrinth:jei:RTFeXsvE"
-    modImplementation "maven.modrinth:emi:Axuu9I9R"
+    // 临时禁用 EMI：改为 compileOnly，编译期 API 仍可用（EMI 代码无需改动），但运行期不加载 EMI，方便单独查看 JEI 适配。
+    // 恢复方式：改回 modImplementation。
+    modCompileOnly "maven.modrinth:emi:Axuu9I9R"
 
 
     // If you wish to declare dependencies against mods, make sure to use the 'mod*' configurations so that they're remapped.

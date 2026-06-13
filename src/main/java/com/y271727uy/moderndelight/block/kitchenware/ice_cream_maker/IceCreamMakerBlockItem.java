@@ -16,8 +16,10 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.core.animation.AnimationController;
 import software.bernie.geckolib.core.animation.RawAnimation;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 public class IceCreamMakerBlockItem extends BlockItem implements GeoItem {
     public IceCreamMakerBlockItem(Block block) {
@@ -45,6 +47,20 @@ public class IceCreamMakerBlockItem extends BlockItem implements GeoItem {
             tooltip.add(TextUtil.getAltText(false));
         }
         super.appendHoverText(stack, world, tooltip, context);
+    }
+
+    @Override
+    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+        consumer.accept(new IClientItemExtensions() {
+            private IceCreamMakerBlockItemRenderer renderer;
+
+            @Override
+            public IceCreamMakerBlockItemRenderer getCustomRenderer() {
+                if (this.renderer == null)
+                    this.renderer = new IceCreamMakerBlockItemRenderer();
+                return this.renderer;
+            }
+        });
     }
 
     @Override

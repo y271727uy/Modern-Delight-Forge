@@ -10,6 +10,9 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.core.animation.AnimationController;
 import software.bernie.geckolib.core.animation.RawAnimation;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
+
+import java.util.function.Consumer;
 
 public class JuiceExtractorBlockItem extends BlockItem implements GeoItem {
     public JuiceExtractorBlockItem(Block block) {
@@ -18,6 +21,20 @@ public class JuiceExtractorBlockItem extends BlockItem implements GeoItem {
     }
     private static final RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+
+    @Override
+    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+        consumer.accept(new IClientItemExtensions() {
+            private JuiceExtractorBlockItemRenderer renderer;
+
+            @Override
+            public JuiceExtractorBlockItemRenderer getCustomRenderer() {
+                if (this.renderer == null)
+                    this.renderer = new JuiceExtractorBlockItemRenderer();
+                return this.renderer;
+            }
+        });
+    }
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {

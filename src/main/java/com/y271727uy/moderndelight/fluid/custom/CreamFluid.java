@@ -3,6 +3,7 @@ package com.y271727uy.moderndelight.fluid.custom;
 import com.y271727uy.moderndelight.block.ModBlocks;
 import com.y271727uy.moderndelight.fluid.ModAbstractFluid;
 import com.y271727uy.moderndelight.fluid.ModFluid;
+import com.y271727uy.moderndelight.fluid.ModFluidTypes;
 import com.y271727uy.moderndelight.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.Item;
@@ -22,6 +23,11 @@ public abstract class CreamFluid extends ModAbstractFluid {
 
     public Fluid getStill() {
         return ModFluid.STILL_CREAM.get();
+    }
+
+    @Override
+    public net.minecraftforge.fluids.FluidType getFluidType() {
+        return ModFluidTypes.CREAM_FLUID_TYPE.get();
     }
 
     public Item getBucketItem() {

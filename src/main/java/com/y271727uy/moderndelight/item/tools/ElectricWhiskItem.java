@@ -30,12 +30,14 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.core.animation.AnimationController;
 import software.bernie.geckolib.core.animation.RawAnimation;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 
 public class ElectricWhiskItem extends Item implements GeoItem {
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
@@ -232,6 +234,20 @@ public class ElectricWhiskItem extends Item implements GeoItem {
     @Override
     public boolean isBarVisible(ItemStack stack) {
         return true;
+    }
+
+    @Override
+    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+        consumer.accept(new IClientItemExtensions() {
+            private ElectricWhiskItemRenderer renderer;
+
+            @Override
+            public ElectricWhiskItemRenderer getCustomRenderer() {
+                if (this.renderer == null)
+                    this.renderer = new ElectricWhiskItemRenderer();
+                return this.renderer;
+            }
+        });
     }
 
     @Override

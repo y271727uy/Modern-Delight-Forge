@@ -1,2 +1,0 @@
-Legacy note: `DCConsumer` was removed after FE-only migration to Forge item energy capabilities.
-

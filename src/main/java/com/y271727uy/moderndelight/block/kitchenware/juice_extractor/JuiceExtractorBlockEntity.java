@@ -130,7 +130,7 @@ public class JuiceExtractorBlockEntity extends BlockEntity implements GeoBlockEn
     }
 
     public void use(Level world, BlockPos bPos, Player player) {
-        if (!world.isClientSide || world.getBlockState(bPos).getValue(JuiceExtractorBlock.IS_WORKING)){
+        if (world.isClientSide || world.getBlockState(bPos).getValue(JuiceExtractorBlock.IS_WORKING)){
             return;
         }
         InteractionHand hand = player.getUsedItemHand();
@@ -261,7 +261,7 @@ public class JuiceExtractorBlockEntity extends BlockEntity implements GeoBlockEn
     }
 
     public static void tick(Level world, BlockPos bPos, BlockState state, JuiceExtractorBlockEntity entity) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         if (entity.cachedPower != 0){
