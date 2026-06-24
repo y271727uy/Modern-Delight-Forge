@@ -1,8 +1,8 @@
 package com.y271727uy.moderndelight.screen.custom;
 
 import com.y271727uy.moderndelight.block.kitchenware.CuisineTableBlockEntity;
-import com.y271727uy.moderndelight.recipe.custom.CuisineRecipe;
 import com.y271727uy.moderndelight.screen.ModScreenHandlers;
+import com.y271727uy.moderndelight.screen.util.OnlyShowSlotWrapper;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.Container;
@@ -14,9 +14,6 @@ import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.Level;
-
-import java.util.Optional;
 
 public class CuisineTableScreenHandler extends AbstractContainerMenu {
     private final Container inventory;
@@ -37,10 +34,9 @@ public class CuisineTableScreenHandler extends AbstractContainerMenu {
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = ((CuisineTableBlockEntity) blockEntity);
 
-        for (int i = 0; i < 9; ++i){
-            this.addSlot(new Slot(inventory, i, 8 + i * 18, 17));
-        }
-        this.addSlot(new Slot(inventory, 9, 134, 35));
+        this.addSlot(new Slot(inventory, 0, 25, 26));
+        this.addSlot(new Slot(inventory, 1, 25, 47));
+        this.addSlot(new OnlyShowSlotWrapper(inventory, 9, 134, 35));
 
         addPlayerHotbar(playerInventory);
         addPlayerInventory(playerInventory);
@@ -59,11 +55,11 @@ public class CuisineTableScreenHandler extends AbstractContainerMenu {
         if (slot.hasItem()) {
             ItemStack originalStack = slot.getItem();
             newStack = originalStack.copy();
-            if (invSlot < this.inventory.getContainerSize() - 1) {
-                if (!this.moveItemStackTo(originalStack, this.inventory.getContainerSize() - 1, this.slots.size(), true)) {
+            if (invSlot < 2) {
+                if (!this.moveItemStackTo(originalStack, 3, this.slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.moveItemStackTo(originalStack, 0, this.inventory.getContainerSize() - 1, false)) {
+            } else if (invSlot >= 3 && !this.moveItemStackTo(originalStack, 0, 2, false)) {
                 return ItemStack.EMPTY;
             }
 

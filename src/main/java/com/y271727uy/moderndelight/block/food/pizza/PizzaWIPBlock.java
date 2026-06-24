@@ -1,5 +1,6 @@
 package com.y271727uy.moderndelight.block.food.pizza;
 
+import com.y271727uy.moderndelight.block.ModBlocks;
 import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -45,7 +46,7 @@ public class PizzaWIPBlock extends AbstractPizzaBlock {
 
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean moved) {
-        if (state.getBlock() != newState.getBlock() && level.getBlockEntity(pos) instanceof Container container) {
+        if (state.getBlock() != newState.getBlock() && newState.getBlock() != ModBlocks.RAW_PIZZA.get() && level.getBlockEntity(pos) instanceof Container container) {
             Containers.dropContents(level, pos, container);
             level.updateNeighbourForOutputSignal(pos, this);
         }

@@ -101,7 +101,7 @@ public class DeepFryBasketBlock extends BaseEntityBlock {
 
     @Override
     public void playerWillDestroy(Level world, BlockPos pos, BlockState state, Player player) {
-        if (!world.isClientSide){
+        if (!world.isClientSide && !player.isCreative()){
             if (world.getBlockEntity(pos) instanceof DeepFryBasketBlockEntity blockEntity){
                 ItemStack itemStack = new ItemStack(ModBlocks.DEEP_FRY_BASKET_ITEM.get());
                 blockEntity.saveToItem(itemStack);
@@ -130,7 +130,7 @@ public class DeepFryBasketBlock extends BaseEntityBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return InteractionResult.SUCCESS;
         }
         if (MiscUtil.isPlayerHoldingCrowbar(player)){

@@ -26,9 +26,10 @@ public class DeepFryBasketBlockEntityRenderer implements BlockEntityRenderer<Dee
     public void render(DeepFryBasketBlockEntity entity, float tickDelta, PoseStack matrices, MultiBufferSource vertexConsumers, int light, int overlay) {
         ItemRenderer itemRenderer = Minecraft.getInstance().getItemRenderer();
         NonNullList<ItemStack> items = entity.getItems();
-        var direction = entity.getBlockState().getValue(DeepFryerBlock.FACING);
+        var direction = entity.getBlockState().getValue(DeepFryBasketBlock.FACING);
 
         matrices.pushPose();
+        rotateToFacing(matrices, direction);
         matrices.translate(0.35f, 0.3f,0.65f);
         matrices.scale(0.3f,0.3f,0.3f);
         matrices.mulPose(Axis.YP.rotationDegrees(200));
@@ -39,6 +40,7 @@ public class DeepFryBasketBlockEntityRenderer implements BlockEntityRenderer<Dee
         matrices.popPose();
 
         matrices.pushPose();
+        rotateToFacing(matrices, direction);
         matrices.translate(0.35f, 0.3f,0.35f);
         matrices.scale(0.3f,0.3f,0.3f);
         matrices.mulPose(Axis.YP.rotationDegrees(120));
@@ -49,6 +51,7 @@ public class DeepFryBasketBlockEntityRenderer implements BlockEntityRenderer<Dee
         matrices.popPose();
 
         matrices.pushPose();
+        rotateToFacing(matrices, direction);
         matrices.translate(0.65f, 0.3f,0.35f);
         matrices.scale(0.3f,0.3f,0.3f);
         matrices.mulPose(Axis.YP.rotationDegrees(20));
@@ -59,6 +62,7 @@ public class DeepFryBasketBlockEntityRenderer implements BlockEntityRenderer<Dee
         matrices.popPose();
 
         matrices.pushPose();
+        rotateToFacing(matrices, direction);
         matrices.translate(0.65f, 0.3f,0.65f);
         matrices.scale(0.3f,0.3f,0.3f);
         matrices.mulPose(Axis.YP.rotationDegrees(250));
@@ -73,5 +77,16 @@ public class DeepFryBasketBlockEntityRenderer implements BlockEntityRenderer<Dee
         int blockLight = world.getBrightness(LightLayer.BLOCK, pos);
         int skyLight = world.getBrightness(LightLayer.SKY, pos);
         return LightTexture.pack(blockLight,skyLight);
+    }
+
+    private void rotateToFacing(PoseStack matrices, net.minecraft.core.Direction direction) {
+        matrices.translate(0.5f, 0.0f, 0.5f);
+        matrices.mulPose(Axis.YP.rotationDegrees(switch (direction) {
+            case EAST -> 90;
+            case SOUTH -> 180;
+            case WEST -> 270;
+            default -> 0;
+        }));
+        matrices.translate(-0.5f, 0.0f, -0.5f);
     }
 }

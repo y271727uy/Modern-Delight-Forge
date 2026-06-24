@@ -50,9 +50,9 @@ public class GlassCupBlock extends Block {
 
     @Override
     public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
-        if (!level.isClientSide) {
+        if (!level.isClientSide && !player.isCreative()) {
             int cups = state.getValue(CUPS);
-            Block.popResource(level, pos, new ItemStack(ModBlocks.GLASS_CUP.get(), cups));
+            Block.popResource(level, pos, new ItemStack(ModBlocks.GLASS_CUP_ITEM.get(), cups));
         }
         super.playerWillDestroy(level, pos, state, player);
     }
@@ -75,7 +75,7 @@ public class GlassCupBlock extends Block {
 
     @Override
     public boolean canBeReplaced(BlockState state, BlockPlaceContext context) {
-        return context.getItemInHand().is(ModBlocks.GLASS_CUP.get().asItem()) && state.getValue(CUPS) < 4 || super.canBeReplaced(state, context);
+        return context.getItemInHand().is(ModBlocks.GLASS_CUP_ITEM.get()) && state.getValue(CUPS) < 4 || super.canBeReplaced(state, context);
     }
 
     @Override

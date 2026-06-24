@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -58,17 +59,19 @@ public class DeepFryBasketBlockEntity extends BlockEntity implements Implemented
 
     @Override
     public void load(CompoundTag nbt) {
-        for (int i = 0; i < inventory.size(); i++) {
-            inventory.set(i, ItemStack.of(nbt.getCompound("Item" + i)));
+        if (nbt.contains("Items", 9)) {
+            ContainerHelper.loadAllItems(nbt, inventory);
+        } else {
+            for (int i = 0; i < inventory.size(); i++) {
+                inventory.set(i, ItemStack.of(nbt.getCompound("Item" + i)));
+            }
         }
         super.load(nbt);
     }
 
     @Override
     protected void saveAdditional(CompoundTag nbt) {
-        for (int i = 0; i < inventory.size(); i++) {
-            nbt.put("Item" + i, inventory.get(i).save(new CompoundTag()));
-        }
+        ContainerHelper.saveAllItems(nbt, inventory);
         super.saveAdditional(nbt);
     }
 

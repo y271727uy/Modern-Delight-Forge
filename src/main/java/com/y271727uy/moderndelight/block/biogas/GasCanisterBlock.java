@@ -1,11 +1,17 @@
 package com.y271727uy.moderndelight.block.biogas;
 
 import com.y271727uy.moderndelight.util.MiscUtil;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -61,17 +67,63 @@ public class GasCanisterBlock extends BaseEntityBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (MiscUtil.isPlayerHoldingCrowbar(player) || player.getMainHandItem().is(Items.FLINT_AND_STEEL) || player.getOffhandItem().is(Items.FLINT_AND_STEEL)
-                || player.getMainHandItem().is(Items.FIRE_CHARGE) || player.getOffhandItem().is(Items.FIRE_CHARGE)) {
-            if (!level.isClientSide) {
-                level.destroyBlock(pos, true);
-            }
-            return InteractionResult.sidedSuccess(level.isClientSide);
+        if (level.isClientSide) {
+            return InteractionResult.SUCCESS;
         }
-        if (!level.isClientSide && level.getBlockEntity(pos) instanceof GasCanisterBlockEntity blockEntity && player instanceof ServerPlayer serverPlayer) {
+        if (MiscUtil.isPlayerHoldingCrowbar(player)) {
+            Direction dir = state.getValue(FACING);
+            level.setBlock(pos, state.setValue(FACING, switch (dir) {
+                case EAST -> Direction.SOUTH;
+                case SOUTH -> Direction.WEST;
+                case WEST -> Direction.NORTH;
+                default -> Direction.EAST;
+            }), 3);
+            return InteractionResult.CONSUME;
+        }
+        if (player.getMainHandItem().is(Items.FLINT_AND_STEEL) || player.getOffhandItem().is(Items.FLINT_AND_STEEL)
+                || player.getMainHandItem().is(Items.FIRE_CHARGE) || player.getOffhandItem().is(Items.FIRE_CHARGE)) {
+            if (level.getBlockEntity(pos) instanceof GasCanisterBlockEntity blockEntity) {
+                blockEntity.use(player, level);
+            }
+            return InteractionResult.CONSUME;
+        }
+        if (level.getBlockEntity(pos) instanceof GasCanisterBlockEntity blockEntity && player instanceof ServerPlayer serverPlayer) {
             NetworkHooks.openScreen(serverPlayer, blockEntity, pos);
         }
-        return InteractionResult.sidedSuccess(level.isClientSide);
+        return InteractionResult.CONSUME;
+    }
+
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        return defaultBlockState()
+                .setValue(FACING, context.getHorizontalDirection().getOpposite())
+                .setValue(WATERLOGGED, context.getLevel().getFluidState(context.getClickedPos()).getType() == net.minecraft.world.level.material.Fluids.WATER);
+    }
+
+    @Override
+    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+        if (!level.isClientSide && !player.isCreative() && level.getBlockEntity(pos) instanceof GasCanisterBlockEntity blockEntity) {
+            ItemStack stack = new ItemStack(com.y271727uy.moderndelight.block.ModBlocks.GAS_CANISTER_ITEM.get());
+            writeBlockEntityData(stack, blockEntity);
+            ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, stack);
+            itemEntity.setDefaultPickUpDelay();
+            level.addFreshEntity(itemEntity);
+        }
+        super.playerWillDestroy(level, pos, state, player);
+    }
+
+    @Override
+    public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos, Player player) {
+        ItemStack stack = new ItemStack(com.y271727uy.moderndelight.block.ModBlocks.GAS_CANISTER_ITEM.get());
+        if (level.getBlockEntity(pos) instanceof GasCanisterBlockEntity blockEntity) {
+            writeBlockEntityData(stack, blockEntity);
+        }
+        return stack;
+    }
+
+    private static void writeBlockEntityData(ItemStack stack, GasCanisterBlockEntity blockEntity) {
+        CompoundTag tag = blockEntity.saveWithoutMetadata();
+        BlockItem.setBlockEntityData(stack, com.y271727uy.moderndelight.block.ModBlockEntities.GAS_CANISTER_BLOCK_ENTITY.get(), tag);
     }
 
     @Override

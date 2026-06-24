@@ -65,7 +65,7 @@ public class GlassBowlBlockEntity extends BlockEntity implements ImplementedInve
     }
 
     public void use(@Nonnull Player player, BlockState state, Level world){
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         Item offHandItem = player.getOffhandItem().getItem();
@@ -184,9 +184,6 @@ public class GlassBowlBlockEntity extends BlockEntity implements ImplementedInve
         world.setBlock(worldPosition,state.setValue(GlassBowlBlock.HAS_ITEM,false), 3);
     }
     private void spawnItem(Level world){
-        if (!world.isClientSide){
-            return;
-        }
         Block.popResource(world, this.worldPosition,
                 getItems().get(0));
         GLASS_BOWL_INV.clear();

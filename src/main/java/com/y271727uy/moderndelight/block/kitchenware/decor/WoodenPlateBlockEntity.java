@@ -8,6 +8,9 @@ import com.y271727uy.moderndelight.util.enums.ShowAbleItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.Containers;
@@ -40,6 +43,7 @@ public class WoodenPlateBlockEntity extends BlockEntity implements ImplementedIn
             inventory.set(i, ItemStack.of(nbt.getCompound("Item" + i)));
         }
         rotate = nbt.getInt("wooden_plate_rotate");
+        updateShowingState();
     }
 
     @Override
@@ -73,9 +77,32 @@ public class WoodenPlateBlockEntity extends BlockEntity implements ImplementedIn
                 }
             }
             level.updateNeighborsAt(worldPosition, getBlockState().getBlock());
+            if (!level.isClientSide) {
+                updateShowingState();
+                level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), Block.UPDATE_ALL);
+            }
             ItemStackSyncS2CPacket.send(worldPosition, getItems(), level);
         }
         super.setChanged();
+    }
+
+    @Override
+    public Packet<ClientGamePacketListener> getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    @Override
+    public CompoundTag getUpdateTag() {
+        return saveWithoutMetadata();
+    }
+
+    private void updateShowingState() {
+        if (level != null && !level.isClientSide && getBlockState().hasProperty(WoodenPlateBlock.SHOWING_ITEM)) {
+            ShowAbleItems value = getItem(0).isEmpty() ? ShowAbleItems.EMPTY : ShowAbleItems.getValue(getItem(0).getItem());
+            if (getBlockState().getValue(WoodenPlateBlock.SHOWING_ITEM) != value) {
+                level.setBlock(worldPosition, getBlockState().setValue(WoodenPlateBlock.SHOWING_ITEM, value), 3);
+            }
+        }
     }
     
     public ItemStack getRenderStack(){

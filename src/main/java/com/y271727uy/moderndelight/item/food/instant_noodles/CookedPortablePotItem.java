@@ -11,6 +11,8 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -71,6 +73,8 @@ public class CookedPortablePotItem extends Item {
         if (livingEntity instanceof Player player && !level.isClientSide) {
             if (PortablePotItem.isUnhealthy(stack)) {
                 player.getFoodData().eat(3, 0.1F);
+                player.addEffect(new MobEffectInstance(MobEffects.HUNGER, 600, 0));
+                player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200, 0));
             } else {
                 player.getFoodData().eat(8, 1.5F);
             }

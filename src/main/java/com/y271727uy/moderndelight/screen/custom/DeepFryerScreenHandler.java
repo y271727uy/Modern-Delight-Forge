@@ -7,6 +7,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.FriendlyByteBuf;
@@ -18,14 +19,7 @@ public class DeepFryerScreenHandler extends AbstractContainerMenu {
     public final DeepFryerBlockEntity blockEntity;
     public DeepFryerScreenHandler(int syncId, Inventory inventory, FriendlyByteBuf buf){
         this(syncId, inventory, inventory.player.level().getBlockEntity(buf.readBlockPos()),
-                new ContainerData() {
-                    @Override
-                    public int get(int index) { return 0; }
-                    @Override
-                    public void set(int index, int value) {}
-                    @Override
-                    public int getCount() { return 6; }
-                });
+                new SimpleContainerData(6));
     }
     public DeepFryerScreenHandler(int syncId, Inventory playerInventory,
                                   net.minecraft.world.level.block.entity.BlockEntity blockEntity, ContainerData containerData){

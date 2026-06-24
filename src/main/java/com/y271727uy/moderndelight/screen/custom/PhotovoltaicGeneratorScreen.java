@@ -89,25 +89,25 @@ public class PhotovoltaicGeneratorScreen extends AbstractContainerScreen<Photovo
     }
 
     private void renderDayNightIcon(GuiGraphics guiGraphics, int x, int y) {
-        if (!Objects.requireNonNull(menu.blockEntity.getLevel()).dimensionType().fixedTime().isEmpty()){
-            if (PhotovoltaicGeneratorBlockEntity.isEarlyMorningOrTwilight(Objects.requireNonNull(menu.blockEntity.getLevel())) &&
+        if (menu.blockEntity.getLevel() != null && menu.blockEntity.getLevel().dimensionType().fixedTime().isEmpty()){
+            if (PhotovoltaicGeneratorBlockEntity.isEarlyMorningOrTwilight(menu.blockEntity.getLevel()) &&
                     menu.blockEntity.getLevel().isThundering()){
                 guiGraphics.blit(TEXTURE, x + 38, y + 54,204,67,14,14);
-            } else if (PhotovoltaicGeneratorBlockEntity.isEarlyMorningOrTwilight(Objects.requireNonNull(menu.blockEntity.getLevel())) &&
+            } else if (PhotovoltaicGeneratorBlockEntity.isEarlyMorningOrTwilight(menu.blockEntity.getLevel()) &&
                     menu.blockEntity.getLevel().isRaining()) {
                 guiGraphics.blit(TEXTURE, x + 38, y + 54,190,67,14,14);
-            } else if (PhotovoltaicGeneratorBlockEntity.isEarlyMorningOrTwilight(Objects.requireNonNull(menu.blockEntity.getLevel()))) {
+            } else if (PhotovoltaicGeneratorBlockEntity.isEarlyMorningOrTwilight(menu.blockEntity.getLevel())) {
                 guiGraphics.blit(TEXTURE, x + 38, y + 54,176,67,14,14);
-            } else if ((PhotovoltaicGeneratorBlockEntity.isMorningOrAfternoon(Objects.requireNonNull(menu.blockEntity.getLevel())) ||
-                    PhotovoltaicGeneratorBlockEntity.isNoon(Objects.requireNonNull(menu.blockEntity.getLevel())))
+            } else if ((PhotovoltaicGeneratorBlockEntity.isMorningOrAfternoon(menu.blockEntity.getLevel()) ||
+                    PhotovoltaicGeneratorBlockEntity.isNoon(menu.blockEntity.getLevel()))
                     && menu.blockEntity.getLevel().isThundering()){
                 guiGraphics.blit(TEXTURE, x + 38, y + 54,204,53,14,14);
-            } else if ((PhotovoltaicGeneratorBlockEntity.isMorningOrAfternoon(Objects.requireNonNull(menu.blockEntity.getLevel())) ||
-                    PhotovoltaicGeneratorBlockEntity.isNoon(Objects.requireNonNull(menu.blockEntity.getLevel())))
+            } else if ((PhotovoltaicGeneratorBlockEntity.isMorningOrAfternoon(menu.blockEntity.getLevel()) ||
+                    PhotovoltaicGeneratorBlockEntity.isNoon(menu.blockEntity.getLevel()))
                     && menu.blockEntity.getLevel().isRaining()){
                 guiGraphics.blit(TEXTURE, x + 38, y + 54,190,53,14,14);
-            } else if ((PhotovoltaicGeneratorBlockEntity.isMorningOrAfternoon(Objects.requireNonNull(menu.blockEntity.getLevel())) ||
-                    PhotovoltaicGeneratorBlockEntity.isNoon(Objects.requireNonNull(menu.blockEntity.getLevel())))){
+            } else if ((PhotovoltaicGeneratorBlockEntity.isMorningOrAfternoon(menu.blockEntity.getLevel()) ||
+                    PhotovoltaicGeneratorBlockEntity.isNoon(menu.blockEntity.getLevel()))){
                 guiGraphics.blit(TEXTURE, x + 38, y + 54,176,53,14,14);
             } else if (menu.blockEntity.getLevel().isThundering()) {
                 guiGraphics.blit(TEXTURE, x + 38, y + 54,204,81,14,14);

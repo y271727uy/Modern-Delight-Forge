@@ -146,9 +146,9 @@ public class IceCreamMakerBlockEntity extends BlockEntity implements GeoBlockEnt
                                 }
                             }
                         }
-                        this.removeItemNoUpdate(0);
-                        this.removeItemNoUpdate(1);
-                        this.removeItemNoUpdate(2);
+                        this.removeItem(0, 1);
+                        this.removeItem(1, 1);
+                        this.removeItem(2, 1);
                         ItemStack stack3 = this.getItem(3);
                         int count = stack3.getCount();
                         if (stack3.isEmpty()){

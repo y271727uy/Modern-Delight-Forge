@@ -52,8 +52,13 @@ public class PizzaWIPBlockEntity extends AbstractPizzaBlockEntity {
             CompoundTag nbt = saveWithoutMetadata();
             BlockItem.setBlockEntityData(rawPizza, ModBlockEntities.RAW_PIZZA_BLOCK_ENTITY.get(), nbt);
             playSound(SoundEvents.HONEY_BLOCK_PLACE, 1.0f, level.random.nextFloat() + 0.1f);
-            Block.popResource(level, worldPosition, rawPizza);
-            level.removeBlock(worldPosition, false);
+            level.setBlock(worldPosition, ModBlocks.RAW_PIZZA.get().defaultBlockState(), 3);
+            if (level.getBlockEntity(worldPosition) instanceof RawPizzaBlockEntity rawPizzaBlockEntity) {
+                rawPizzaBlockEntity.load(nbt);
+                rawPizzaBlockEntity.setChanged();
+            } else {
+                Block.popResource(level, worldPosition, rawPizza);
+            }
         } else {
             player.displayClientMessage(Component.translatable(NEED_CHEESE), true);
         }

@@ -31,4 +31,14 @@ public class RawPizzaBlock extends AbstractPizzaBlock {
         }
         super.onRemove(state, level, pos, newState, moved);
     }
+
+    @Override
+    public ItemStack getCloneItemStack(BlockState state, net.minecraft.world.phys.HitResult target, net.minecraft.world.level.BlockGetter level, BlockPos pos, net.minecraft.world.entity.player.Player player) {
+        ItemStack itemStack = new ItemStack(ModBlocks.RAW_PIZZA_ITEM.get());
+        if (level.getBlockEntity(pos) instanceof RawPizzaBlockEntity blockEntity) {
+            CompoundTag tag = blockEntity.saveWithoutMetadata();
+            BlockItem.setBlockEntityData(itemStack, ModBlockEntities.RAW_PIZZA_BLOCK_ENTITY.get(), tag);
+        }
+        return itemStack;
+    }
 }

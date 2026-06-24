@@ -1,14 +1,23 @@
 package com.y271727uy.moderndelight.block.power.batteries;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
 import com.y271727uy.moderndelight.ModernDelightMain;
 import com.y271727uy.moderndelight.block.ModBlockEntities;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.energy.IEnergyStorage;
 
 public abstract class AbstractBatteryBlock extends BaseEntityBlock {
@@ -21,6 +30,44 @@ public abstract class AbstractBatteryBlock extends BaseEntityBlock {
     }
 
     public abstract long getMaxPower();
+
+    @Override
+    public RenderShape getRenderShape(BlockState state) {
+        return RenderShape.MODEL;
+    }
+
+    @Override
+    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+        if (!level.isClientSide && !player.isCreative() && level.getBlockEntity(pos) instanceof BatteryBlockEntity blockEntity) {
+            ItemStack stack = new ItemStack(getBlock().asItem());
+            writeBlockEntityData(stack, blockEntity, this);
+            ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, stack);
+            itemEntity.setDefaultPickUpDelay();
+            level.addFreshEntity(itemEntity);
+        }
+        super.playerWillDestroy(level, pos, state, player);
+    }
+
+    @Override
+    public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos, Player player) {
+        ItemStack stack = new ItemStack(getBlock().asItem());
+        BlockEntity blockEntity = level.getBlockEntity(pos);
+        if (blockEntity instanceof BatteryBlockEntity batteryBlockEntity) {
+            writeBlockEntityData(stack, batteryBlockEntity, this);
+        } else {
+            setBatteryEnergy(stack, 0);
+        }
+        return stack;
+    }
+
+    private static void writeBlockEntityData(ItemStack stack, BatteryBlockEntity blockEntity, AbstractBatteryBlock batteryBlock) {
+        CompoundTag tag = blockEntity.saveWithoutMetadata();
+        int energy = Mth.clamp(tag.getInt(BATTERY_ENERGY_TAG), 0, getMaxEnergy(batteryBlock));
+        tag.putInt(BATTERY_ENERGY_TAG, energy);
+        tag.putLong(BATTERY_POWER_TAG, energy / 10L);
+        tag.putLong(BATTERY_MAX_POWER_TAG, batteryBlock.getMaxPower());
+        BlockItem.setBlockEntityData(stack, ModBlockEntities.BATTERY_BLOCK_ENTITY.get(), tag);
+    }
 
     public static int getBatteryEnergy(ItemStack batteryItem) {
         if (batteryItem.getItem() instanceof BlockItem blockItem){

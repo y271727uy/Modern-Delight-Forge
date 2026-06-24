@@ -1,7 +1,9 @@
 package com.y271727uy.moderndelight.block.power;
 
+import com.y271727uy.moderndelight.util.MiscUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -22,6 +24,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
 
 import javax.annotation.Nullable;
 
@@ -54,14 +57,23 @@ public class ChargingPostBlock extends BaseEntityBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        Direction dir = state.getValue(FACING);
-        level.setBlock(pos, state.setValue(FACING, switch (dir) {
-            case EAST -> Direction.SOUTH;
-            case SOUTH -> Direction.WEST;
-            case WEST -> Direction.NORTH;
-            default -> Direction.EAST;
-        }), 3);
-        return InteractionResult.SUCCESS;
+        if (level.isClientSide) {
+            return InteractionResult.SUCCESS;
+        }
+        if (MiscUtil.isPlayerHoldingCrowbar(player)) {
+            Direction dir = state.getValue(FACING);
+            level.setBlock(pos, state.setValue(FACING, switch (dir) {
+                case EAST -> Direction.SOUTH;
+                case SOUTH -> Direction.WEST;
+                case WEST -> Direction.NORTH;
+                default -> Direction.EAST;
+            }), 3);
+            return InteractionResult.CONSUME;
+        }
+        if (level.getBlockEntity(pos) instanceof ChargingPostBlockEntity blockEntity && player instanceof ServerPlayer serverPlayer) {
+            NetworkHooks.openScreen(serverPlayer, blockEntity, pos);
+        }
+        return InteractionResult.CONSUME;
     }
 
     @Override
@@ -87,6 +99,6 @@ public class ChargingPostBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public net.minecraft.world.level.block.entity.BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return null;
+        return new ChargingPostBlockEntity(pos, state);
     }
 }

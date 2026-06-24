@@ -22,6 +22,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -252,7 +255,13 @@ public class GasCanisterBlockEntity extends BlockEntity implements MenuProvider 
         super.load(nbt);
         fluidStorage.variant = FluidVariant.fromNbt(nbt.getCompound("gas_canister.fluid_variant"));
         fluidStorage.amount = nbt.getLong("gas_canister.fluid_amount");
+        gasValue = (int) FluidStack.convertDropletsToMb(fluidStorage.amount);
         setChanged();
+    }
+
+    @Override
+    public Packet<ClientGamePacketListener> getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
     }
 
     @Override
@@ -287,6 +296,9 @@ public class GasCanisterBlockEntity extends BlockEntity implements MenuProvider 
     public void setChanged() {
         if (level != null) {
             level.updateNeighbourForOutputSignal(worldPosition, getBlockState().getBlock());
+            if (!level.isClientSide) {
+                level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), Block.UPDATE_ALL);
+            }
         }
         super.setChanged();
     }

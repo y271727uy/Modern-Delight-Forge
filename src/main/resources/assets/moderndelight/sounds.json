@@ -55,6 +55,7 @@
   },
   "block_food_frying": {
     "subtitle": "sounds.moderndelight.block_food_frying",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:food_frying"
     ]
@@ -73,6 +74,7 @@
   },
   "block_gas_canister_filling": {
     "subtitle": "sounds.moderndelight.block_gas_canister_filling",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:gas_canister_filling"
     ]
@@ -85,6 +87,7 @@
   },
   "block_sterling_engine": {
     "subtitle": "sounds.moderndelight.block_sterling_engine",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:sterling_engine_1",
       "moderndelight:sterling_engine_2",
@@ -95,18 +98,21 @@
   },
   "block_sterling_engine_start": {
     "subtitle": "sounds.moderndelight.block_sterling_engine_start",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:sterling_engine_start"
     ]
   },
   "block_sterling_engine_stop": {
     "subtitle": "sounds.moderndelight.block_sterling_engine_stop",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:sterling_engine_stop"
     ]
   },
   "block_tesla_coil": {
     "subtitle": "sounds.moderndelight.block_tesla_coil",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:tesla_coil_1",
       "moderndelight:tesla_coil_2",
@@ -121,12 +127,14 @@
   },
   "block_juice_extractor_working": {
     "subtitle": "sounds.moderndelight.block_juice_extractor_working",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:juicer_work"
     ]
   },
   "block_juice_extractor_scream": {
     "subtitle": "sounds.moderndelight.block_juice_extractor_scream",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:juicer_scream_1",
       "moderndelight:juicer_scream_2",
@@ -138,6 +146,7 @@
   },
   "block_juice_extractor_stop": {
     "subtitle": "sounds.moderndelight.block_juice_extractor_stop",
+    "attenuation_distance": 16,
     "sounds": [
       "moderndelight:juicer_stop"
     ]

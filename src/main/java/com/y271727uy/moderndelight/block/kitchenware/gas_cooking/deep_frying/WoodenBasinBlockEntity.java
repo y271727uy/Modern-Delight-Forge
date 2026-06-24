@@ -149,7 +149,7 @@ public class WoodenBasinBlockEntity extends BlockEntity implements ImplementedIn
     }
     
     public void onLandedUpon(Level world, LivingEntity entity) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         SimpleContainer inv = new SimpleContainer(1);
@@ -256,7 +256,7 @@ public class WoodenBasinBlockEntity extends BlockEntity implements ImplementedIn
     }
     
     public void tick(Level world, BlockPos pos, BlockState state) {
-        if(!world.isClientSide){
+        if(world.isClientSide){
             return;
         }
         if (getItem(INPUT_SLOT).getItem().equals(Items.BUCKET) &&
