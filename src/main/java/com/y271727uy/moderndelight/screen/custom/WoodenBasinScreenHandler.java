@@ -26,10 +26,27 @@ public class WoodenBasinScreenHandler extends AbstractContainerMenu {
         ((Container) blockEntity).startOpen(playerInventory.player);
         this.blockEntity = ((WoodenBasinBlockEntity) blockEntity);
 
-        this.addSlot(new Slot(inventory,0,20,21));
+        this.addSlot(new Slot(inventory,0,20,21) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return stack.getItem() == Items.BUCKET || stack.getItem() == Items.GLASS_BOTTLE;
+            }
+        });
         this.addSlot(new OnlyExtractSlot( inventory,1,20,52));
-        this.addSlot(new Slot(inventory,2,95,53));
-        this.addSlot(new Slot(inventory,3,95,21));
+        this.addSlot(new Slot(inventory,2,95,53) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return WoodenBasinBlockEntity.isFilter(stack.getItem());
+            }
+        });
+        this.addSlot(new Slot(inventory,3,95,21) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return stack.getItem() != Items.BUCKET
+                        && stack.getItem() != Items.GLASS_BOTTLE
+                        && !WoodenBasinBlockEntity.isFilter(stack.getItem());
+            }
+        });
         this.addSlot(new OnlyExtractSlot( inventory,4,141,53));
 
         addPlayerHotbar(playerInventory);

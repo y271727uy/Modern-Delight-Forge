@@ -39,6 +39,8 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class WoodenBasinBlock extends BaseEntityBlock implements SimpleWaterloggedBlock{
+    private static final String LAST_PRESS_TICK_KEY = "moderndelight.last_wooden_basin_press_tick";
+
     public WoodenBasinBlock() {
         super(Properties.copy(Blocks.BARREL).noOcclusion());
         registerDefaultState(this.getStateDefinition().any().setValue(WATERLOGGED,false));
@@ -126,6 +128,25 @@ public class WoodenBasinBlock extends BaseEntityBlock implements SimpleWaterlogg
             }
         }
         super.fallOn(world, state, pos, entity, fallDistance);
+    }
+
+    @Override
+    public void stepOn(Level world, BlockPos pos, BlockState state, Entity entity) {
+        if (!world.isClientSide && canPress(world, entity)) {
+            long gameTime = world.getGameTime();
+            long lastPressTick = entity.getPersistentData().getLong(LAST_PRESS_TICK_KEY);
+            if (gameTime - lastPressTick >= 20 && world.getBlockEntity(pos) instanceof WoodenBasinBlockEntity blockEntity
+                    && blockEntity.onLandedUpon(world, (LivingEntity) entity)) {
+                entity.getPersistentData().putLong(LAST_PRESS_TICK_KEY, gameTime);
+            }
+        }
+        super.stepOn(world, pos, state, entity);
+    }
+
+    private boolean canPress(Level world, Entity entity) {
+        return entity instanceof LivingEntity
+                && (entity instanceof Player || world.getGameRules().getBoolean(GameRules.RULE_MOBGRIEFING))
+                && entity.getBbWidth() * entity.getBbWidth() * entity.getBbHeight() > 0.512f;
     }
     
     @Override

@@ -3,9 +3,12 @@ package com.y271727uy.moderndelight.screen.util;
 import com.google.common.base.Preconditions;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.y271727uy.moderndelight.util.FluidStack;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 
 import java.util.ArrayList;
@@ -40,18 +43,19 @@ public class FluidStackRenderer {
         y+=height;
         net.minecraftforge.fluids.FluidType fluidType = fluidStack.stack.getFluid().getFluidType();
         IClientFluidTypeExtensions extensions = IClientFluidTypeExtensions.of(fluidType);
-        ResourceLocation sprite = extensions.getStillTexture();
+        ResourceLocation texture = extensions.getStillTexture();
         int color = extensions.getTintColor();
 
         final int drawHeight = (int)(fluidStack.getAmount()/(capacityDrop*1f)*height);
-        if (sprite != null) {
+        if (texture != null) {
+            TextureAtlasSprite sprite = Minecraft.getInstance().getTextureAtlas(InventoryMenu.BLOCK_ATLAS).apply(texture);
             int offsetHeight = drawHeight;
             RenderSystem.setShaderColor((color >> 16 & 255) / 255.0F, (float) (color >> 8 & 255) / 255.0F, (float) (color & 255) / 255.0F, 1F);
             int iteration = 0;
             while(offsetHeight != 0){
                 final int curHeight = Math.min(offsetHeight, height);
 
-                context.blit(sprite, x, y - offsetHeight, 0, 0, width, curHeight, width, curHeight);
+                context.blit(x, y - offsetHeight, 0, width, curHeight, sprite);
                 offsetHeight -= curHeight;
                 iteration ++;
                 if (iteration>50){

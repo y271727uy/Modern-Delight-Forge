@@ -25,8 +25,8 @@ public class ModFluidTypes {
                 @Override
                 public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
                     consumer.accept(new IClientFluidTypeExtensions() {
-                        private static final ResourceLocation STILL = new ResourceLocation("minecraft:block/water_still");
-                        private static final ResourceLocation FLOW = new ResourceLocation("minecraft:block/water_flow");
+                        private static final ResourceLocation STILL = new ResourceLocation(ModernDelightMain.MOD_ID, "block/vegetable_oil_still");
+                        private static final ResourceLocation FLOW = new ResourceLocation(ModernDelightMain.MOD_ID, "block/vegetable_oil_flow");
 
                         @Override
                         public ResourceLocation getStillTexture() { return STILL; }

@@ -148,9 +148,9 @@ public class WoodenBasinBlockEntity extends BlockEntity implements ImplementedIn
         return false;
     }
     
-    public void onLandedUpon(Level world, LivingEntity entity) {
+    public boolean onLandedUpon(Level world, LivingEntity entity) {
         if (world.isClientSide){
-            return;
+            return false;
         }
         SimpleContainer inv = new SimpleContainer(1);
         inv.setItem(0,getItem(INGREDIENT_SLOT));
@@ -196,9 +196,12 @@ public class WoodenBasinBlockEntity extends BlockEntity implements ImplementedIn
                     entity.setSecondsOnFire(5);
                     createFire(world);
                 }
+                setChanged();
+                return true;
             }
         }
         setChanged();
+        return false;
     }
     
     private boolean canLightFire(Level world, BlockPos pos) {

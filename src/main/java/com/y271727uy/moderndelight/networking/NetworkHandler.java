@@ -58,5 +58,10 @@ public class NetworkHandler {
                 .decoder(IntegerSyncS2CPacket::decode)
                 .consumerMainThread(IntegerSyncS2CPacket::handle)
                 .add();
+        CHANNEL.messageBuilder(FluidSyncS2CPacket.class, id++, NetworkDirection.PLAY_TO_CLIENT)
+                .encoder(FluidSyncS2CPacket::encode)
+                .decoder(FluidSyncS2CPacket::decode)
+                .consumerMainThread(FluidSyncS2CPacket::handle)
+                .add();
     }
 }

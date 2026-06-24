@@ -102,9 +102,6 @@ public class ModernDelightClient {
     }
 
     private static void registerRenderLayers() {
-        // Note: In Forge 1.20.1, render layers are handled automatically for most cases
-        // These calls are deprecated and can be removed if needed
-        /*
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_BOWL.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.DEEP_FRYER.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WOODEN_PLATE.get(), RenderType.translucent());
@@ -112,7 +109,6 @@ public class ModernDelightClient {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WILD_PEPPER_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GARLIC_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WILD_GARLIC.get(), RenderType.cutout());
-        */
     }
 
     public static void registerModelPredicateProviders() {

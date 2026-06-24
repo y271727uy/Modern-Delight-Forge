@@ -237,7 +237,14 @@ public class ModItems {
     public static final RegistryObject<Item> SPATULA = registerItem("spatula", () -> new SpatulaItem(Tiers.IRON,2.5f,-2.8f));
     public static final RegistryObject<Item> ROASTED_SUNFLOWER_SEED = registerItem("roasted_sunflower_seed", () -> new Item(new Item.Properties()
             .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.2f).build())));
-    public static final RegistryObject<Item> FILTER = registerItem("filter", () -> new Item(new Item.Properties()){
+    public static final RegistryObject<Item> FILTER = registerItem("filter", () -> new Item(new Item.Properties()
+            .durability(ModToolMaterials.STRING.getUses())){
+        @Override
+        public boolean isValidRepairItem(ItemStack stack, ItemStack repairCandidate) {
+            return ModToolMaterials.STRING.getRepairIngredient().test(repairCandidate)
+                    || super.isValidRepairItem(stack, repairCandidate);
+        }
+
         @Override
         public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag context) {
             if(Screen.hasShiftDown()){
