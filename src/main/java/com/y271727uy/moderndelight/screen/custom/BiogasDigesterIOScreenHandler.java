@@ -61,11 +61,7 @@ public class BiogasDigesterIOScreenHandler extends AbstractContainerMenu {
     }
 
     public int getGasValue() {
-        int gasValue = data.get(2);
-        if (data.get(4) != 0) {
-            gasValue = gasValue * 19;
-        }
-        return gasValue;
+        return (data.get(4) << 16) | (data.get(2) & 0xFFFF);
     }
 
     public boolean isChecked() {

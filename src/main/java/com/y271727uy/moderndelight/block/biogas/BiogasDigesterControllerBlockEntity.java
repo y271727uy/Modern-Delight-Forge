@@ -27,8 +27,6 @@ public class BiogasDigesterControllerBlockEntity extends BlockEntity implements 
     private int size = 0;
     private int gasValue = 0;
     private int maxGasValue = 0;
-    private int shortGasValue = 0;
-    private int isSplit = 0;
 
     public BiogasDigesterControllerBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.BIOGAS_DIGESTER_CONTROLLER_BLOCK_ENTITY.get(), pos, state);
@@ -38,8 +36,8 @@ public class BiogasDigesterControllerBlockEntity extends BlockEntity implements 
                 return switch (index) {
                     case 0 -> BiogasDigesterControllerBlockEntity.this.checked;
                     case 1 -> BiogasDigesterControllerBlockEntity.this.size;
-                    case 2 -> BiogasDigesterControllerBlockEntity.this.shortGasValue;
-                    case 3 -> BiogasDigesterControllerBlockEntity.this.isSplit;
+                    case 2 -> BiogasDigesterControllerBlockEntity.this.gasValue & 0xFFFF;
+                    case 3 -> BiogasDigesterControllerBlockEntity.this.gasValue >>> 16;
                     default -> 0;
                 };
             }
@@ -112,7 +110,7 @@ public class BiogasDigesterControllerBlockEntity extends BlockEntity implements 
     private int time = 60;
 
     public void tick(Level world, BlockPos pos) {
-        if (!world.isClientSide) {
+        if (world.isClientSide) {
             return;
         }
         time--;
@@ -131,13 +129,6 @@ public class BiogasDigesterControllerBlockEntity extends BlockEntity implements 
         } else {
             maxGasValue = 0;
             setChanged();
-        }
-        if (gasValue >= Short.MAX_VALUE) {
-            shortGasValue = gasValue / 19;
-            isSplit = 1;
-        } else {
-            shortGasValue = gasValue;
-            isSplit = 0;
         }
         if (gasValue > maxGasValue && time == 1) {
             if (gasValue >= 1000) {

@@ -123,7 +123,7 @@ public class ChargingPostBlockEntity extends BlockEntity implements net.minecraf
     }
 
     public void tick(Level world) {
-        if (!world.isClientSide) {
+        if (world.isClientSide) {
             return;
         }
         if (world.getGameTime() % 20L == 0) {

@@ -84,8 +84,8 @@ public class CabinetBlock extends BaseEntityBlock {
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (!world.isClientSide){
-            if (world.getBlockEntity(pos) instanceof CabinetBlockEntity entity){
-                NetworkHooks.openScreen((ServerPlayer) player, entity, buf -> buf.writeBlockPos(pos));
+            if (world.getBlockEntity(pos) instanceof CabinetBlockEntity entity && player instanceof ServerPlayer serverPlayer){
+                NetworkHooks.openScreen(serverPlayer, entity, buf -> buf.writeBlockPos(pos));
             }
             return InteractionResult.CONSUME;
         } else {

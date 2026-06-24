@@ -121,7 +121,7 @@ public class DeepFryerBlockEntity extends BlockEntity implements ImplementedInve
     public static final String TOO_HOT = "moderndelight.deep_fryer_message.too_hot";
     
     public void useOnButton(BlockState state, Level world){
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         if (!isHeated(state)){
@@ -148,7 +148,7 @@ public class DeepFryerBlockEntity extends BlockEntity implements ImplementedInve
     }
     
     public void use(BlockState state, Level world, BlockPos pos, Player player) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         ItemStack mainHandStack = player.getItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND);
@@ -332,7 +332,7 @@ public class DeepFryerBlockEntity extends BlockEntity implements ImplementedInve
     int maxProgress = 300;
     
     public void tick(Level world, BlockState state, DeepFryerBlockEntity blockEntity) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         if (hasOil()){

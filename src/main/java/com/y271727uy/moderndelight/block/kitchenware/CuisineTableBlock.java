@@ -1,12 +1,12 @@
 package com.y271727uy.moderndelight.block.kitchenware;
 
-import net.minecraft.core.registries.BuiltInRegistries;
+import com.y271727uy.moderndelight.util.MiscUtil;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -29,6 +29,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
 
 import java.util.List;
 
@@ -98,7 +99,7 @@ public class CuisineTableBlock extends BaseEntityBlock {
 
     @Override
     public net.minecraft.world.level.block.entity.BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return null;
+        return new CuisineTableBlockEntity(pos, state);
     }
 
     @Override
@@ -107,11 +108,11 @@ public class CuisineTableBlock extends BaseEntityBlock {
             return InteractionResult.SUCCESS;
         }
 
-        ResourceLocation crowbarId = new ResourceLocation("modern_delight", "crowbar");
-        if (BuiltInRegistries.ITEM.getKey(player.getMainHandItem().getItem()).equals(crowbarId)
-                || BuiltInRegistries.ITEM.getKey(player.getOffhandItem().getItem()).equals(crowbarId)) {
+        if (MiscUtil.isPlayerHoldingCrowbar(player)) {
                 level.setBlock(pos, state.setValue(FACING, state.getValue(FACING).getClockWise()), 3);
                 level.playSound(null, pos, SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundSource.BLOCKS, 1.0F, level.random.nextFloat() + 0.8F);
+        } else if (level.getBlockEntity(pos) instanceof CuisineTableBlockEntity blockEntity && player instanceof ServerPlayer serverPlayer) {
+            NetworkHooks.openScreen(serverPlayer, blockEntity, pos);
         } else {
             player.displayClientMessage(Component.translatable(CANT_OPEN), true);
         }

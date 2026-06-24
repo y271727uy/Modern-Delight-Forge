@@ -38,8 +38,6 @@ public class BiogasDigesterIOBlockEntity extends BlockEntity implements Implemen
     private int gasValue = 0;
     private int checked = 0;
     private int counter = 0;
-    private int shortGasValue = 0;
-    private int isSplit = 0;
     private boolean isCrafting = false;
     private int tempGasValue = 0;
     protected final ContainerData propertyDelegate;
@@ -52,9 +50,9 @@ public class BiogasDigesterIOBlockEntity extends BlockEntity implements Implemen
                 return switch (index) {
                     case 0 -> BiogasDigesterIOBlockEntity.this.progress;
                     case 1 -> BiogasDigesterIOBlockEntity.this.maxProgress;
-                    case 2 -> BiogasDigesterIOBlockEntity.this.shortGasValue;
+                    case 2 -> BiogasDigesterIOBlockEntity.this.gasValue & 0xFFFF;
                     case 3 -> BiogasDigesterIOBlockEntity.this.checked;
-                    case 4 -> BiogasDigesterIOBlockEntity.this.isSplit;
+                    case 4 -> BiogasDigesterIOBlockEntity.this.gasValue >>> 16;
                     default -> 0;
                 };
             }
@@ -115,7 +113,7 @@ public class BiogasDigesterIOBlockEntity extends BlockEntity implements Implemen
     }
 
     public void tick(Level world, BlockPos pos, BiogasDigesterIOBlockEntity blockEntity) {
-        if (!world.isClientSide) {
+        if (world.isClientSide) {
             return;
         }
         if (world.getBlockEntity(pos.below()) instanceof BiogasDigesterControllerBlockEntity entity) {
@@ -123,13 +121,6 @@ public class BiogasDigesterIOBlockEntity extends BlockEntity implements Implemen
                 blockEntity.checked = 1;
                 blockEntity.gasValue = entity.getGasValue();
                 blockEntity.maxProgress = entity.getCurrentSize();
-                if (gasValue > Short.MAX_VALUE) {
-                    shortGasValue = gasValue / 19;
-                    isSplit = 1;
-                } else {
-                    shortGasValue = gasValue;
-                    isSplit = 0;
-                }
                 if (!blockEntity.isCrafting) {
                     for (int i = 0; i < 9; i++) {
                         Item item = this.getItem(i).getItem();

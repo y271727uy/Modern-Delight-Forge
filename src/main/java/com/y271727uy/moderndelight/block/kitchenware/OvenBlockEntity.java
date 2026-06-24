@@ -155,7 +155,7 @@ public class OvenBlockEntity extends BlockEntity implements MenuProvider, Worldl
     }
 
     public void tick(Level world, BlockPos pos, BlockState state, OvenBlockEntity entity) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         if (world.getBlockEntity(pos.below()) instanceof BurningGasCookingStoveBlockEntity){

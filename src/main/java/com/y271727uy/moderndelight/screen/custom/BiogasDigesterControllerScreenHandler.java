@@ -42,11 +42,7 @@ public class BiogasDigesterControllerScreenHandler extends AbstractContainerMenu
     }
 
     public int getGasValue(){
-        int gasValue = this.propertyDelegate.get(2);
-        if (this.propertyDelegate.get(3) != 0){
-            gasValue = gasValue * 19;
-        }
-        return gasValue;
+        return (this.propertyDelegate.get(3) << 16) | (this.propertyDelegate.get(2) & 0xFFFF);
     }
     @Override
     public ItemStack quickMoveStack(Player player, int slot) {

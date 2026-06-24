@@ -124,7 +124,7 @@ public class ElectricSteamerBlock extends BaseEntityBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return InteractionResult.SUCCESS;
         }
         if (MiscUtil.isPlayerHoldingCrowbar(player)){
@@ -141,8 +141,8 @@ public class ElectricSteamerBlock extends BaseEntityBlock {
                 if (blockEntity.fillWater(world,pos)){
                     player.setItemInHand(hand,Items.BUCKET.getDefaultInstance());
                 }
-            } else {
-                NetworkHooks.openScreen((ServerPlayer) player, blockEntity, buf -> buf.writeBlockPos(pos));
+            } else if (player instanceof ServerPlayer serverPlayer) {
+                NetworkHooks.openScreen(serverPlayer, blockEntity, buf -> buf.writeBlockPos(pos));
             }
         }
         return InteractionResult.CONSUME;

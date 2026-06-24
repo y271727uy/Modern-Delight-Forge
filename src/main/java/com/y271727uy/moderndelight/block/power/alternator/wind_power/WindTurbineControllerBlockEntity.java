@@ -59,7 +59,7 @@ public class WindTurbineControllerBlockEntity extends BlockEntity implements Men
     }
 
     public void tick(Level world, BlockPos pos, BlockState state) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         switch (state.getValue(WindTurbineControllerBlock.FACING)){

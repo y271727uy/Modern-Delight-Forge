@@ -25,6 +25,8 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
 
 public class GasCanisterBlock extends BaseEntityBlock {
@@ -61,9 +63,15 @@ public class GasCanisterBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (MiscUtil.isPlayerHoldingCrowbar(player) || player.getMainHandItem().is(Items.FLINT_AND_STEEL) || player.getOffhandItem().is(Items.FLINT_AND_STEEL)
                 || player.getMainHandItem().is(Items.FIRE_CHARGE) || player.getOffhandItem().is(Items.FIRE_CHARGE)) {
-            level.destroyBlock(pos, true);
+            if (!level.isClientSide) {
+                level.destroyBlock(pos, true);
+            }
+            return InteractionResult.sidedSuccess(level.isClientSide);
         }
-        return InteractionResult.SUCCESS;
+        if (!level.isClientSide && level.getBlockEntity(pos) instanceof GasCanisterBlockEntity blockEntity && player instanceof ServerPlayer serverPlayer) {
+            NetworkHooks.openScreen(serverPlayer, blockEntity, pos);
+        }
+        return InteractionResult.sidedSuccess(level.isClientSide);
     }
 
     @Override

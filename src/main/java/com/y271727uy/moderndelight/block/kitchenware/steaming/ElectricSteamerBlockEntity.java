@@ -168,7 +168,7 @@ public class ElectricSteamerBlockEntity extends BlockEntity implements MenuProvi
     }
     
     public void tick(Level world, BlockPos pos, BlockState state) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         if (fluidStorage.variant.getFluid() == net.minecraft.world.level.material.Fluids.WATER){

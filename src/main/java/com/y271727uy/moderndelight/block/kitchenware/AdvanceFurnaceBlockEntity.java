@@ -146,7 +146,7 @@ public class AdvanceFurnaceBlockEntity extends BlockEntity implements MenuProvid
     private boolean alwaysBurning = false;
 
     public static void tick(Level world, BlockPos pos, BlockState state, AdvanceFurnaceBlockEntity entity) {
-        if (!world.isClientSide) {
+        if (world.isClientSide) {
             return;
         }
         entity.tickCounter--;

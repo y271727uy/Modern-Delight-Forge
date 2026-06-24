@@ -8,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.sounds.SoundEvents;
@@ -127,6 +128,17 @@ public class JuiceExtractorBlockEntity extends BlockEntity implements GeoBlockEn
             tempContainer = BuiltInRegistries.ITEM.get(new net.minecraft.resources.ResourceLocation(nbt.getString("juice_extractor.tempContainer")));
         }
         hasRecipe = nbt.getBoolean("juice_extractor.hasRecipe");
+    }
+
+    @Override
+    public CompoundTag getUpdateTag() {
+        return saveWithoutMetadata();
+    }
+
+    @Nullable
+    @Override
+    public ClientboundBlockEntityDataPacket getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
     }
 
     public void use(Level world, BlockPos bPos, Player player) {
@@ -358,6 +370,15 @@ public class JuiceExtractorBlockEntity extends BlockEntity implements GeoBlockEn
     public void clearContent() {
         inventory.clear();
         setChanged();
+    }
+
+    @Override
+    public void setChanged() {
+        super.setChanged();
+        if (level != null && !level.isClientSide) {
+            BlockState state = getBlockState();
+            level.sendBlockUpdated(worldPosition, state, state, Block.UPDATE_ALL);
+        }
     }
 
     @Nonnull

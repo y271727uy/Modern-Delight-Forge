@@ -97,7 +97,7 @@ public class IceCreamMakerBlockEntity extends BlockEntity implements GeoBlockEnt
     }
 
     public void tick(Level world, BlockPos pos, BlockState state) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         if (isPowered > 0){

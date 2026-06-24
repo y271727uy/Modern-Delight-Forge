@@ -117,7 +117,7 @@ public class ACDCConverterBlockEntity extends BlockEntity implements MenuProvide
     }
 
     public void tick(Level world, ACDCConverterBlockEntity blockEntity, BlockState state) {
-        if (!world.isClientSide) {
+        if (world.isClientSide) {
             return;
         }
         if (world.getGameTime() % 20L == 0L) {

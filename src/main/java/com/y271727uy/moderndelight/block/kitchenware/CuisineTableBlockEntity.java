@@ -24,7 +24,7 @@ public class CuisineTableBlockEntity extends BlockEntity implements net.minecraf
     
     @SuppressWarnings({"rawtypes", "unchecked"})
     public CuisineTableBlockEntity(BlockPos pos, BlockState state) {
-        super((net.minecraft.world.level.block.entity.BlockEntityType) (Object) ModBlockEntities.CUISINE_TABLE_BLOCK_ENTITY, pos, state);
+        super(ModBlockEntities.CUISINE_TABLE_BLOCK_ENTITY.get(), pos, state);
     }
 
     @Override

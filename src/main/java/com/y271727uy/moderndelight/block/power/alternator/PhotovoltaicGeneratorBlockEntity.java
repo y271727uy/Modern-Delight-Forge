@@ -70,7 +70,7 @@ public class PhotovoltaicGeneratorBlockEntity extends BlockEntity implements Men
     public static final String PHOTOVOLTAIC_GENERATOR_NAME = "display_name.moderndelight.photovoltaic_generator_name";
     
     public void tick(Level world, PhotovoltaicGeneratorBlockEntity blockEntity) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         if (world.getGameTime() % 20L == 0L){

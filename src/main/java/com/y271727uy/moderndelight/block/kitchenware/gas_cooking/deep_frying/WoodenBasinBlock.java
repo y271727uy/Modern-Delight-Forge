@@ -111,8 +111,8 @@ public class WoodenBasinBlock extends BaseEntityBlock implements SimpleWaterlogg
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (!world.isClientSide){
             var screenHandlerFactory = ((WoodenBasinBlockEntity) world.getBlockEntity(pos));
-            if (screenHandlerFactory != null){
-                NetworkHooks.openScreen((ServerPlayer) player, screenHandlerFactory, buf -> buf.writeBlockPos(pos));
+            if (screenHandlerFactory != null && player instanceof ServerPlayer serverPlayer){
+                NetworkHooks.openScreen(serverPlayer, screenHandlerFactory, buf -> buf.writeBlockPos(pos));
             }
         }
         return InteractionResult.SUCCESS;

@@ -76,7 +76,7 @@ public class TeslaCoilBlockEntity extends BlockEntity implements MenuProvider {
     private int ticker = 60;
     
     public void tick(Level world, BlockPos pos, BlockState state) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return;
         }
         this.ticker--;

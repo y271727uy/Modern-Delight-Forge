@@ -97,7 +97,7 @@ public class GasCanisterBlockEntity extends BlockEntity implements MenuProvider 
     private int tick = 20;
 
     public void tick(Level world, BlockPos pos, BlockState state, GasCanisterBlockEntity blockEntity) {
-        if (!world.isClientSide) {
+        if (world.isClientSide) {
             return;
         }
         gasValue = (int) FluidStack.convertDropletsToMb(fluidStorage.amount);

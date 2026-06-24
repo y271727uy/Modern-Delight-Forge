@@ -220,7 +220,7 @@ public class ModBlocks {
     public static final RegistryObject<Item> GLASS_BOWL_ITEM = ITEMS.register("glass_bowl",
             () -> new BlockItem(GLASS_BOWL.get(), new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> GLASS_CUP_ITEM = ITEMS.register("glass_cup",
-            () -> new BlockItem(GLASS_CUP.get(), new Item.Properties().stacksTo(1)));
+            () -> new BlockItem(GLASS_CUP.get(), new Item.Properties().stacksTo(16)));
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);

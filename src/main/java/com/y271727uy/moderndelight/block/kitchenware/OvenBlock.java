@@ -101,8 +101,8 @@ public class OvenBlock extends Block implements EntityBlock {
                 if (MiscUtil.isPlayerHoldingCrowbar(player)){
                     ovenBE.use(state, world);
                     return InteractionResult.SUCCESS;
-                } else {
-                    NetworkHooks.openScreen((ServerPlayer) player, ovenBE, pos);
+                } else if (player instanceof ServerPlayer serverPlayer) {
+                    NetworkHooks.openScreen(serverPlayer, ovenBE, pos);
                 }
             }
         }

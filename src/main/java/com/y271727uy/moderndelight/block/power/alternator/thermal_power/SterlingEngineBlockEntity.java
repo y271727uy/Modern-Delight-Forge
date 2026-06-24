@@ -72,6 +72,10 @@ public class SterlingEngineBlockEntity extends BlockEntity implements GeoBlockEn
     
     public void tick(Level world, BlockPos pos, BlockState state) {
         if (!world.isClientSide){
+            boolean working = isHeatSourceWorking(world, pos.below());
+            if (state.getValue(SterlingEngineBlock.IS_WORKING) != working) {
+                world.setBlock(pos, state.setValue(SterlingEngineBlock.IS_WORKING, working), 3);
+            }
             return;
         }
         boolean small_sound = state.getValue(SterlingEngineBlock.SMALL_SOUND);
@@ -81,7 +85,7 @@ public class SterlingEngineBlockEntity extends BlockEntity implements GeoBlockEn
                 if (small_sound){
                     world.playLocalSound(pos, ModSounds.BLOCK_STERLING_ENGINE_START.get(), SoundSource.BLOCKS, 0.15f, 1.0f, false);
                 } else {
-                    world.playLocalSound(pos, ModSounds.BLOCK_STERLING_ENGINE_START.get(), SoundSource.BLOCKS, 2.3f, 1.0f, false);
+                    world.playLocalSound(pos, ModSounds.BLOCK_STERLING_ENGINE_START.get(), SoundSource.BLOCKS, 0.8f, 1.0f, false);
                 }
             }
             hasStart = true;
@@ -92,7 +96,7 @@ public class SterlingEngineBlockEntity extends BlockEntity implements GeoBlockEn
                     }
                 } else {
                     if (world.getGameTime() % 3L == 0){
-                        world.playLocalSound(pos, ModSounds.BLOCK_STERLING_ENGINE.get(), SoundSource.BLOCKS, 2.3f, 1.0f, false);
+                        world.playLocalSound(pos, ModSounds.BLOCK_STERLING_ENGINE.get(), SoundSource.BLOCKS, 0.8f, 1.0f, false);
                     }
                 }
             } else {
@@ -103,28 +107,26 @@ public class SterlingEngineBlockEntity extends BlockEntity implements GeoBlockEn
                 if (small_sound){
                     world.playLocalSound(pos, ModSounds.BLOCK_STERLING_ENGINE_STOP.get(), SoundSource.BLOCKS, 0.15f, 1.0f, false);
                 } else {
-                    world.playLocalSound(pos, ModSounds.BLOCK_STERLING_ENGINE_STOP.get(), SoundSource.BLOCKS, 2.3f, 1.0f, false);
+                    world.playLocalSound(pos, ModSounds.BLOCK_STERLING_ENGINE_STOP.get(), SoundSource.BLOCKS, 0.8f, 1.0f, false);
                 }
             }
             hasStart = false;
         }
-        if (world.getBlockState(pos).getBlock() instanceof SterlingEngineBlock){
-            if (world.getBlockState(pos.below()).getBlock() instanceof net.minecraft.world.level.block.FurnaceBlock){
-                world.setBlock(pos, state.setValue(SterlingEngineBlock.IS_WORKING,
-                        world.getBlockState(pos.below()).getValue(net.minecraft.world.level.block.FurnaceBlock.LIT)), 3);
-            } else if (world.getBlockState(pos.below()).getBlock() instanceof net.minecraft.world.level.block.BlastFurnaceBlock){
-                world.setBlock(pos, state.setValue(SterlingEngineBlock.IS_WORKING,
-                        world.getBlockState(pos.below()).getValue(net.minecraft.world.level.block.BlastFurnaceBlock.LIT)), 3);
-            } else if (world.getBlockState(pos.below()).getBlock() instanceof net.minecraft.world.level.block.SmokerBlock){
-                world.setBlock(pos, state.setValue(SterlingEngineBlock.IS_WORKING,
-                        world.getBlockState(pos.below()).getValue(net.minecraft.world.level.block.SmokerBlock.LIT)), 3);
-            } else if (world.getBlockState(pos.below()).getBlock() instanceof OvenBlock){
-                world.setBlock(pos, state.setValue(SterlingEngineBlock.IS_WORKING,
-                        world.getBlockState(pos.below()).getValue(OvenBlock.OVEN_BURNING)), 3);
-            } else if (world.getBlockState(pos.below()).getBlock() instanceof AdvanceFurnaceBlock){
-                world.setBlock(pos, state.setValue(SterlingEngineBlock.IS_WORKING,
-                        world.getBlockState(pos.below()).getValue(AdvanceFurnaceBlock.BURNING)), 3);
-            }
+    }
+
+    private static boolean isHeatSourceWorking(Level world, BlockPos pos) {
+        BlockState state = world.getBlockState(pos);
+        if (state.getBlock() instanceof net.minecraft.world.level.block.FurnaceBlock) {
+            return state.getValue(net.minecraft.world.level.block.FurnaceBlock.LIT);
+        } else if (state.getBlock() instanceof net.minecraft.world.level.block.BlastFurnaceBlock) {
+            return state.getValue(net.minecraft.world.level.block.BlastFurnaceBlock.LIT);
+        } else if (state.getBlock() instanceof net.minecraft.world.level.block.SmokerBlock) {
+            return state.getValue(net.minecraft.world.level.block.SmokerBlock.LIT);
+        } else if (state.getBlock() instanceof OvenBlock) {
+            return state.getValue(OvenBlock.OVEN_BURNING);
+        } else if (state.getBlock() instanceof AdvanceFurnaceBlock) {
+            return state.getValue(AdvanceFurnaceBlock.BURNING);
         }
+        return false;
     }
 }
