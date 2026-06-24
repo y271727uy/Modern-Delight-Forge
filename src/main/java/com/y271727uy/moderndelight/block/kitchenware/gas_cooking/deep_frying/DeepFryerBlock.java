@@ -8,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -28,6 +29,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
 
 import java.util.List;
@@ -146,14 +148,18 @@ public class DeepFryerBlock extends BaseEntityBlock {
                 }
                 world.playSound(null,pos, net.minecraft.sounds.SoundEvents.WOODEN_TRAPDOOR_OPEN, net.minecraft.sounds.SoundSource.BLOCKS,1.0f,world.random.nextFloat()+0.8f);
             } else if (player.isShiftKeyDown()){
-                player.openMenu(entity);
+                if (!world.isClientSide && player instanceof ServerPlayer serverPlayer){
+                    NetworkHooks.openScreen(serverPlayer, entity, pos);
+                }
             } else {
                 if (hit.getDirection().equals(state.getValue(FACING))){
                     entity.useOnButton(state, world);
                 } else if (hit.getDirection().equals(Direction.UP)){
                     entity.use(state,world,pos,player);
                 } else {
-                    player.openMenu(entity);
+                    if (!world.isClientSide && player instanceof ServerPlayer serverPlayer){
+                        NetworkHooks.openScreen(serverPlayer, entity, pos);
+                    }
                 }
             }
         }

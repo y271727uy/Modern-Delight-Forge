@@ -6,6 +6,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.Containers;
@@ -32,6 +33,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -126,8 +128,8 @@ public class ElectriciansDeskBlock extends BaseEntityBlock {
                     case NORTH -> world.setBlock(pos, state.setValue(FACING, Direction.EAST), 3);
                 }
                 world.playSound(null, pos, SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundSource.BLOCKS, 1.0f, world.random.nextFloat() + 0.8f);
-            } else if (world.getBlockEntity(pos) instanceof MenuProvider entity){
-                player.openMenu(entity);
+            } else if (world.getBlockEntity(pos) instanceof MenuProvider entity && player instanceof ServerPlayer serverPlayer){
+                NetworkHooks.openScreen(serverPlayer, entity, pos);
             }
             return InteractionResult.CONSUME;
         }

@@ -64,6 +64,6 @@ public class AssemblyRecipeCategory implements IRecipeCategory<AssemblyRecipe> {
 
     @Override
     public void draw(AssemblyRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
-        guiGraphics.blit(TEXTURE, 0, 0, 0, 0, 150, 53);
+        guiGraphics.blit(TEXTURE, 5, 5, 4, 4, 142, 45);
     }
 }

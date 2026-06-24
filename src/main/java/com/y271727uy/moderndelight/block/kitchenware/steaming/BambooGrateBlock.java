@@ -8,6 +8,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
@@ -35,6 +36,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -212,8 +214,11 @@ public class BambooGrateBlock extends BaseEntityBlock {
                             world.setBlock(pos.above(),ModBlocks.BAMBOO_GRATE.get().defaultBlockState().setValue(COVERED,true), 3);
                         }
                     }
-                } else {
-                    player.openMenu(blockEntity);
+                } else if (player instanceof ServerPlayer serverPlayer) {
+                    NetworkHooks.openScreen(serverPlayer, blockEntity, buf -> {
+                        buf.writeBlockPos(pos);
+                        buf.writeInt(state.getValue(LAYER));
+                    });
                 }
                 blockEntity.setChanged();
             }

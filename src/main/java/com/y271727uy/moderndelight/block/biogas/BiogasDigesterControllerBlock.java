@@ -4,6 +4,7 @@ import com.y271727uy.moderndelight.block.ModBlockEntities;
 import com.y271727uy.moderndelight.block.ModBlocks;
 import com.y271727uy.moderndelight.util.TextUtil;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.entity.player.Player;
@@ -22,6 +23,7 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
 
 import java.util.List;
@@ -69,8 +71,8 @@ public class BiogasDigesterControllerBlock extends BaseEntityBlock {
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (!world.isClientSide) {
-            if (world.getBlockEntity(pos) instanceof BiogasDigesterControllerBlockEntity blockEntity) {
-                player.openMenu(blockEntity);
+            if (world.getBlockEntity(pos) instanceof BiogasDigesterControllerBlockEntity blockEntity && player instanceof ServerPlayer serverPlayer) {
+                NetworkHooks.openScreen(serverPlayer, blockEntity, pos);
             }
         }
         return InteractionResult.SUCCESS;

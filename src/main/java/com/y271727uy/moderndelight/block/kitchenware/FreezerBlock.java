@@ -8,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
@@ -37,6 +38,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.Containers;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
 
 import java.util.List;
@@ -219,8 +221,8 @@ public class FreezerBlock extends BaseEntityBlock {
                             }
                         } else {
                             MenuProvider screenHandlerFactory = (FreezerBlockEntity) world.getBlockEntity(pos);
-                            if (screenHandlerFactory != null){
-                                player.openMenu(screenHandlerFactory);
+                            if (screenHandlerFactory != null && player instanceof ServerPlayer serverPlayer){
+                                NetworkHooks.openScreen(serverPlayer, screenHandlerFactory, pos);
                             }
                         }
                     } else {

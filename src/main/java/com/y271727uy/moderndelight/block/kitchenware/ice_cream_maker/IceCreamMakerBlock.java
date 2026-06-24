@@ -4,6 +4,7 @@ import com.y271727uy.moderndelight.block.ModBlockEntities;
 import com.y271727uy.moderndelight.util.MiscUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -29,6 +30,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
 
 public class IceCreamMakerBlock extends BaseEntityBlock {
@@ -84,12 +86,14 @@ public class IceCreamMakerBlock extends BaseEntityBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!world.isClientSide){
+        if (world.isClientSide){
             return InteractionResult.SUCCESS;
         }
         if (world.getBlockEntity(pos) instanceof IceCreamMakerBlockEntity entity){
             if (player.isShiftKeyDown()){
-                player.openMenu(entity);
+                if (player instanceof ServerPlayer serverPlayer){
+                    NetworkHooks.openScreen(serverPlayer, entity, pos);
+                }
             } else if (hit.getDirection().equals(state.getValue(FACING))) {
                 entity.tryStart(state, world, player);
             } else if (MiscUtil.isPlayerHoldingCrowbar(player)){
@@ -101,7 +105,9 @@ public class IceCreamMakerBlock extends BaseEntityBlock {
                     case NORTH -> world.setBlock(pos,state.setValue(FACING,Direction.EAST), 3);
                 }
                 world.playSound(null,pos, SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundSource.BLOCKS,1.0f,world.random.nextFloat()+0.8f);
-            } else player.openMenu(entity);
+            } else if (player instanceof ServerPlayer serverPlayer){
+                NetworkHooks.openScreen(serverPlayer, entity, pos);
+            }
         }
         return InteractionResult.CONSUME;
     }

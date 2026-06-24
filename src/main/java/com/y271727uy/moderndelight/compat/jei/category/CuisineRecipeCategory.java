@@ -49,6 +49,6 @@ public class CuisineRecipeCategory implements IRecipeCategory<CuisineRecipe> {
 
     @Override
     public void draw(CuisineRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
-        guiGraphics.blit(TEXTURE, 0, 0, 0, 0, 150, 51);
+        guiGraphics.blit(TEXTURE, 5, 5, 4, 4, 142, 43);
     }
 }
