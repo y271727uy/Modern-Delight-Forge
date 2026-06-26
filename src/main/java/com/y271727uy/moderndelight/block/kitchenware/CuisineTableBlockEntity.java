@@ -10,7 +10,6 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,7 +19,7 @@ import javax.annotation.Nullable;
 public class CuisineTableBlockEntity extends BlockEntity implements net.minecraft.world.Container, MenuProvider {
     public static final String CUISINE_TABLE_NAME = "display_name.moderndelight.cuisine_table_name";
     private boolean canOpen = true;
-    private final NonNullList<ItemStack> inventory = NonNullList.withSize(10, ItemStack.EMPTY);
+    private final NonNullList<ItemStack> inventory = NonNullList.withSize(3, ItemStack.EMPTY);
     
     @SuppressWarnings({"rawtypes", "unchecked"})
     public CuisineTableBlockEntity(BlockPos pos, BlockState state) {
@@ -45,7 +44,11 @@ public class CuisineTableBlockEntity extends BlockEntity implements net.minecraf
 
     @Override
     public ItemStack removeItem(int slot, int amount) {
-        return ContainerHelper.removeItem(inventory, slot, amount);
+        ItemStack stack = ContainerHelper.removeItem(inventory, slot, amount);
+        if (!stack.isEmpty()) {
+            setChanged();
+        }
+        return stack;
     }
 
     @Override
@@ -77,6 +80,11 @@ public class CuisineTableBlockEntity extends BlockEntity implements net.minecraf
 
     public void setCanOpen(boolean canOpen) {
         this.canOpen = canOpen;
+        setChanged();
+    }
+
+    public NonNullList<ItemStack> getItems() {
+        return inventory;
     }
 
     @Override
@@ -87,21 +95,7 @@ public class CuisineTableBlockEntity extends BlockEntity implements net.minecraf
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int syncId, Inventory playerInventory, Player player) {
-        return new com.y271727uy.moderndelight.screen.custom.CuisineTableScreenHandler(syncId, playerInventory, this, new ContainerData() {
-            @Override
-            public int get(int index) {
-                return 0;
-            }
-
-            @Override
-            public void set(int index, int value) {
-            }
-
-            @Override
-            public int getCount() {
-                return 1;
-            }
-        });
+        return new com.y271727uy.moderndelight.screen.custom.CuisineTableScreenHandler(syncId, playerInventory, this);
     }
 
     @Override

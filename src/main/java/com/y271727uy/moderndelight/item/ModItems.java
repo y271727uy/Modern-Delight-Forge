@@ -642,6 +642,7 @@ public class ModItems {
             new PackagedItem(new ResourceLocation(ModernDelightMain.MOD_ID, "wooden_plate"),new Item.Properties().craftRemainder(ModBlocks.WOODEN_PLATE.get().asItem())
                     .stacksTo(16).food(new FoodProperties.Builder().nutrition(11).saturationMod(0.4f).build())));
     public static final RegistryObject<Item> HOLDER = registerItem("holder", () -> new HolderItem());
+    public static final RegistryObject<Item> HOLDER_BASE = registerItem("holder_base", () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> HOLDER_UP = registerItem("holder_up", () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> GUIDE_BOOK = registerItem("guide_book", () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> RAW_NOODLES = registerItem("raw_noodles", () -> new Item(new Item.Properties()

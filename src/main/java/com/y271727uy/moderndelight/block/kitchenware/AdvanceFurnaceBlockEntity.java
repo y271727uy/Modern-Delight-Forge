@@ -277,6 +277,18 @@ public class AdvanceFurnaceBlockEntity extends BlockEntity implements MenuProvid
         return experience / 10;
     }
 
+    public void setExperience(int experience) {
+        this.experience = Math.max(0, experience * 10);
+        setChanged();
+    }
+
+    public int takeExperience() {
+        int result = getExperience();
+        this.experience = 0;
+        setChanged();
+        return result;
+    }
+
     private boolean hasCraftingFinished(int slot) {
         return switch (slot) {
             case 1 -> progress_1 >= maxProgress;

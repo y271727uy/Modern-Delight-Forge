@@ -3,6 +3,7 @@ package com.y271727uy.moderndelight.block.power;
 import com.y271727uy.moderndelight.block.ModBlockEntities;
 import com.y271727uy.moderndelight.block.ModBlocks;
 import com.y271727uy.moderndelight.block.power.batteries.AbstractBatteryBlock;
+import com.y271727uy.moderndelight.networking.packet.ItemStackSyncS2CPacket;
 import com.y271727uy.moderndelight.screen.custom.ChargingPostScreenHandler;
 import com.y271727uy.moderndelight.util.ModConfig;
 import com.y271727uy.moderndelight.util.energy.ModEnergyStorage;
@@ -145,6 +146,7 @@ public class ChargingPostBlockEntity extends BlockEntity implements net.minecraf
                 }
             }
             isWorking = chargeSlotItem(getItem(2)) ? 1 : 0;
+            setChanged();
         }
         if (isWorking != 0) {
             if (!dir) {
@@ -204,6 +206,18 @@ public class ChargingPostBlockEntity extends BlockEntity implements net.minecraf
 
     public ItemStack getRendererStack() {
         return this.getItem(2);
+    }
+
+    public NonNullList<ItemStack> getItems() {
+        return inventory;
+    }
+
+    @Override
+    public void setChanged() {
+        if (level != null && !level.isClientSide) {
+            ItemStackSyncS2CPacket.send(worldPosition, inventory, level);
+        }
+        super.setChanged();
     }
 
     @Override

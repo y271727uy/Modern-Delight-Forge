@@ -43,7 +43,7 @@ public class AdvanceFurnaceScreen extends AbstractContainerScreen<AdvanceFurnace
         mouseY >= minY && mouseY <= maxY && button == 0){
             Minecraft mc = Minecraft.getInstance();
             if (mc.player != null && !mc.player.isSpectator()) {
-                if (menu.getExperiences()/10 != 0){
+                if (menu.getExperiences() != 0){
                     mc.player.playSound(SoundEvents.UI_BUTTON_CLICK.value(),1.0f,1.0f);
                     SpawnXPC2SPacket.send(menu.blockEntity.getBlockPos());
                 } else {
@@ -74,8 +74,8 @@ public class AdvanceFurnaceScreen extends AbstractContainerScreen<AdvanceFurnace
             guiGraphics.blit(TEXTURE, x + 6, y + 50, 176, 38, 36,13);
             b = true;
         } else b = false;
-        if (menu.getExperiences()/10 <= 9999){
-            guiGraphics.drawString(font,String.valueOf(menu.getExperiences()/10),x+8,y+52, 0x82fd64,true);
+        if (menu.getExperiences() <= 9999){
+            guiGraphics.drawString(font,String.valueOf(menu.getExperiences()),x+8,y+52, 0x82fd64,true);
         } else {
             guiGraphics.drawString(font,"9999+",x+8,y+52, 0x82fd64,true);
         }

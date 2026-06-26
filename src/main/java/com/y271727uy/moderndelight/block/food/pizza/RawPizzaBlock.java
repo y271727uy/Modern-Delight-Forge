@@ -4,13 +4,14 @@ import com.y271727uy.moderndelight.block.ModBlocks;
 import com.y271727uy.moderndelight.block.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import javax.annotation.Nullable;
+import java.util.List;
 
 public class RawPizzaBlock extends AbstractPizzaBlock {
     @Nullable
@@ -20,16 +21,15 @@ public class RawPizzaBlock extends AbstractPizzaBlock {
     }
 
     @Override
-    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean moved) {
-        if (state.getBlock() != newState.getBlock() && level.getBlockEntity(pos) instanceof RawPizzaBlockEntity blockEntity && !level.isClientSide) {
+    public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+        BlockEntity blockEntity = builder.getOptionalParameter(LootContextParams.BLOCK_ENTITY);
+        if (blockEntity instanceof RawPizzaBlockEntity rawPizzaBlockEntity) {
             ItemStack itemStack = new ItemStack(ModBlocks.RAW_PIZZA_ITEM.get());
-            CompoundTag tag = blockEntity.saveWithoutMetadata();
+            CompoundTag tag = rawPizzaBlockEntity.saveWithoutMetadata();
             BlockItem.setBlockEntityData(itemStack, ModBlockEntities.RAW_PIZZA_BLOCK_ENTITY.get(), tag);
-            ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, itemStack);
-            itemEntity.setDefaultPickUpDelay();
-            level.addFreshEntity(itemEntity);
+            return List.of(itemStack);
         }
-        super.onRemove(state, level, pos, newState, moved);
+        return super.getDrops(state, builder);
     }
 
     @Override

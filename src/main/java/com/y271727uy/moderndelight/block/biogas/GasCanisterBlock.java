@@ -2,7 +2,6 @@ package com.y271727uy.moderndelight.block.biogas;
 
 import com.y271727uy.moderndelight.util.MiscUtil;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
@@ -31,9 +30,12 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
+import java.util.List;
 
 public class GasCanisterBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -101,15 +103,14 @@ public class GasCanisterBlock extends BaseEntityBlock {
     }
 
     @Override
-    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
-        if (!level.isClientSide && !player.isCreative() && level.getBlockEntity(pos) instanceof GasCanisterBlockEntity blockEntity) {
+    public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+        BlockEntity blockEntity = builder.getOptionalParameter(LootContextParams.BLOCK_ENTITY);
+        if (blockEntity instanceof GasCanisterBlockEntity gasCanisterBlockEntity) {
             ItemStack stack = new ItemStack(com.y271727uy.moderndelight.block.ModBlocks.GAS_CANISTER_ITEM.get());
-            writeBlockEntityData(stack, blockEntity);
-            ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, stack);
-            itemEntity.setDefaultPickUpDelay();
-            level.addFreshEntity(itemEntity);
+            writeBlockEntityData(stack, gasCanisterBlockEntity);
+            return List.of(stack);
         }
-        super.playerWillDestroy(level, pos, state, player);
+        return super.getDrops(state, builder);
     }
 
     @Override

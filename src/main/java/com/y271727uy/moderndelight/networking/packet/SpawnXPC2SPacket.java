@@ -42,21 +42,29 @@ public class SpawnXPC2SPacket {
             }
             String simpleName = blockEntity.getClass().getSimpleName();
             if (simpleName.equals("AdvanceFurnaceBlockEntity") || simpleName.equals("OvenBlockEntity") || simpleName.equals("FreezerBlockEntity")) {
-                int experience = getExperience(blockEntity);
+                int experience = takeExperience(blockEntity);
                 if (experience != 0) {
                     ExperienceOrb xp = new ExperienceOrb(world, msg.pos.getX(), msg.pos.getY() + 1, msg.pos.getZ(), experience);
                     world.addFreshEntity(xp);
-                    setExperience(blockEntity, 0);
                 }
             }
         });
         ctx.setPacketHandled(true);
     }
 
-    private static int getExperience(Object blockEntity) {
+    private static int takeExperience(Object blockEntity) {
+        try {
+            Object value = blockEntity.getClass().getMethod("takeExperience").invoke(blockEntity);
+            return value instanceof Integer integer ? integer : 0;
+        } catch (ReflectiveOperationException ignored) {
+        }
         try {
             Object value = blockEntity.getClass().getMethod("getExperience").invoke(blockEntity);
-            return value instanceof Integer integer ? integer : 0;
+            int experience = value instanceof Integer integer ? integer : 0;
+            if (experience != 0) {
+                setExperience(blockEntity, 0);
+            }
+            return experience;
         } catch (ReflectiveOperationException ignored) {
             return 0;
         }

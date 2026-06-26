@@ -1,6 +1,7 @@
 package com.y271727uy.moderndelight.block.biogas;
 
 import com.y271727uy.moderndelight.util.FluidStack;
+import com.y271727uy.moderndelight.util.fluid.FluidVariant;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
@@ -52,8 +53,21 @@ public class GasCanisterBlockItem extends BlockItem {
         CompoundTag nbtCompound = BlockItem.getBlockEntityData(stack);
         if (nbtCompound != null && nbtCompound.contains("gas_canister.fluid_amount")) {
             long mb = FluidStack.convertDropletsToMb(nbtCompound.getLong("gas_canister.fluid_amount"));
-            tooltip.add(Component.literal("Fluid: ").append(Component.literal(String.valueOf(mb)).withStyle(net.minecraft.ChatFormatting.GRAY))
+            Component fluidName = getFluidName(nbtCompound);
+            tooltip.add(Component.literal("Fluid: ").append(fluidName.copy().withStyle(net.minecraft.ChatFormatting.GRAY))
+                    .append(Component.literal(" ").withStyle(net.minecraft.ChatFormatting.GRAY))
+                    .append(Component.literal(String.valueOf(mb)).withStyle(net.minecraft.ChatFormatting.GRAY))
                     .append(Component.literal("mB").withStyle(net.minecraft.ChatFormatting.GRAY)));
         }
+    }
+
+    private static Component getFluidName(CompoundTag nbtCompound) {
+        if (nbtCompound.contains("gas_canister.fluid_variant", 10)) {
+            FluidVariant variant = FluidVariant.fromNbt(nbtCompound.getCompound("gas_canister.fluid_variant"));
+            if (!variant.isBlank()) {
+                return Component.translatable(variant.getFluid().getFluidType().getDescriptionId());
+            }
+        }
+        return Component.translatable("block.minecraft.air");
     }
 }

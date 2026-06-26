@@ -7,8 +7,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
@@ -24,7 +22,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import javax.annotation.Nullable;
@@ -100,17 +101,23 @@ public class DeepFryBasketBlock extends BaseEntityBlock {
     }
 
     @Override
-    public void playerWillDestroy(Level world, BlockPos pos, BlockState state, Player player) {
-        if (!world.isClientSide && !player.isCreative()){
-            if (world.getBlockEntity(pos) instanceof DeepFryBasketBlockEntity blockEntity){
-                ItemStack itemStack = new ItemStack(ModBlocks.DEEP_FRY_BASKET_ITEM.get());
-                blockEntity.saveToItem(itemStack);
-                ItemEntity itemEntity = new ItemEntity(world, (double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5, itemStack);
-                itemEntity.setPickUpDelay(0);
-                world.addFreshEntity(itemEntity);
-            }
+    public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+        net.minecraft.world.level.block.entity.BlockEntity blockEntity = builder.getOptionalParameter(LootContextParams.BLOCK_ENTITY);
+        if (blockEntity instanceof DeepFryBasketBlockEntity deepFryBasketBlockEntity) {
+            ItemStack itemStack = new ItemStack(ModBlocks.DEEP_FRY_BASKET_ITEM.get());
+            deepFryBasketBlockEntity.saveToItem(itemStack);
+            return List.of(itemStack);
         }
-        super.playerWillDestroy(world, pos, state, player);
+        return super.getDrops(state, builder);
+    }
+
+    @Override
+    public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos, Player player) {
+        ItemStack itemStack = new ItemStack(ModBlocks.DEEP_FRY_BASKET_ITEM.get());
+        if (level.getBlockEntity(pos) instanceof DeepFryBasketBlockEntity blockEntity) {
+            blockEntity.saveToItem(itemStack);
+        }
+        return itemStack;
     }
 
     @Override

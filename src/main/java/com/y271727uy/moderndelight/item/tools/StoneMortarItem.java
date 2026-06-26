@@ -1,10 +1,8 @@
 package com.y271727uy.moderndelight.item.tools;
 
-import com.y271727uy.moderndelight.client.render.ModernDelightItemRenderer;
 import com.y271727uy.moderndelight.enchantment.ModEnchantments;
 import com.y271727uy.moderndelight.recipe.custom.GrindingRecipe;
 import com.y271727uy.moderndelight.sound.ModSounds;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundSource;
@@ -24,14 +22,10 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.SimpleContainer;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
-import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
-import java.util.function.Consumer;
 
 public class StoneMortarItem extends Item {
     public StoneMortarItem(Tier material, Properties properties) {
@@ -164,20 +158,5 @@ public class StoneMortarItem extends Item {
             } catch (Exception ignored){}
         }
         return ItemStack.EMPTY;
-    }
-
-    @Override
-    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-        consumer.accept(new IClientItemExtensions() {
-            private final BlockEntityWithoutLevelRenderer renderer = new ModernDelightItemRenderer(
-                    Minecraft.getInstance().getBlockEntityRenderDispatcher(),
-                    Minecraft.getInstance().getEntityModels()
-            );
-
-            @Override
-            public BlockEntityWithoutLevelRenderer getCustomRenderer() {
-                return renderer;
-            }
-        });
     }
 }

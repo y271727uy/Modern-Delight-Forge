@@ -39,7 +39,8 @@ public abstract class AbstractGasCookingStoveBlock extends BaseEntityBlock imple
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
-        return defaultBlockState().setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+        return updateBracket(defaultBlockState()
+                .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER), context.getLevel(), context.getClickedPos());
     }
     
     @Override
@@ -48,8 +49,9 @@ public abstract class AbstractGasCookingStoveBlock extends BaseEntityBlock imple
         if (Boolean.TRUE.equals(state.getValue(WATERLOGGED))) {
             world.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
         }
-        return direction == Direction.DOWN && !state.canSurvive(world, pos) ? Blocks.AIR.defaultBlockState()
-                : super.updateShape(state, direction, newState, world, pos, posFrom);
+        BlockState updatedState = updateBracket(state, world, pos);
+        return direction == Direction.DOWN && !updatedState.canSurvive(world, pos) ? Blocks.AIR.defaultBlockState()
+                : super.updateShape(updatedState, direction, newState, world, pos, posFrom);
     }
     
     @Override
@@ -64,7 +66,14 @@ public abstract class AbstractGasCookingStoveBlock extends BaseEntityBlock imple
 
     @Override
     public void setPlacedBy(Level world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
+        world.setBlock(pos, updateBracket(state, world, pos), 3);
         super.setPlacedBy(world, pos, state, placer, itemStack);
+    }
+
+    protected BlockState updateBracket(BlockState state, LevelReader world, BlockPos pos) {
+        BlockState aboveState = world.getBlockState(pos.above());
+        boolean hasBracket = !aboveState.isAir() && !aboveState.isFaceSturdy(world, pos.above(), Direction.DOWN);
+        return state.setValue(HAS_BRACKET, hasBracket);
     }
 
     @Override

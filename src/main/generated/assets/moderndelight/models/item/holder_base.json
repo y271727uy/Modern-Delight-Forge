@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "moderndelight:item/stone_mortar"
+    "layer0": "moderndelight:item/holder"
   }
 }

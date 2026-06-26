@@ -1,7 +1,6 @@
 package com.y271727uy.moderndelight.block.power.batteries;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import com.y271727uy.moderndelight.ModernDelightMain;
 import com.y271727uy.moderndelight.block.ModBlockEntities;
@@ -17,8 +16,11 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.energy.IEnergyStorage;
+import java.util.List;
 
 public abstract class AbstractBatteryBlock extends BaseEntityBlock {
     public static final String BATTERY_POWER_TAG = "battery.power";
@@ -37,15 +39,14 @@ public abstract class AbstractBatteryBlock extends BaseEntityBlock {
     }
 
     @Override
-    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
-        if (!level.isClientSide && !player.isCreative() && level.getBlockEntity(pos) instanceof BatteryBlockEntity blockEntity) {
+    public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+        BlockEntity blockEntity = builder.getOptionalParameter(LootContextParams.BLOCK_ENTITY);
+        if (blockEntity instanceof BatteryBlockEntity batteryBlockEntity) {
             ItemStack stack = new ItemStack(getBlock().asItem());
-            writeBlockEntityData(stack, blockEntity, this);
-            ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, stack);
-            itemEntity.setDefaultPickUpDelay();
-            level.addFreshEntity(itemEntity);
+            writeBlockEntityData(stack, batteryBlockEntity, this);
+            return List.of(stack);
         }
-        super.playerWillDestroy(level, pos, state, player);
+        return super.getDrops(state, builder);
     }
 
     @Override
