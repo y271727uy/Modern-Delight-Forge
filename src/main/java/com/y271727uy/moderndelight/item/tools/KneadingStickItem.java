@@ -2,6 +2,7 @@ package com.y271727uy.moderndelight.item.tools;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.y271727uy.moderndelight.util.TextUtil;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
@@ -59,11 +60,11 @@ public class KneadingStickItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag context) {
         if(Screen.hasShiftDown()){
-            tooltip.add(Component.translatable("moderndelight.tooltips.shift_front").withStyle(ChatFormatting.DARK_GRAY));
+            tooltip.add(TextUtil.getShiftText(true));
             tooltip.add(Component.literal(" "));
             tooltip.add(Component.translatable("moderndelight.tooltips.kneading_stick").withStyle(ChatFormatting.GRAY));
         }else {
-            tooltip.add(Component.translatable("moderndelight.tooltips.shift_front").withStyle(ChatFormatting.DARK_GRAY));
+            tooltip.add(TextUtil.getShiftText(false));
         }
         super.appendHoverText(stack, level, tooltip, context);
     }

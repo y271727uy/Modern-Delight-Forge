@@ -148,7 +148,6 @@ public class ModItems {
             }else {
                 tooltip.add(TextUtil.getShiftText(false));
             }
-            super.appendHoverText(stack, level, tooltip, context);
         }
     });
     public static final RegistryObject<Item> WHITE_TRUFFLE = registerItem("white_truffle", () -> new SeasoningItem(new Item.Properties(),
@@ -161,7 +160,6 @@ public class ModItems {
             }else {
                 tooltip.add(TextUtil.getShiftText(false));
             }
-            super.appendHoverText(stack, level, tooltip, context);
         }
     });
     public static final RegistryObject<Item> CUTTLEBONE = registerItem("cuttlebone", () -> new SeasoningItem(new Item.Properties(),

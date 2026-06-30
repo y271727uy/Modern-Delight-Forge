@@ -1,5 +1,6 @@
 package com.y271727uy.moderndelight.block.power;
 
+import com.y271727uy.moderndelight.block.ModBlockEntities;
 import com.y271727uy.moderndelight.util.MiscUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -16,6 +17,9 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -100,5 +104,12 @@ public class ChargingPostBlock extends BaseEntityBlock {
     @Override
     public net.minecraft.world.level.block.entity.BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return new ChargingPostBlockEntity(pos, state);
+    }
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level world, BlockState state, BlockEntityType<T> type) {
+        return createTickerHelper(type, ModBlockEntities.CHARGING_POST_BLOCK_ENTITY.get(),
+                (world1, pos, state1, blockEntity) -> blockEntity.tick(world1));
     }
 }

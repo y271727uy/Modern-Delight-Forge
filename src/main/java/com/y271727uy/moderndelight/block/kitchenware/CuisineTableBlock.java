@@ -1,6 +1,7 @@
 package com.y271727uy.moderndelight.block.kitchenware;
 
 import com.y271727uy.moderndelight.util.MiscUtil;
+import com.y271727uy.moderndelight.util.TextUtil;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -51,11 +52,11 @@ public class CuisineTableBlock extends BaseEntityBlock {
     @Override
     public void appendHoverText(ItemStack stack, BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Component.translatable("moderndelight.tooltips.shift_front"));
+            tooltip.add(TextUtil.getShiftText(true));
             tooltip.add(Component.literal(" "));
             tooltip.add(Component.translatable("moderndelight.tooltips.cuisine_table"));
         } else {
-            tooltip.add(Component.translatable("moderndelight.tooltips.shift_front"));
+            tooltip.add(TextUtil.getShiftText(false));
         }
     }
 

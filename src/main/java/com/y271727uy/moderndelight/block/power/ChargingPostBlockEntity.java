@@ -3,6 +3,7 @@ package com.y271727uy.moderndelight.block.power;
 import com.y271727uy.moderndelight.block.ModBlockEntities;
 import com.y271727uy.moderndelight.block.ModBlocks;
 import com.y271727uy.moderndelight.block.power.batteries.AbstractBatteryBlock;
+import com.y271727uy.moderndelight.item.tools.ElectricWhiskItem;
 import com.y271727uy.moderndelight.networking.packet.ItemStackSyncS2CPacket;
 import com.y271727uy.moderndelight.screen.custom.ChargingPostScreenHandler;
 import com.y271727uy.moderndelight.util.ModConfig;
@@ -128,21 +129,9 @@ public class ChargingPostBlockEntity extends BlockEntity implements net.minecraf
             return;
         }
         if (world.getGameTime() % 20L == 0) {
-            int battery1 = AbstractBatteryBlock.getBatteryEnergy(getItem(0));
-            int battery2 = AbstractBatteryBlock.getBatteryEnergy(getItem(1));
             if (energyStorage.getEnergyStored() < energyStorage.getMaxEnergyStored()) {
-                if (battery1 >= 1000) {
-                    setItem(0, AbstractBatteryBlock.transferEnergyBetween(getItem(0), energyStorage, 1000, false));
-                } else if (battery1 >= 100) {
-                    setItem(0, AbstractBatteryBlock.transferEnergyBetween(getItem(0), energyStorage, 100, false));
-                } else if (battery1 >= 10) {
-                    setItem(0, AbstractBatteryBlock.transferEnergyBetween(getItem(0), energyStorage, 10, false));
-                } else if (battery2 >= 1000) {
-                    setItem(1, AbstractBatteryBlock.transferEnergyBetween(getItem(1), energyStorage, 1000, false));
-                } else if (battery2 >= 100) {
-                    setItem(1, AbstractBatteryBlock.transferEnergyBetween(getItem(1), energyStorage, 100, false));
-                } else if (battery2 >= 10) {
-                    setItem(1, AbstractBatteryBlock.transferEnergyBetween(getItem(1), energyStorage, 10, false));
+                if (!drainBatterySlot(0)) {
+                    drainBatterySlot(1);
                 }
             }
             isWorking = chargeSlotItem(getItem(2)) ? 1 : 0;
@@ -234,7 +223,50 @@ public class ChargingPostBlockEntity extends BlockEntity implements net.minecraf
         this.energyHandler.invalidate();
     }
 
+    private boolean drainBatterySlot(int slot) {
+        ItemStack stack = getItem(slot);
+        if (stack.isEmpty()) {
+            return false;
+        }
+
+        int transfer = getBatteryTransferAmount(stack);
+        if (transfer <= 0) {
+            return false;
+        }
+
+        IEnergyStorage itemEnergy = stack.getCapability(ForgeCapabilities.ENERGY).resolve().orElse(null);
+        if (itemEnergy != null && itemEnergy.canExtract()) {
+            int received = this.energyStorage.receiveEnergy(itemEnergy.extractEnergy(transfer, true), false);
+            if (received > 0) {
+                itemEnergy.extractEnergy(received, false);
+                setChanged();
+                return true;
+            }
+        }
+
+        setItem(slot, AbstractBatteryBlock.transferEnergyBetween(stack, energyStorage, transfer, false));
+        return true;
+    }
+
+    private static int getBatteryTransferAmount(ItemStack stack) {
+        int batteryEnergy = AbstractBatteryBlock.getBatteryEnergy(stack);
+        if (batteryEnergy >= 1000) {
+            return 1000;
+        }
+        if (batteryEnergy >= 100) {
+            return 100;
+        }
+        if (batteryEnergy >= 10) {
+            return 10;
+        }
+        return 0;
+    }
+
     private boolean chargeSlotItem(ItemStack stack) {
+        if (chargeElectricWhisk(stack)) {
+            return true;
+        }
+
         IEnergyStorage itemEnergy = stack.getCapability(ForgeCapabilities.ENERGY).resolve().orElse(null);
         if (itemEnergy == null || !itemEnergy.canReceive()) {
             return false;
@@ -260,6 +292,31 @@ public class ChargingPostBlockEntity extends BlockEntity implements net.minecraf
                 this.energyStorage.extractEnergy(10, false);
                 return true;
             }
+        }
+        return false;
+    }
+
+    private boolean chargeElectricWhisk(ItemStack stack) {
+        if (!(stack.getItem() instanceof ElectricWhiskItem)) {
+            return false;
+        }
+        int need = ElectricWhiskItem.MAX_ENERGY - ElectricWhiskItem.getStoredEnergy(stack);
+        if (need <= 0) {
+            return false;
+        }
+
+        int bulkCost = 300;
+        int bulkReceived = Math.max(1, Math.round(bulkCost * getEfficiency()));
+        if (need >= bulkReceived && this.energyStorage.getEnergyStored() >= bulkCost) {
+            this.energyStorage.extractEnergy(bulkCost, false);
+            ElectricWhiskItem.addStoredEnergy(stack, Math.min(need, bulkReceived));
+            return true;
+        }
+
+        if (this.energyStorage.getEnergyStored() >= 10) {
+            this.energyStorage.extractEnergy(10, false);
+            ElectricWhiskItem.addStoredEnergy(stack, Math.min(need, 10));
+            return true;
         }
         return false;
     }

@@ -5,9 +5,11 @@ import com.y271727uy.moderndelight.item.ModItems;
 import com.y271727uy.moderndelight.item.food.PackagedItem;
 import com.y271727uy.moderndelight.recipe.custom.WhiskingRecipe;
 import com.y271727uy.moderndelight.sound.ModSounds;
+import com.y271727uy.moderndelight.util.TextUtil;
 import com.y271727uy.moderndelight.util.energy.ItemStackEnergyCapabilityProvider;
 import com.y271727uy.moderndelight.util.energy.StackEnergyStorage;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -102,17 +104,20 @@ public class ElectricWhiskItem extends Item implements GeoItem {
     public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, net.minecraft.world.item.TooltipFlag context) {
         tooltip.add(Component.translatable(BatteryBlockItem.TOOLTIP_TEXT).withStyle(ChatFormatting.DARK_GRAY));
         tooltip.add(Component.literal(getStoredEnergy(stack) + "/" + MAX_ENERGY + " FE").withStyle(ChatFormatting.GRAY));
-        if (net.minecraft.client.gui.screens.Screen.hasShiftDown()) {
-            tooltip.add(Component.translatable("moderndelight.tooltips.shift_front").withStyle(ChatFormatting.DARK_GRAY));
+        if (Screen.hasShiftDown()) {
+            tooltip.add(TextUtil.getShiftText(true));
+            tooltip.add(TextUtil.getAltText(false));
             tooltip.add(Component.literal(" "));
             tooltip.add(Component.translatable("moderndelight.tooltips.electric_whisk").withStyle(ChatFormatting.GRAY));
-        } else if (net.minecraft.client.gui.screens.Screen.hasAltDown()) {
-            tooltip.add(Component.translatable("moderndelight.tooltips.shift_front").withStyle(ChatFormatting.DARK_GRAY));
+        } else if (Screen.hasAltDown()) {
+            tooltip.add(TextUtil.getShiftText(false));
+            tooltip.add(TextUtil.getAltText(true));
             tooltip.add(Component.literal(" "));
-            tooltip.add(Component.literal("20 FE/s").withStyle(ChatFormatting.DARK_GREEN));
-            tooltip.add(Component.literal(MAX_ENERGY + " FE").withStyle(ChatFormatting.DARK_GREEN));
+            tooltip.add(TextUtil.getDCCom("20"));
+            tooltip.add(TextUtil.getDCSto(String.valueOf(MAX_ENERGY)));
         } else {
-            tooltip.add(Component.translatable("moderndelight.tooltips.shift_front").withStyle(ChatFormatting.DARK_GRAY));
+            tooltip.add(TextUtil.getShiftText(false));
+            tooltip.add(TextUtil.getAltText(false));
         }
         super.appendHoverText(stack, level, tooltip, context);
     }

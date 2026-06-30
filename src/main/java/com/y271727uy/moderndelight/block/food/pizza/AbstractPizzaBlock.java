@@ -4,7 +4,11 @@ import com.y271727uy.moderndelight.util.TextUtil;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.NonNullList;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.ContainerHelper;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
@@ -59,6 +63,18 @@ public abstract class AbstractPizzaBlock extends BaseEntityBlock {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter world, List<Component> tooltip, TooltipFlag options) {
+        CompoundTag nbtCompound = BlockItem.getBlockEntityData(stack);
+        if (nbtCompound != null && nbtCompound.contains("Items", 9)) {
+            NonNullList<ItemStack> stacks = NonNullList.withSize(5, ItemStack.EMPTY);
+            ContainerHelper.loadAllItems(nbtCompound, stacks);
+            for (ItemStack ingredient : stacks) {
+                if (!ingredient.isEmpty()) {
+                    tooltip.add(Component.literal(ingredient.getCount() + "x ")
+                            .append(ingredient.getHoverName())
+                            .withStyle(ChatFormatting.GRAY));
+                }
+            }
+        }
         tooltip.add(Component.translatable(TextUtil.CAN_PLACE).withStyle(ChatFormatting.GRAY));
         super.appendHoverText(stack, world, tooltip, options);
     }
