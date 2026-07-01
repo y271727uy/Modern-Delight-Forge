@@ -2,7 +2,7 @@
   "type": "moderndelight:deep_frying",
   "ingredients": [
     {
-      "tag": "c:foods/doughs"
+      "tag": "forge:dough"
     }
   ],
   "output": {

@@ -13,7 +13,7 @@
       "item": "minecraft:sugar"
     },
     {
-      "tag": "c:crops/cabbage"
+      "tag": "forge:crops/cabbage"
     },
     {
       "item": "moderndelight:mashed_potato"

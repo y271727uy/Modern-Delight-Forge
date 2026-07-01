@@ -2,13 +2,13 @@
   "type": "moderndelight:freezing",
   "ingredients": [
     {
-      "tag": "c:foods/pumpkins"
+      "tag": "forge:vegetables/pumpkin"
     },
     {
       "item": "moderndelight:mousse_wip"
     },
     {
-      "tag": "c:foods/pumpkins"
+      "tag": "forge:vegetables/pumpkin"
     }
   ],
   "output": {

@@ -4,10 +4,10 @@
   "container": "minecraft:glass_bottle",
   "ingredients": [
     {
-      "tag": "c:foods/vegetables/tomatoes"
+      "tag": "forge:vegetables/tomato"
     },
     {
-      "tag": "c:foods/vegetables/tomatoes"
+      "tag": "forge:vegetables/tomato"
     },
     {
       "item": "minecraft:sugar"

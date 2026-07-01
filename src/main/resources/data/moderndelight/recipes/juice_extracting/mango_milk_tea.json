@@ -10,10 +10,10 @@
       "item": "minecraft:honey_bottle"
     },
     {
-      "tag": "c:milks"
+      "tag": "forge:milk"
     },
     {
-      "tag": "c:foods/fruits/mango"
+      "tag": "forge:fruits"
     }
   ],
   "output": {

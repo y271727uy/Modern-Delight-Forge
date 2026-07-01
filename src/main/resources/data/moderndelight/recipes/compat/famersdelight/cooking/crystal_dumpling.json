@@ -13,13 +13,13 @@
   },
   "ingredients": [
     {
-      "tag": "c:foods/raw_meats/raw_beef"
+      "tag": "forge:raw_beef"
     },
     {
-      "tag": "c:foods/raw_fishes"
+      "tag": "forge:raw_fishes"
     },
     {
-      "tag": "c:foods/raw_meats/raw_mutton"
+      "tag": "forge:raw_mutton"
     },
     {
       "item": "moderndelight:mixed_dough"

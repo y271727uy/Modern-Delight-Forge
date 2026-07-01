@@ -2,7 +2,7 @@
   "type": "moderndelight:whisking",
   "ingredients": [
     {
-      "tag": "c:coal"
+      "tag": "minecraft:coals"
     }
   ],
   "output": {

@@ -2,7 +2,7 @@
   "type": "moderndelight:deep_frying",
   "ingredients": [
     {
-      "tag": "c:foods/pastas"
+      "tag": "forge:pasta"
     }
   ],
   "output": {

@@ -11,7 +11,7 @@
       "item": "minecraft:dried_kelp"
     },
     {
-      "tag": "c:crops/rice"
+      "tag": "forge:crops/rice"
     }
   ],
   "output": {

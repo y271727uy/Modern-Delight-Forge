@@ -11,7 +11,7 @@
       "item": "minecraft:beef"
     },
     {
-      "tag": "c:tools/knives"
+      "tag": "forge:tools/knives"
     }
   ],
   "output": {
