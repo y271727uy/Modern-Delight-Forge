@@ -35,7 +35,7 @@
           "item": "moderndelight:ac_dc_converter"
         },
         {
-          "tag": "c:iron_plates"
+          "tag": "forge:plates/iron"
         }
       ],
       "results": [
@@ -83,7 +83,7 @@
           "item": "moderndelight:ac_dc_converter"
         },
         {
-          "tag": "c:iron_plates"
+          "tag": "forge:plates/iron"
         }
       ],
       "results": [

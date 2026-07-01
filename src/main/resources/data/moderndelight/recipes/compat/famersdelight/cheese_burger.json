@@ -9,19 +9,19 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "c:foods/breads"
+      "tag": "forge:bread"
     },
     {
       "item": "farmersdelight:beef_patty"
     },
     {
-      "tag": "c:crops/cabbage"
+      "tag": "forge:crops/cabbage"
     },
     {
       "item": "farmersdelight:tomato"
     },
     {
-      "item": "farmersdelight:onion"
+      "item": "forge:vegetables/onion"
     },
     {
       "item": "moderndelight:cheese"

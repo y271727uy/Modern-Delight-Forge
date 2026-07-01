@@ -35,7 +35,7 @@
           "item": "moderndelight:tesla_coil"
         },
         {
-          "tag": "c:iron_plates"
+          "tag": "forge:plates/iron"
         }
       ],
       "results": [
@@ -51,7 +51,7 @@
           "item": "moderndelight:tesla_coil"
         },
         {
-          "tag": "c:iron_ingots"
+          "tag": "forge:ingots/iron"
         }
       ],
       "results": [
@@ -67,7 +67,7 @@
           "item": "moderndelight:tesla_coil"
         },
         {
-          "tag": "c:copper_plates"
+          "tag": "forge:plates/copper"
         }
       ],
       "results": [
@@ -83,7 +83,7 @@
           "item": "moderndelight:tesla_coil"
         },
         {
-          "tag": "c:copper_plates"
+          "tag": "forge:plates/copper"
         }
       ],
       "results": [
@@ -99,7 +99,7 @@
           "item": "moderndelight:tesla_coil"
         },
         {
-          "tag": "c:copper_plates"
+          "tag": "forge:plates/copper"
         }
       ],
       "results": [
@@ -115,7 +115,7 @@
           "item": "moderndelight:tesla_coil"
         },
         {
-          "tag": "c:copper_plates"
+          "tag": "forge:plates/copper"
         }
       ],
       "results": [

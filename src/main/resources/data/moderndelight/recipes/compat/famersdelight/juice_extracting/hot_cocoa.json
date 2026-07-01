@@ -19,7 +19,7 @@
       "item": "minecraft:sugar"
     },
     {
-      "tag": "c:milks"
+      "tag": "forge:milk"
     }
   ],
   "output": {

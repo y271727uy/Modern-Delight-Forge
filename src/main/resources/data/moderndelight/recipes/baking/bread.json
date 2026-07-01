@@ -2,16 +2,16 @@
   "type": "moderndelight:oven_baking",
   "ingredients": [
     {
-      "tag": "c:foods/doughs"
+      "tag": "forge:dough"
     },
     {
-      "tag": "c:foods/doughs"
+      "tag": "forge:dough"
     },
     {
-      "tag": "c:foods/doughs"
+      "tag": "forge:dough"
     },
     {
-      "tag": "c:foods/doughs"
+      "tag": "forge:dough"
     }
   ],
   "output": {

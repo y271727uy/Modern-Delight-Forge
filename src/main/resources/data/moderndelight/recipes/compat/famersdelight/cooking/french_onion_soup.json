@@ -13,7 +13,7 @@
   "experience": 2.0,
   "ingredients": [
     {
-      "tag": "c:foods/breads"
+      "tag": "forge:bread"
     },
     {
       "item": "moderndelight:black_pepper_dust"
@@ -25,10 +25,10 @@
       "item": "minecraft:carrot"
     },
     {
-      "item": "farmersdelight:onion"
+      "item": "forge:vegetables/onion"
     },
     {
-      "item": "farmersdelight:onion"
+      "item": "forge:vegetables/onion"
     }
   ],
   "recipe_book_tab": "meals",

@@ -10,16 +10,16 @@
   "experience": 1.5,
   "ingredients": [
     {
-      "tag": "c:foods/creams_without_plain"
+      "tag": "forge:creams_without_plain"
     },
     {
-      "tag": "c:milks"
+      "tag": "forge:milk"
     },
     {
-      "tag": "c:wheat_flour"
+      "tag": "forge:flour/wheat"
     },
     {
-      "item": "farmersdelight:onion"
+      "item": "forge:vegetables/onion"
     },
     {
       "item": "minecraft:brown_mushroom"

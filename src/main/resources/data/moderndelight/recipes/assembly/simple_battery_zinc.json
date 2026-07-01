@@ -4,7 +4,7 @@
   "goal": 3,
   "ingredients": [
     {
-      "tag": "c:zinc_ingots"
+      "tag": "forge:ingots/zinc"
     },
     {
       "item": "minecraft:coal"
@@ -13,7 +13,7 @@
       "item": "minecraft:copper_ingot"
     },
     {
-      "tag": "c:zinc_ingots"
+      "tag": "forge:ingots/zinc"
     },
     {
       "item": "minecraft:redstone_block"

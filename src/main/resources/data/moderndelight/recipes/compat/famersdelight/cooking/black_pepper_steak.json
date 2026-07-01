@@ -16,13 +16,13 @@
       "item": "minecraft:beef"
     },
     {
-      "tag": "c:foods/vegetables/onion"
+      "tag": "forge:vegetables/onion"
     },
     {
-      "tag": "c:crops/black_peppers"
+      "tag": "forge:crops/black_pepper"
     },
     {
-      "tag": "c:crops/black_peppers"
+      "tag": "forge:crops/black_pepper"
     }
   ],
   "recipe_book_tab": "meals",

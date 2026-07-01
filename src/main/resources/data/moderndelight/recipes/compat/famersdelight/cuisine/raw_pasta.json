@@ -8,10 +8,10 @@
   "type": "moderndelight:cuisine",
   "ingredients": [
     {
-      "tag": "c:dough"
+      "tag": "forge:dough"
     },
     {
-      "tag": "c:tools/knives"
+      "tag": "forge:tools/knives"
     }
   ],
   "output": {

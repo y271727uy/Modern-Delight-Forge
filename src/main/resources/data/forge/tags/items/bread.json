@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:bread/wheat",
+    "moderndelight:butter_bread_slice"
+  ]
+}

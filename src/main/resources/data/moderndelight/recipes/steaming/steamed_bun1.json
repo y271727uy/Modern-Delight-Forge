@@ -3,7 +3,7 @@
   "maxProgress": 6,
   "ingredients": [
     {
-      "tag": "c:dough"
+      "tag": "forge:dough"
     }
   ],
   "output": {

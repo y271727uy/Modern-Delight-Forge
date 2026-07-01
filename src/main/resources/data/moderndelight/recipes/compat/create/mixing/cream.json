@@ -9,7 +9,7 @@
   "ingredients": [
     {
       "amount": 100,
-      "fluidTag": "c:milk"
+      "fluidTag": "forge:milk"
     }
   ],
   "results": [

@@ -2,7 +2,7 @@
   "type": "moderndelight:grinding",
   "ingredients": [
     {
-      "tag": "c:raw_gold_ores"
+      "tag": "forge:ores/gold"
     }
   ],
   "output": {

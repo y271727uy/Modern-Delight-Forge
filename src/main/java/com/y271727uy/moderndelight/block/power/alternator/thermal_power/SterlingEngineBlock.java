@@ -45,7 +45,7 @@ public class SterlingEngineBlock extends BaseEntityBlock {
     public static final BooleanProperty IS_WORKING = BooleanProperty.create("is_working");
 
     public SterlingEngineBlock() {
-        super(BlockBehaviour.Properties.copy(Blocks.IRON_BARS).sound(SoundType.GRASS));
+        super(BlockBehaviour.Properties.copy(Blocks.IRON_BARS));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(SMALL_SOUND, false).setValue(IS_WORKING, false));
     }
     

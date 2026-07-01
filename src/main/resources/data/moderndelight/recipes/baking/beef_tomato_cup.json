@@ -2,13 +2,13 @@
   "type": "moderndelight:oven_baking",
   "ingredients": [
     {
-      "tag": "c:vegetables/tomato"
+      "tag": "forge:vegetables/tomato"
     },
     {
       "item": "moderndelight:cheese"
     },
     {
-      "tag": "c:foods/raw_meats/raw_beef"
+      "tag": "forge:raw_beef"
     },
     {
       "item": "moderndelight:wooden_plate"

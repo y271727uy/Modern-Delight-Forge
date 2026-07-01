@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "moderndelight:cherry_cream",
+    "moderndelight:golden_apple_cream",
+    "moderndelight:chocolate_cream",
+    "moderndelight:apple_cream",
+    "moderndelight:matcha_cream",
+    "moderndelight:pumpkin_cream"
+  ]
+}
