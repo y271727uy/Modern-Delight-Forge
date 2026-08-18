@@ -4,6 +4,8 @@ import com.y271727uy.moderndelight.ModernDelightMain;
 import com.y271727uy.moderndelight.block.ModBlocks;
 import com.y271727uy.moderndelight.compat.emi.recipe.*;
 import com.y271727uy.moderndelight.recipe.custom.*;
+import com.y271727uy.moderndelight.screen.ModScreenHandlers;
+import com.y271727uy.moderndelight.screen.custom.*;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
@@ -71,6 +73,12 @@ public class ModernDelightEMIPlugin implements EmiPlugin {
         registry.addWorkstation(EMIIceCreamRecipe.CATEGORY, EMIIceCreamRecipe.WORKSTATION);
         registry.addWorkstation(EMIJuiceExtractingRecipe.CATEGORY, EMIJuiceExtractingRecipe.WORKSTATION);
         registry.addWorkstation(EMIInstantNoodlesMakingRecipe.CATEGORY, EMIInstantNoodlesMakingRecipe.WORKSTATION);
+
+        registry.addRecipeHandler(ModScreenHandlers.ELECTRICIANS_DESK_SCREEN_HANDLER.get(), new StandardMenuRecipeHandler<>(EMIAssemblyRecipe.CATEGORY, 8, 0, 1, 2, 3, 4, 5, 6, 7));
+        registry.addRecipeHandler(ModScreenHandlers.CUISINE_TABLE_SCREEN_HANDLER.get(), new StandardMenuRecipeHandler<>(EMICuisineRecipe.CATEGORY, 2, 0, 1));
+        registry.addRecipeHandler(ModScreenHandlers.FREEZER_SCREEN_HANDLER.get(), new StandardMenuRecipeHandler<>(EMIFreezingRecipe.CATEGORY, 4, 0, 1, 2));
+        registry.addRecipeHandler(ModScreenHandlers.OVEN_SCREEN_HANDLER.get(), new StandardMenuRecipeHandler<>(EMIBakingRecipe.CATEGORY, 5, 0, 1, 2, 3));
+        registry.addRecipeHandler(ModScreenHandlers.ELECTRIC_STEAMER_SCREEN_HANDLER.get(), new StandardMenuRecipeHandler<>(EMISteamingElectricRecipe.CATEGORY, 12, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11));
 
         RecipeManager manager = registry.getRecipeManager();
         for (MixWithWaterRecipe recipe : manager.getAllRecipesFor(MixWithWaterRecipe.Type.INSTANCE)) {

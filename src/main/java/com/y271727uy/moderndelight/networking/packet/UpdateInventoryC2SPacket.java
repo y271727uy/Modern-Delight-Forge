@@ -1,6 +1,8 @@
 package com.y271727uy.moderndelight.networking.packet;
 
 import com.y271727uy.moderndelight.networking.NetworkHandler;
+import com.y271727uy.moderndelight.block.kitchenware.CuisineTableBlockEntity;
+import com.y271727uy.moderndelight.block.power.ElectriciansDeskBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -39,26 +41,13 @@ public class UpdateInventoryC2SPacket {
             if (blockEntity == null) {
                 return;
             }
-            String simpleName = blockEntity.getClass().getSimpleName();
-            if ("CuisineTableBlockEntity".equals(simpleName)) {
-                setItem(blockEntity, 2, msg.itemStack);
-            } else if ("ElectriciansDeskBlockEntity".equals(simpleName)) {
-                setItem(blockEntity, 8, msg.itemStack);
+            if (blockEntity instanceof CuisineTableBlockEntity cuisineTable) {
+                cuisineTable.setItem(2, msg.itemStack);
+            } else if (blockEntity instanceof ElectriciansDeskBlockEntity electriciansDesk) {
+                electriciansDesk.setItem(8, msg.itemStack);
             }
         });
         ctx.setPacketHandled(true);
-    }
-
-    @SuppressWarnings({"rawtypes", "unchecked"})
-    private static void setItem(BlockEntity blockEntity, int slot, ItemStack stack) {
-        try {
-            Object items = blockEntity.getClass().getMethod("getItems").invoke(blockEntity);
-            if (items instanceof java.util.List list) {
-                list.set(slot, stack);
-            }
-            blockEntity.getClass().getMethod("setChanged").invoke(blockEntity);
-        } catch (ReflectiveOperationException ignored) {
-        }
     }
 
     public static void send(BlockPos pos, ItemStack itemStack) {

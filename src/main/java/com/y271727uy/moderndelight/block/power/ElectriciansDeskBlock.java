@@ -71,13 +71,12 @@ public class ElectriciansDeskBlock extends BaseEntityBlock {
 
     @Override
     public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean moved) {
-        if (!world.isClientSide){
-            super.onRemove(state, world, pos, newState, moved);
-        }
         if (state.getBlock() != newState.getBlock()){
             net.minecraft.world.level.block.entity.BlockEntity blockEntity = world.getBlockEntity(pos);
             if (blockEntity instanceof ElectriciansDeskBlockEntity entity){
-                Containers.dropContents(world, pos, entity);
+                if (!world.isClientSide) {
+                    Containers.dropContents(world, pos, entity);
+                }
                 world.updateNeighbourForOutputSignal(pos, this);
             }
         }
